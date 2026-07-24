@@ -1,0 +1,371 @@
+{
+  "topicId": "factorials",
+  "subtopics": ["Factorials"],
+  "learn": {
+    "title": "Factorials",
+    "intro": "Factorials show up everywhere from counting problems to trailing-zero puzzles. The one formula worth memorizing cold — Legendre's trailing-zero count — turns intimidating-looking questions into simple arithmetic.",
+    "sections": [
+      {
+        "subtopic": "Factorials",
+        "explanation": "The factorial of a number n (written n!) is the product of all positive integers from 1 to n. Factorials grow extremely fast and are used in counting/permutation problems as well as trailing-zero and divisibility puzzles.",
+        "realLifeExample": "The number of ways to arrange 5 different books on a shelf is 5!=120 — factorials directly count arrangements like this.",
+        "memoryTrick": "Factorial explodes fast: 5!=120, but 10! is already over 3.6 million.",
+        "shortcutTrick": "To find trailing zeros in n!, count how many times 5 divides into the numbers from 1 to n (there are always more factors of 2 than 5): trailing zeros = floor(n/5) + floor(n/25) + floor(n/125) + ...",
+        "formulaCard": ["n! = n×(n−1)×(n−2)×...×2×1", "0! = 1 (a fixed special case)", "Trailing zeros in n! = floor(n/5) + floor(n/25) + floor(n/125) + ..."],
+        "commonMistakes": [
+          "Forgetting that 0! = 1, not 0.",
+          "Counting only floor(n/5) for trailing zeros and forgetting the higher powers of 5 (25, 125...) once n is large enough."
+        ],
+        "talentSprintTip": "TalentSprint often asks 'how many trailing zeros in 100!' — always check whether n is large enough to need the floor(n/25) and floor(n/125) terms too.",
+        "tcsNqtTip": "TCS NQT sometimes asks for the highest power of a prime p (like 2 or 3) dividing n! — use the same formula: floor(n/p) + floor(n/p²) + ..."
+      }
+    ]
+  },
+  "solvedExamples": [
+    {
+      "id": "fact-se-01",
+      "subtopic": "Factorials",
+      "question": "Find the value of 6!.",
+      "solution": "6! = 6×5×4×3×2×1 = 720.",
+      "answer": "720"
+    },
+    {
+      "id": "fact-se-02",
+      "subtopic": "Factorials",
+      "question": "Find the number of trailing zeros in 25!.",
+      "solution": "floor(25/5) + floor(25/25) = 5 + 1 = 6.",
+      "answer": "6"
+    },
+    {
+      "id": "fact-se-03",
+      "subtopic": "Factorials",
+      "question": "Find the number of trailing zeros in 100!.",
+      "solution": "floor(100/5) + floor(100/25) + floor(100/125) = 20 + 4 + 0 = 24.",
+      "answer": "24"
+    },
+    {
+      "id": "fact-se-04",
+      "subtopic": "Factorials",
+      "question": "Simplify 8!/6!.",
+      "solution": "8!/6! cancels the common 6! tail, leaving 8×7 = 56.",
+      "answer": "56"
+    },
+    {
+      "id": "fact-se-05",
+      "subtopic": "Factorials",
+      "question": "Find the highest power of 2 that divides 10!.",
+      "solution": "floor(10/2) + floor(10/4) + floor(10/8) = 5 + 2 + 1 = 8.",
+      "answer": "2⁸ (i.e. 8)"
+    }
+  ],
+  "practiceExamples": [
+    {
+      "id": "fact-pe-01",
+      "subtopic": "Factorials",
+      "question": "Find the value of 7!.",
+      "answer": "5040",
+      "hint": "7! = 7 × 6!."
+    },
+    {
+      "id": "fact-pe-02",
+      "subtopic": "Factorials",
+      "question": "Find the number of trailing zeros in 50!.",
+      "answer": "12",
+      "hint": "floor(50/5) + floor(50/25)."
+    },
+    {
+      "id": "fact-pe-03",
+      "subtopic": "Factorials",
+      "question": "Simplify 10!/8!.",
+      "answer": "90",
+      "hint": "10!/8! = 10×9."
+    },
+    {
+      "id": "fact-pe-04",
+      "subtopic": "Factorials",
+      "question": "Find the number of trailing zeros in 30!.",
+      "answer": "7",
+      "hint": "floor(30/5) + floor(30/25)."
+    },
+    {
+      "id": "fact-pe-05",
+      "subtopic": "Factorials",
+      "question": "Find the highest power of 3 dividing 15!.",
+      "answer": "6",
+      "hint": "floor(15/3) + floor(15/9)."
+    }
+  ],
+  "quiz": {
+    "easy": [
+      {
+        "id": "fact-e-01",
+        "subtopic": "Factorials",
+        "question": "What is 5!?",
+        "options": ["120", "24", "60", "720"],
+        "answerIndex": 0,
+        "explanation": "5! = 5×4×3×2×1 = 120.",
+        "whyWrong": [null, "24 is 4!, not 5!.", "60 doesn't equal 5×4×3×2×1.", "720 is 6!, not 5!."],
+        "shortcut": "Build up from 4!=24 by multiplying by 5."
+      },
+      {
+        "id": "fact-e-02",
+        "subtopic": "Factorials",
+        "question": "What is 0!?",
+        "options": ["1", "0", "10", "Undefined"],
+        "answerIndex": 0,
+        "explanation": "By definition, 0! = 1 — a fixed convention in mathematics, not something computed from a product.",
+        "whyWrong": [null, "0 is a common but incorrect guess — 0! is defined as 1.", "10 doesn't relate to the definition at all.", "0! is well-defined, not undefined."],
+        "shortcut": "Memorize 0!=1 as a fixed rule."
+      },
+      {
+        "id": "fact-e-03",
+        "subtopic": "Factorials",
+        "question": "Simplify 6!/4!.",
+        "options": ["30", "24", "15", "20"],
+        "answerIndex": 0,
+        "explanation": "6!/4! = 6×5 = 30 (the 4! cancels out).",
+        "whyWrong": [null, "24 is 4! itself, not the simplified ratio.", "15 doesn't equal 6×5.", "20 doesn't equal 6×5 either."],
+        "shortcut": "n!/(n−2)! = n×(n−1) — cancel the common factorial tail directly."
+      },
+      {
+        "id": "fact-e-04",
+        "subtopic": "Factorials",
+        "question": "How many trailing zeros does 10! have?",
+        "options": ["2", "1", "3", "0"],
+        "answerIndex": 0,
+        "explanation": "10! = 3,628,800, and floor(10/5)=2 confirms exactly 2 trailing zeros.",
+        "whyWrong": [null, "1 undercounts.", "3 overcounts — floor(10/25)=0 contributes nothing extra.", "0 is incorrect since 10! clearly ends in 00."],
+        "shortcut": "Trailing zeros = floor(n/5) for n below 25, since floor(n/25)=0 in that range."
+      },
+      {
+        "id": "fact-e-05",
+        "subtopic": "Factorials",
+        "question": "Which of these is the correct value of 4!?",
+        "options": ["24", "12", "16", "20"],
+        "answerIndex": 0,
+        "explanation": "4! = 4×3×2×1 = 24.",
+        "whyWrong": [null, "12 doesn't equal 4×3×2×1.", "16 doesn't equal it either.", "20 doesn't equal it either."],
+        "shortcut": "Memorize factorials up to 7! for instant recall."
+      }
+    ],
+    "medium": [
+      {
+        "id": "fact-m-01",
+        "subtopic": "Factorials",
+        "question": "Find the number of trailing zeros in 20!.",
+        "options": ["4", "3", "5", "2"],
+        "answerIndex": 0,
+        "explanation": "floor(20/5)=4, and floor(20/25)=0, so 20! has exactly 4 trailing zeros.",
+        "whyWrong": [null, "3 undercounts by one.", "5 overcounts by one.", "2 undercounts significantly."],
+        "shortcut": "For n<25, trailing zeros = floor(n/5) alone."
+      },
+      {
+        "id": "fact-m-02",
+        "subtopic": "Factorials",
+        "question": "Simplify 9!/7!.",
+        "options": ["72", "63", "56", "81"],
+        "answerIndex": 0,
+        "explanation": "9!/7! = 9×8 = 72 (the 7! cancels).",
+        "whyWrong": [null, "63 doesn't equal 9×8.", "56 doesn't equal 9×8 either.", "81 doesn't equal 9×8 either."],
+        "shortcut": "n!/(n−2)! = n×(n−1) — no need to compute both full factorials."
+      },
+      {
+        "id": "fact-m-03",
+        "subtopic": "Factorials",
+        "question": "Find the highest power of 2 dividing 12!.",
+        "options": ["10", "8", "9", "12"],
+        "answerIndex": 0,
+        "explanation": "floor(12/2)+floor(12/4)+floor(12/8) = 6+3+1 = 10.",
+        "whyWrong": [null, "8 undercounts — it misses contributions from higher powers of 2.", "9 undercounts by one.", "12 overcounts significantly."],
+        "shortcut": "Sum floor(n/2)+floor(n/4)+floor(n/8)+... until the divisor exceeds n."
+      },
+      {
+        "id": "fact-m-04",
+        "subtopic": "Factorials",
+        "question": "How many zeros are at the end of 15!?",
+        "options": ["3", "2", "4", "5"],
+        "answerIndex": 0,
+        "explanation": "floor(15/5)=3, and floor(15/25)=0, giving exactly 3 trailing zeros.",
+        "whyWrong": [null, "2 undercounts by one.", "4 overcounts by one.", "5 overcounts significantly."],
+        "shortcut": "For n<25, just compute floor(n/5)."
+      },
+      {
+        "id": "fact-m-05",
+        "subtopic": "Factorials",
+        "question": "Simplify (n+2)!/n! in terms of n.",
+        "options": ["(n+2)(n+1)", "(n+1)", "(n+2)", "n(n+1)"],
+        "answerIndex": 0,
+        "explanation": "(n+2)!/n! cancels the common n! tail, leaving (n+2)(n+1).",
+        "whyWrong": [null, "(n+1) alone misses the (n+2) factor.", "(n+2) alone misses the (n+1) factor.", "n(n+1) doesn't correctly represent the two terms above n! in the numerator."],
+        "shortcut": "(n+k)!/n! always equals the product of the k terms counting down from (n+k): (n+1)(n+2)...(n+k)."
+      },
+      {
+        "id": "fact-m-06",
+        "subtopic": "Factorials",
+        "question": "If n! = 5040, find n.",
+        "options": ["7", "6", "8", "9"],
+        "answerIndex": 0,
+        "explanation": "7! = 7×6×5×4×3×2×1 = 5040.",
+        "whyWrong": [null, "6! = 720, not 5040.", "8! = 40320, not 5040.", "9! = 362880, not 5040."],
+        "shortcut": "Memorize factorials up to 8! to answer these instantly."
+      },
+      {
+        "id": "fact-m-07",
+        "subtopic": "Factorials",
+        "question": "Find the number of trailing zeros in 40!.",
+        "options": ["9", "8", "10", "7"],
+        "answerIndex": 0,
+        "explanation": "floor(40/5)=8, floor(40/25)=1, total = 9 trailing zeros.",
+        "whyWrong": [null, "8 misses the extra contribution from floor(40/25)=1.", "10 overcounts by one.", "7 undercounts by two."],
+        "shortcut": "Always check floor(n/25) once n reaches or exceeds 25, not just floor(n/5)."
+      },
+      {
+        "id": "fact-m-08",
+        "subtopic": "Factorials",
+        "question": "Simplify 100!/98!.",
+        "options": ["9900", "9800", "10000", "9700"],
+        "answerIndex": 0,
+        "explanation": "100!/98! = 100×99 = 9900 (the 98! cancels).",
+        "whyWrong": [null, "9800 doesn't equal 100×99.", "10000 doesn't equal it either.", "9700 doesn't equal it either."],
+        "shortcut": "n!/(n−2)! = n×(n−1) works even for large n."
+      },
+      {
+        "id": "fact-m-09",
+        "subtopic": "Factorials",
+        "question": "Find the units digit of 15!.",
+        "options": ["0", "5", "2", "1"],
+        "answerIndex": 0,
+        "explanation": "Any factorial n! for n≥5 contains both 2 and 5 as factors, making it divisible by 10 — so its units digit is always 0.",
+        "whyWrong": [null, "5 is incorrect — the presence of a factor of 2 alongside 5 always produces a trailing 0, not a bare 5.", "2 doesn't match the units digit of any factorial ≥5!.", "1 doesn't match either."],
+        "shortcut": "Any factorial from 5! onward always ends in 0 — no calculation needed for the units digit."
+      },
+      {
+        "id": "fact-m-10",
+        "subtopic": "Factorials",
+        "question": "Find the number of trailing zeros in 5! + 10!.",
+        "options": ["1", "2", "3", "0"],
+        "answerIndex": 0,
+        "explanation": "5!=120 and 10!=3,628,800. Their sum is 3,628,920, which ends in only one zero (the digit before it is 2) — the total has exactly 1 trailing zero, not the smaller individual count.",
+        "whyWrong": [null, "2 would be true if the sum's trailing zeros equalled the minimum of the two addends' zero counts, but addition doesn't work that way.", "3 overcounts entirely.", "0 undercounts — the sum does end in at least one zero."],
+        "shortcut": "When adding numbers with trailing zeros, compute the actual sum's last few digits directly — trailing zero counts don't simply combine by taking the minimum."
+      }
+    ],
+    "hard": [
+      {
+        "id": "fact-h-01",
+        "subtopic": "Factorials",
+        "question": "Find the number of trailing zeros in 125!.",
+        "options": ["31", "30", "29", "32"],
+        "answerIndex": 0,
+        "explanation": "floor(125/5)+floor(125/25)+floor(125/125) = 25+5+1 = 31.",
+        "whyWrong": [null, "30 undercounts by missing the floor(125/125)=1 contribution.", "29 undercounts by two.", "32 overcounts by one."],
+        "shortcut": "Keep dividing n by increasing powers of 5 (5, 25, 125, 625...) until the quotient is 0, then sum all the quotients."
+      },
+      {
+        "id": "fact-h-02",
+        "subtopic": "Factorials",
+        "question": "Find the highest power of 5 dividing 50!.",
+        "options": ["12", "10", "11", "13"],
+        "answerIndex": 0,
+        "explanation": "floor(50/5)+floor(50/25) = 10+2 = 12.",
+        "whyWrong": [null, "10 misses the floor(50/25)=2 contribution.", "11 undercounts by one.", "13 overcounts by one."],
+        "shortcut": "Legendre's formula works for any prime — sum floor(n/pᵏ) for k=1,2,3..."
+      },
+      {
+        "id": "fact-h-03",
+        "subtopic": "Factorials",
+        "question": "If n! has exactly 2 trailing zeros, what is the largest possible value of n?",
+        "options": ["14", "10", "15", "12"],
+        "answerIndex": 0,
+        "explanation": "floor(n/5)=2 for n=10 through 14. At n=15, floor(15/5)=3, so the count jumps. The largest n still giving exactly 2 is 14.",
+        "whyWrong": [null, "10 is the smallest n giving 2 trailing zeros, not the largest.", "15 already gives 3 trailing zeros, one too many.", "12 does give 2 trailing zeros but isn't the largest such n — 13 and 14 also work."],
+        "shortcut": "Trailing zero count only increases at multiples of 5 — the count stays constant for a run of consecutive n right before the next multiple of 5."
+      },
+      {
+        "id": "fact-h-04",
+        "subtopic": "Factorials",
+        "question": "Find the number of trailing zeros in 23!.",
+        "options": ["4", "3", "5", "6"],
+        "answerIndex": 0,
+        "explanation": "floor(23/5)=4, and floor(23/25)=0, giving exactly 4 trailing zeros.",
+        "whyWrong": [null, "3 undercounts by one.", "5 overcounts by one.", "6 overcounts significantly."],
+        "shortcut": "For n<25, trailing zeros = floor(n/5) alone."
+      },
+      {
+        "id": "fact-h-05",
+        "subtopic": "Factorials",
+        "question": "Simplify n!/(n−3)! in terms of n.",
+        "options": ["n(n−1)(n−2)", "(n−1)(n−2)(n−3)", "n(n−1)", "n(n−1)(n−2)(n−3)"],
+        "answerIndex": 0,
+        "explanation": "n!/(n−3)! cancels the common (n−3)! tail, leaving the product of the 3 terms above it: n(n−1)(n−2).",
+        "whyWrong": [null, "(n−1)(n−2)(n−3) shifts the terms down by one position incorrectly.", "n(n−1) only accounts for 2 terms, not 3.", "n(n−1)(n−2)(n−3) includes one extra term beyond what cancels."],
+        "shortcut": "n!/(n−k)! always equals the product of the k terms counting down from n."
+      },
+      {
+        "id": "fact-h-06",
+        "subtopic": "Factorials",
+        "question": "Find the number of trailing zeros in the product 15! × 20!.",
+        "options": ["7", "6", "8", "3"],
+        "answerIndex": 0,
+        "explanation": "Unlike addition, trailing zeros DO add when multiplying: 15! contributes 3 (floor(15/5)=3) and 20! contributes 4 (floor(20/5)=4), so their product has 3+4=7 trailing zeros.",
+        "whyWrong": [null, "6 undercounts by one.", "8 overcounts by one.", "3 only accounts for 15!'s zeros, ignoring 20!'s contribution."],
+        "shortcut": "When multiplying numbers, their trailing zero counts always add directly — unlike addition, where this shortcut doesn't apply."
+      },
+      {
+        "id": "fact-h-07",
+        "subtopic": "Factorials",
+        "question": "What is the smallest n such that n! is divisible by 1000?",
+        "options": ["15", "10", "20", "12"],
+        "answerIndex": 0,
+        "explanation": "1000=2³×5³. Since factors of 5 are always the limiting factor in a factorial, we need floor(n/5)≥3, which first happens at n=15 (floor(14/5)=2 is insufficient).",
+        "whyWrong": [null, "10 gives floor(10/5)=2 factors of 5, one short of the required 3.", "20 works too, but isn't the smallest such n.", "12 gives floor(12/5)=2, still one short."],
+        "shortcut": "For 'n! divisible by 10^k' questions, find the smallest n where floor(n/5)≥k — factors of 2 are never the bottleneck."
+      },
+      {
+        "id": "fact-h-08",
+        "subtopic": "Factorials",
+        "question": "Find the unit digit of 1! + 2! + 3! + 4! + 5!.",
+        "options": ["3", "0", "5", "1"],
+        "answerIndex": 0,
+        "explanation": "1!+2!+3!+4!+5! = 1+2+6+24+120 = 153, whose unit digit is 3.",
+        "whyWrong": [null, "0 doesn't match — this short sum genuinely ends in 3, not 0.", "5 doesn't match the actual sum's last digit.", "1 doesn't match it either."],
+        "shortcut": "For a short sum like this (only up to 5!), just add the factorials directly — the 'ignore terms from 5! onward' shortcut applies only to much longer sums going well past 5!."
+      },
+      {
+        "id": "fact-h-09",
+        "subtopic": "Factorials",
+        "question": "Find the number of trailing zeros in 10! × 15!.",
+        "options": ["5", "4", "6", "2"],
+        "answerIndex": 0,
+        "explanation": "Trailing zeros of a product equal the sum of each factor's trailing zeros: 10! contributes 2, 15! contributes 3, totaling 5.",
+        "whyWrong": [null, "4 undercounts by one.", "6 overcounts by one.", "2 only accounts for 10!'s zeros, ignoring 15!'s contribution."],
+        "shortcut": "Trailing zeros add across a product — compute each factor's zero count separately, then sum them."
+      },
+      {
+        "id": "fact-h-10",
+        "subtopic": "Factorials",
+        "question": "If n! ends in exactly 6 zeros, find the range of possible values of n.",
+        "options": ["25 to 29", "20 to 24", "30 to 34", "24 to 28"],
+        "answerIndex": 0,
+        "explanation": "floor(n/5)+floor(n/25)=6 holds for n=25 through 29 (at n=30, the count jumps to 7 since floor(30/5)=6 combined with floor(30/25)=1 gives 7).",
+        "whyWrong": [null, "20 to 24 gives only 4 trailing zeros, two short.", "30 to 34 already gives 7 trailing zeros, one too many.", "24 to 28 straddles the boundary incorrectly — 24 gives only 4 zeros while 25-28 give 6, so the range isn't uniformly 6."],
+        "shortcut": "Trailing zero counts stay constant across a run of consecutive n values between multiples of 5 (and jump further at multiples of 25) — find the exact boundary values first."
+      }
+    ]
+  },
+  "revision": {
+    "quickSheet": [
+      "n! = n×(n−1)×...×2×1, and 0!=1 by definition.",
+      "Trailing zeros in n! = floor(n/5)+floor(n/25)+floor(n/125)+... (keep going until the divisor exceeds n).",
+      "n!/(n−k)! = the product of the k terms counting down from n — never compute both full factorials separately.",
+      "Trailing zeros ADD when multiplying factorials, but do NOT simply combine when adding them — always check the actual sum for addition questions.",
+      "Any factorial from 5! onward always ends in 0."
+    ],
+    "oneMinute": [
+      "Memorize factorials up to 8! (40320) for instant recall.",
+      "Trailing zero count = count the factors of 5, not 2 (5 is always the bottleneck).",
+      "The count stays constant for a run of n values, jumping only at multiples of 5, 25, 125..."
+    ],
+    "summary": "Factorial questions in placement exams almost always reduce to one core skill: counting how many times 5 divides into a range of numbers (Legendre's formula), since 5 is always the bottleneck for trailing zeros. Combine that with knowing n!/(n−k)! cancels down to a short product, and you can handle nearly every factorial question without ever computing a full factorial."
+  }
+}

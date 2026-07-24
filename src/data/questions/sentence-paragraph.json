@@ -1,0 +1,385 @@
+{
+  "topicId": "sentence-paragraph",
+  "subtopics": ["Sentence Improvement", "Para Jumbles"],
+  "learn": {
+    "title": "Sentence & Paragraph Skills",
+    "intro": "Both skills here test the same underlying habit: reading for logical and grammatical consistency across a whole sentence or paragraph, not just a phrase in isolation.",
+    "sections": [
+      {
+        "subtopic": "Sentence Improvement",
+        "explanation": "Sentence improvement questions give a sentence with an underlined part and ask you to pick the best replacement — testing grammar, clarity, and conciseness together. Sometimes 'No improvement' is the correct answer.",
+        "realLifeExample": "Editing a friend's resume bullet point from a wordy, awkward phrase into something crisp and professional is exactly this skill in action.",
+        "memoryTrick": "The best replacement is grammatically correct AND the most concise — don't pick a fix that's correct but needlessly wordy.",
+        "shortcutTrick": "Read the original sentence first without looking at the options, and try to spot the error yourself — then match your own correction to the closest option.",
+        "formulaCard": ["Priority order to check: 1) grammatical correctness 2) clarity/conciseness 3) tone consistency", "'No improvement' is correct when the original already satisfies all three criteria"],
+        "commonMistakes": [
+          "Picking a technically correct but overly wordy replacement over a more concise correct one.",
+          "Choosing 'No improvement' too quickly without checking if a subtler error exists."
+        ],
+        "talentSprintTip": "TalentSprint sentence improvement questions often hide a subtle redundancy (like 'repeat again' or 'past history') as the error — watch for these specifically.",
+        "tcsNqtTip": "TCS NQT often changes only the underlined portion between options, and 2-3 wrong options are grammatically correct but introduce a NEW error elsewhere — read each full replacement in the complete sentence."
+      },
+      {
+        "subtopic": "Para Jumbles",
+        "explanation": "Para jumbles present several sentences in random order that need to be rearranged into a logical, coherent paragraph. The skill is finding the opening sentence, then tracing logical/grammatical links between the rest.",
+        "realLifeExample": "Reordering shuffled photos into the correct sequence of events at a wedding uses the same skill — you look for clues to reconstruct the true order.",
+        "memoryTrick": "Find the sentence that could stand ALONE and start a paragraph — it introduces the topic without referring back to anything.",
+        "shortcutTrick": "Look for pronoun and connector clues: a sentence starting with 'This', 'It', 'However', or 'Therefore' almost never opens a paragraph, since it refers back to something not yet introduced.",
+        "formulaCard": ["Opening sentence: introduces the topic by name, no backward-referring pronouns", "Middle sentences: connected by 'this/it/therefore/however/also' to specific ideas in prior sentences", "Closing sentence: often summarizes, concludes, or gives an outcome"],
+        "commonMistakes": [
+          "Trying to sequence all sentences at once instead of first finding the definite opener and closer.",
+          "Ignoring pronoun references (he/she/it/this) that clearly point back to a specific earlier sentence."
+        ],
+        "talentSprintTip": "TalentSprint para jumbles often give exactly one sentence starting with a proper noun or clear topic introduction — that's almost always the opener.",
+        "tcsNqtTip": "TCS NQT sometimes gives paired sentences that MUST stay adjacent (identifiable by a strong pronoun link) — lock those pairs together first."
+      }
+    ]
+  },
+  "solvedExamples": [
+    {
+      "id": "sp-se-01",
+      "subtopic": "Sentence Improvement",
+      "question": "Improve the sentence: \"He is one of the best player in the team.\"",
+      "solution": "\"One of the best\" requires a plural noun — \"players\", not \"player\".",
+      "answer": "He is one of the best players in the team."
+    },
+    {
+      "id": "sp-se-02",
+      "subtopic": "Sentence Improvement",
+      "question": "Improve the sentence: \"The reason why he failed is because he didn't study.\"",
+      "solution": "\"Reason why...is because\" is redundant; the standard form is \"the reason...is that\".",
+      "answer": "The reason he failed is that he didn't study."
+    },
+    {
+      "id": "sp-se-03",
+      "subtopic": "Para Jumbles",
+      "question": "Arrange into a coherent paragraph: (A) This allowed farmers to predict seasons accurately. (B) Ancient civilizations developed calendars to track time. (C) As a result, agricultural productivity improved significantly. (D) These calendars were often based on the movement of the sun and moon.",
+      "solution": "B introduces the topic (calendars). D explains how they worked. A explains the direct result of that. C is the final consequence.",
+      "answer": "B-D-A-C"
+    },
+    {
+      "id": "sp-se-04",
+      "subtopic": "Sentence Improvement",
+      "question": "Improve the sentence: \"Neither the manager or the employees was informed.\"",
+      "solution": "\"Neither...or\" should be \"Neither...nor\", and the verb should agree with the nearer subject 'employees' (plural), so \"were\" not \"was\".",
+      "answer": "Neither the manager nor the employees were informed."
+    },
+    {
+      "id": "sp-se-05",
+      "subtopic": "Para Jumbles",
+      "question": "Arrange into a coherent paragraph: (A) However, its population has declined due to habitat loss. (B) The Bengal tiger is one of the most iconic animals in India. (C) Conservation efforts are now underway to protect the species. (D) It is known for its distinctive orange coat and black stripes.",
+      "solution": "B introduces the topic. D describes it further. A introduces a contrasting problem ('however'). C shows the response to that problem.",
+      "answer": "B-D-A-C"
+    }
+  ],
+  "practiceExamples": [
+    {
+      "id": "sp-pe-01",
+      "subtopic": "Sentence Improvement",
+      "question": "Improve: \"She don't like to travel alone.\"",
+      "answer": "She doesn't like to travel alone.",
+      "hint": "Check subject-verb agreement with the singular subject 'She'."
+    },
+    {
+      "id": "sp-pe-02",
+      "subtopic": "Sentence Improvement",
+      "question": "Improve: \"Each of the students have submitted their assignments.\"",
+      "answer": "Each of the students has submitted the assignment.",
+      "hint": "\"Each\" always requires a singular verb."
+    },
+    {
+      "id": "sp-pe-03",
+      "subtopic": "Para Jumbles",
+      "question": "Arrange: (A) This makes it one of the most sought-after gemstones. (B) Diamonds are formed deep within the earth under extreme pressure. (C) It takes millions of years for this process to complete. (D) They are also the hardest known natural material.",
+      "answer": "B-C-D-A",
+      "hint": "Find the sentence introducing the topic first, then trace the pronoun references."
+    },
+    {
+      "id": "sp-pe-04",
+      "subtopic": "Sentence Improvement",
+      "question": "Improve: \"The weather being so cold, we decided to stay indoors.\"",
+      "answer": "No improvement needed — already grammatically correct.",
+      "hint": "Check whether this sentence actually contains an error before assuming it does."
+    },
+    {
+      "id": "sp-pe-05",
+      "subtopic": "Para Jumbles",
+      "question": "Arrange: (A) Consequently, many species faced extinction. (B) Deforestation has been a major issue for decades. (C) It destroys natural habitats at an alarming rate. (D) Efforts are now being made to reverse this damage.",
+      "answer": "B-C-A-D",
+      "hint": "Find the topic sentence, then trace the cause-effect chain."
+    }
+  ],
+  "quiz": {
+    "easy": [
+      {
+        "id": "sp-e-01",
+        "subtopic": "Sentence Improvement",
+        "question": "Choose the best improvement for: \"He is more taller than his brother.\"",
+        "options": ["He is taller than his brother.", "He is more tall than his brother.", "He is much more taller than his brother.", "No improvement"],
+        "answerIndex": 0,
+        "explanation": "\"More taller\" is a double comparative error — \"taller\" alone is already comparative, so \"more\" is redundant.",
+        "whyWrong": [null, "\"more tall\" is also incorrect — the correct comparative form of 'tall' is 'taller'.", "\"much more taller\" compounds the same double-comparative error.", "There is a clear grammatical error in the original sentence."],
+        "shortcut": "For short adjectives (tall, big, fast), add \"-er\" for comparison — never combine this with \"more\"."
+      },
+      {
+        "id": "sp-e-02",
+        "subtopic": "Sentence Improvement",
+        "question": "Choose the best improvement for: \"I have saw that movie already.\"",
+        "options": ["I have seen that movie already.", "I have see that movie already.", "I has seen that movie already.", "No improvement"],
+        "answerIndex": 0,
+        "explanation": "Present perfect requires the past participle \"seen\", not the simple past form \"saw\".",
+        "whyWrong": [null, "\"I have see\" uses the base form instead of the past participle needed after 'have'.", "\"I has seen\" incorrectly uses 'has' with the first-person subject 'I', which requires 'have'.", "There is a clear tense error in the original sentence."],
+        "shortcut": "After \"have/has\", always use the past participle form of the verb, not the simple past."
+      },
+      {
+        "id": "sp-e-03",
+        "subtopic": "Para Jumbles",
+        "question": "Which sentence would most likely open a paragraph about the water cycle?",
+        "options": ["The water cycle describes how water moves through Earth's atmosphere, land, and oceans.", "This process then repeats continuously.", "It eventually falls back to Earth as precipitation.", "As a result, freshwater is constantly renewed."],
+        "answerIndex": 0,
+        "explanation": "This sentence introduces the topic by name and doesn't rely on any prior context — a strong signal it's the opening sentence.",
+        "whyWrong": [null, "\"This process\" refers back to something not yet introduced, so it can't open the paragraph.", "\"It\" refers back to a specific subject not yet named.", "\"As a result\" signals a consequence of something stated earlier."],
+        "shortcut": "Sentences starting with 'this,' 'it,' or 'as a result' almost never open a paragraph."
+      },
+      {
+        "id": "sp-e-04",
+        "subtopic": "Sentence Improvement",
+        "question": "Choose the best improvement for: \"Between you and I, this plan won't work.\"",
+        "options": ["Between you and me, this plan won't work.", "Between you and myself, this plan won't work.", "Between yourself and I, this plan won't work.", "No improvement"],
+        "answerIndex": 0,
+        "explanation": "\"Between\" is a preposition and must be followed by object pronouns (\"me\"), not subject pronouns (\"I\").",
+        "whyWrong": [null, "\"myself\" is a reflexive pronoun, used when subject and object are the same person — not appropriate here.", "\"yourself\" is also a reflexive pronoun and doesn't fit this context either.", "There is a clear pronoun case error ('I' should be 'me') in the original sentence."],
+        "shortcut": "After a preposition like 'between,' 'with,' or 'for,' always use object pronouns (me, him, her, us, them)."
+      },
+      {
+        "id": "sp-e-05",
+        "subtopic": "Para Jumbles",
+        "question": "Which sentence would most likely be the LAST sentence in a paragraph about a scientific discovery?",
+        "options": ["This breakthrough has since transformed the entire field of medicine.", "Scientists began researching the disease in the early 1900s.", "They initially struggled to find a reliable treatment.", "A team of researchers finally identified an effective cure."],
+        "answerIndex": 0,
+        "explanation": "This sentence describes the lasting IMPACT of the discovery, a natural concluding statement summarizing overall significance.",
+        "whyWrong": [null, "This sentence describes the starting point of the research, better suited to open the paragraph.", "This sentence describes an early struggle, fitting a middle position.", "This sentence describes the discovery itself, which logically precedes a concluding statement about its impact."],
+        "shortcut": "Closing sentences often summarize a lasting outcome or significance, using words like 'since,' 'now,' or 'today.'"
+      }
+    ],
+    "medium": [
+      {
+        "id": "sp-m-01",
+        "subtopic": "Sentence Improvement",
+        "question": "Choose the best improvement for: \"The company have decided to expand its operations.\"",
+        "options": ["The company has decided to expand its operations.", "The company have decided to expand their operations.", "The companies has decided to expand its operations.", "No improvement"],
+        "answerIndex": 0,
+        "explanation": "\"Company\" is a singular collective noun here, so it requires the singular verb \"has\", consistent with the already-correct singular possessive \"its\".",
+        "whyWrong": [null, "Changing 'its' to 'their' would create an inconsistency, since 'company' is treated as singular elsewhere.", "\"The companies\" incorrectly pluralizes the subject, which wasn't the original intent.", "There is a clear subject-verb agreement error in the original sentence."],
+        "shortcut": "When a collective noun is treated as one unit, keep the verb AND any pronouns referring to it consistently singular."
+      },
+      {
+        "id": "sp-m-02",
+        "subtopic": "Sentence Improvement",
+        "question": "Choose the best improvement for: \"Not only he is intelligent but also hardworking.\"",
+        "options": ["Not only is he intelligent but also hardworking.", "Not only he was intelligent but also hardworking.", "Not only he is intelligent but he is also hardworking.", "No improvement"],
+        "answerIndex": 0,
+        "explanation": "\"Not only\" at the start of a sentence requires inverted subject-verb order (\"is he\"), similar to a question structure.",
+        "whyWrong": [null, "Changing the tense to 'was' doesn't fix the actual inversion error present in the sentence.", "This option is grammatically valid but less concise than necessary, given the original's 'but also' structure.", "There is a clear inversion error after the sentence-initial 'Not only'."],
+        "shortcut": "When 'not only' begins a sentence, invert the subject and verb, just as in a question."
+      },
+      {
+        "id": "sp-m-03",
+        "subtopic": "Para Jumbles",
+        "question": "Arrange into a coherent paragraph: (A) This vitamin is essential for maintaining healthy bones. (B) Vitamin D is produced naturally when skin is exposed to sunlight. (C) However, many people today have insufficient levels due to indoor lifestyles. (D) As a result, doctors often recommend supplements.",
+        "options": ["B-A-C-D", "A-B-C-D", "B-C-A-D", "C-B-A-D"],
+        "answerIndex": 0,
+        "explanation": "B introduces the topic. A explains why it matters ('this vitamin'). C introduces a contrasting problem ('however'). D gives the resulting recommendation ('as a result').",
+        "whyWrong": [null, "Starting with A is incorrect since 'This vitamin' refers back to something not yet introduced.", "Placing C before A breaks the logical flow — A's explanation of importance should come right after B, before the problem in C.", "Starting with C is incorrect since 'However' signals a contrast to something not yet stated."],
+        "shortcut": "Trace each sentence's referring words (this, however, as a result) back to exactly which earlier sentence they connect to."
+      },
+      {
+        "id": "sp-m-04",
+        "subtopic": "Sentence Improvement",
+        "question": "Choose the best improvement for: \"Having finished the report, the meeting was attended by John.\"",
+        "options": ["Having finished the report, John attended the meeting.", "Having finished the report, the meeting had John attend it.", "Having finished the report, John was attending the meeting.", "No improvement"],
+        "answerIndex": 0,
+        "explanation": "This is a dangling modifier error — \"having finished the report\" should describe \"John\" (who finished it), not \"the meeting\".",
+        "whyWrong": [null, "This option still incorrectly attaches the modifier to 'the meeting' rather than to John.", "\"was attending\" unnecessarily changes the tense without fixing the actual modifier error.", "There is a clear dangling modifier error in the original sentence."],
+        "shortcut": "The introductory phrase must logically describe the very next noun in the sentence."
+      },
+      {
+        "id": "sp-m-05",
+        "subtopic": "Sentence Improvement",
+        "question": "Choose the best improvement for: \"She is the best of all the two candidates.\"",
+        "options": ["She is the better of the two candidates.", "She is the best of the two candidates.", "She is the more best of the two candidates.", "No improvement"],
+        "answerIndex": 0,
+        "explanation": "When comparing exactly TWO things, English requires the comparative form (\"better\"), not the superlative (\"best\"), which is reserved for three or more.",
+        "whyWrong": [null, "\"best\" is a superlative, used for comparing three or more items, not exactly two.", "\"more best\" combines 'more' with an already-superlative word, a double error.", "There is a clear comparative/superlative usage error in the original sentence."],
+        "shortcut": "Comparative (-er/more) for exactly 2 items; superlative (-est/most) for 3 or more."
+      },
+      {
+        "id": "sp-m-06",
+        "subtopic": "Para Jumbles",
+        "question": "Arrange into a coherent paragraph: (A) It has since become one of the most visited landmarks in the world. (B) The Eiffel Tower was originally built as a temporary structure for an exhibition. (C) Despite initial criticism from artists and intellectuals, it remained standing. (D) Today, millions of tourists visit it every year.",
+        "options": ["B-C-A-D", "B-A-C-D", "A-B-C-D", "B-D-C-A"],
+        "answerIndex": 0,
+        "explanation": "B introduces the topic. C explains the initial resistance it faced ('despite'). A shows the eventual outcome ('has since become'). D reinforces this with a present-day detail.",
+        "whyWrong": [null, "Placing A before C breaks the logical order — the tower's fame should follow the description of the criticism it overcame.", "Starting with A is incorrect since 'It' refers back to something not yet introduced.", "Placing D before C skips over the logical connection between the criticism and the tower's eventual fame."],
+        "shortcut": "Look for contrast words like 'despite' — they signal the sentence should follow something it's contrasting against."
+      },
+      {
+        "id": "sp-m-07",
+        "subtopic": "Sentence Improvement",
+        "question": "Choose the best improvement for: \"Unless you don't work hard, you will not succeed.\"",
+        "options": ["Unless you work hard, you will not succeed.", "Unless you don't try hard, you will not succeed.", "Unless you won't work hard, you will not succeed.", "No improvement"],
+        "answerIndex": 0,
+        "explanation": "\"Unless\" already means \"if not\", so adding another negative (\"don't\") creates a double negative, reversing the intended meaning.",
+        "whyWrong": [null, "Changing 'work' to 'try' doesn't fix the actual double-negative error present in the sentence.", "\"won't\" still introduces a second negative alongside 'unless', repeating the same error.", "There is a clear double-negative error in the original sentence."],
+        "shortcut": "\"Unless\" already carries a built-in negative meaning — never pair it with another negative word."
+      },
+      {
+        "id": "sp-m-08",
+        "subtopic": "Sentence Improvement",
+        "question": "Choose the best improvement for: \"The number of applicants have increased this year, reflecting growing interest.\"",
+        "options": ["The number of applicants has increased this year, reflecting growing interest.", "The number of applicants have increased this year, reflecting the growing interest.", "The numbers of applicants has increased this year, reflecting growing interest.", "No improvement"],
+        "answerIndex": 0,
+        "explanation": "\"The number of\" takes a singular verb (\"has increased\"), unlike \"a number of\" which takes a plural verb.",
+        "whyWrong": [null, "This option doesn't fix the subject-verb agreement error — it's identical apart from an unnecessary added article.", "\"The numbers\" incorrectly pluralizes 'number' itself, which wasn't part of the original structure.", "There is a clear subject-verb agreement error in the original sentence."],
+        "shortcut": "\"The number of\" = singular subject; \"a number of\" = plural subject."
+      },
+      {
+        "id": "sp-m-09",
+        "subtopic": "Para Jumbles",
+        "question": "Arrange into a coherent paragraph: (A) Consequently, many countries have introduced strict regulations. (B) Plastic pollution has become a major environmental concern worldwide. (C) It affects marine life, ecosystems, and even human health. (D) These regulations aim to reduce single-use plastic consumption.",
+        "options": ["B-C-A-D", "B-A-C-D", "C-B-A-D", "B-C-D-A"],
+        "answerIndex": 0,
+        "explanation": "B introduces the topic. C explains its wide-ranging impact ('it affects...'). A shows the resulting response ('consequently'). D elaborates on what those regulations aim to do.",
+        "whyWrong": [null, "Placing A before C skips directly to the response before explaining the actual impact, breaking the cause-effect order.", "Starting with C is incorrect since 'It' refers back to something not yet introduced.", "Placing D before A is illogical — D's 'these regulations' can't be referenced before A actually introduces them."],
+        "shortcut": "Trace pronoun references carefully — D's 'these regulations' can only follow A, which first introduces regulations."
+      },
+      {
+        "id": "sp-m-10",
+        "subtopic": "Sentence Improvement",
+        "question": "Choose the best improvement for: \"He talks as if he knows everything, isn't it?\"",
+        "options": ["He talks as if he knows everything, doesn't he?", "He talks as if he know everything, isn't it?", "He talks as if he knows everything, isn't he?", "No improvement"],
+        "answerIndex": 0,
+        "explanation": "Question tags must match the main verb of the sentence — since the main verb is \"talks\" (not a form of 'be'), the tag should use \"doesn't he\".",
+        "whyWrong": [null, "\"he know\" introduces a new subject-verb agreement error without fixing the tag issue.", "\"isn't he\" still incorrectly uses a 'to be' tag when the main verb 'talks' requires a 'does/doesn't' tag.", "There is a clear question-tag mismatch error in the original sentence."],
+        "shortcut": "Match the question tag's auxiliary verb to the sentence's actual main verb."
+      }
+    ],
+    "hard": [
+      {
+        "id": "sp-h-01",
+        "subtopic": "Sentence Improvement",
+        "question": "Choose the best improvement for: \"Scarcely had he reached the station when the train had left.\"",
+        "options": ["Scarcely had he reached the station when the train left.", "Scarcely he had reached the station when the train left.", "Scarcely had he reached the station than the train left.", "No improvement"],
+        "answerIndex": 0,
+        "explanation": "\"Scarcely...when\" is the correct fixed pairing, and the second clause should use simple past (\"left\"), not past perfect, since the first clause's past perfect already establishes the earlier action.",
+        "whyWrong": [null, "\"Scarcely he had\" incorrectly reverses the required inversion after 'scarcely' at the start of a sentence.", "\"scarcely...than\" is a common error — the fixed pairing is 'scarcely...when', not 'than' (which pairs with 'no sooner').", "There is a clear tense-sequencing error ('had left' should be 'left') in the original sentence."],
+        "shortcut": "Memorize the fixed pairs: 'scarcely...when' and 'no sooner...than' — not interchangeable despite looking similar."
+      },
+      {
+        "id": "sp-h-02",
+        "subtopic": "Sentence Improvement",
+        "question": "Choose the best improvement for: \"It is essential that he submits the report by Friday.\"",
+        "options": ["It is essential that he submit the report by Friday.", "It is essential that he submitting the report by Friday.", "It is essential that he will submit the report by Friday.", "No improvement"],
+        "answerIndex": 0,
+        "explanation": "After expressions like \"it is essential/important/necessary that,\" English uses the subjunctive mood, requiring the base form of the verb (\"submit\"), not \"submits\".",
+        "whyWrong": [null, "\"submitting\" isn't a complete finite verb form appropriate for this subjunctive construction.", "\"will submit\" introduces an unnecessary future tense marker not required by the subjunctive structure.", "There is a subtle but real subjunctive mood error, even though 'submits' sounds natural in casual speech."],
+        "shortcut": "After 'it is essential/vital/important that,' always use the base form of the verb — the subjunctive mood."
+      },
+      {
+        "id": "sp-h-03",
+        "subtopic": "Para Jumbles",
+        "question": "Arrange into a coherent paragraph: (A) Despite these advantages, critics argue that automation displaces human workers. (B) Automation has significantly increased efficiency in manufacturing industries. (C) Proponents, however, believe new jobs will emerge to replace those lost. (D) It reduces production time and minimizes human error.",
+        "options": ["B-D-A-C", "B-A-D-C", "D-B-A-C", "B-D-C-A"],
+        "answerIndex": 0,
+        "explanation": "B introduces the topic. D explains the specific advantages ('it reduces...'). A introduces the criticism ('despite these advantages'). C presents the counter-argument to that criticism ('however').",
+        "whyWrong": [null, "Placing A before D is illogical — A's 'these advantages' must refer to advantages already described, which only D provides.", "Starting with D is incorrect since 'It' refers back to something not yet introduced.", "Placing C before A breaks the flow — C's 'however' responds specifically to the criticism raised in A."],
+        "shortcut": "When a sentence says 'despite these [X],' trace back to find exactly which earlier sentence supplies those [X] details."
+      },
+      {
+        "id": "sp-h-04",
+        "subtopic": "Sentence Improvement",
+        "question": "Choose the best improvement for: \"The data shows that consumer spending is rising, but the trend are not expected to continue.\"",
+        "options": ["The data shows that consumer spending is rising, but the trend is not expected to continue.", "The data show that consumer spending is rising, but the trend are not expected to continue.", "The datas show that consumer spending is rising, but the trend is not expected to continue.", "No improvement"],
+        "answerIndex": 0,
+        "explanation": "\"Data\" is conventionally treated as singular in modern usage (already correct as 'data shows'). The actual error is \"the trend are\", which should be \"the trend is\" (trend is singular).",
+        "whyWrong": [null, "Changing 'shows' to 'show' unnecessarily 'fixes' something already correct in modern usage, while leaving 'trend are' uncorrected.", "\"datas\" isn't a standard English word.", "There is a clear subject-verb agreement error with 'trend are' in the original sentence."],
+        "shortcut": "In modern conventional usage, 'data' is treated as singular — don't 'correct' it unnecessarily."
+      },
+      {
+        "id": "sp-h-05",
+        "subtopic": "Sentence Improvement",
+        "question": "Choose the best improvement for: \"The more you practice, the better you will became at it.\"",
+        "options": ["The more you practice, the better you will become at it.", "The more you practice, the more better you will become at it.", "The much you practice, the better you will become at it.", "No improvement"],
+        "answerIndex": 0,
+        "explanation": "\"Became\" is past tense, but this construction describing a future outcome requires the base form \"become\" after \"will\".",
+        "whyWrong": [null, "\"more better\" incorrectly combines 'more' with an already-comparative word ('better').", "\"The much\" is not standard usage — 'the more' is the correct comparative form here.", "There is a clear verb form error ('became' should be 'become' after 'will')."],
+        "shortcut": "After any modal verb (will, can, should, must), always use the base form of the following verb."
+      },
+      {
+        "id": "sp-h-06",
+        "subtopic": "Para Jumbles",
+        "question": "Arrange into a coherent paragraph: (A) This gap has widened further due to unequal access to quality education. (B) Income inequality remains a persistent challenge in many developing economies. (C) Governments are now exploring policies such as progressive taxation to address it. (D) It creates a widening divide between the wealthiest and poorest citizens.",
+        "options": ["B-D-A-C", "B-A-D-C", "D-B-A-C", "B-D-C-A"],
+        "answerIndex": 0,
+        "explanation": "B introduces the topic. D explains the resulting divide ('it creates'). A explains a further contributing factor to that gap. C presents the policy response.",
+        "whyWrong": [null, "Placing A before D is illogical — A's 'this gap' must refer to the divide already described, which only D introduces.", "Starting with D is incorrect since 'It' refers back to something not yet introduced.", "Placing C before A skips over the further explanation of the gap before jumping to the response."],
+        "shortcut": "When a sentence refers to 'this gap' or 'this divide,' trace back to the specific earlier sentence that first establishes it."
+      },
+      {
+        "id": "sp-h-07",
+        "subtopic": "Sentence Improvement",
+        "question": "Choose the best improvement for: \"He is one of those people who always complains about everything.\"",
+        "options": ["He is one of those people who always complain about everything.", "He is one of those people who is always complains about everything.", "He is one of those people whom always complains about everything.", "No improvement"],
+        "answerIndex": 0,
+        "explanation": "In \"one of those [plural noun] who,\" the relative pronoun \"who\" refers back to the plural noun (\"people\"), so the verb must agree in the plural (\"complain\"), not singular.",
+        "whyWrong": [null, "\"is always complains\" introduces an ungrammatical double-verb structure.", "\"whom\" is an object pronoun, but 'who' functions as the subject of 'complain' here.", "There is a clear subject-verb agreement error, since 'who' refers to the plural 'people'."],
+        "shortcut": "In 'one of the [plural] who/that,' the verb after who/that agrees with the plural noun, not with 'one'."
+      },
+      {
+        "id": "sp-h-08",
+        "subtopic": "Sentence Improvement",
+        "question": "Choose the best improvement for: \"I wish I was taller so that I could reach the top shelf.\"",
+        "options": ["I wish I were taller so that I could reach the top shelf.", "I wish I am taller so that I could reach the top shelf.", "I wish I would be taller so that I could reach the top shelf.", "No improvement"],
+        "answerIndex": 0,
+        "explanation": "\"I wish\" expressing an unreal/hypothetical present situation requires the subjunctive \"were\" for all subjects, including 'I', not \"was\".",
+        "whyWrong": [null, "\"am\" doesn't fit the hypothetical, wishful tone required after 'I wish' at all.", "\"would be\" isn't the standard subjunctive construction used after 'I wish' for a present hypothetical.", "There is a subtle but real subjunctive mood error ('was' should be 'were')."],
+        "shortcut": "After 'I wish' for a present unreal situation, always use 'were', never 'was', regardless of the subject."
+      },
+      {
+        "id": "sp-h-09",
+        "subtopic": "Para Jumbles",
+        "question": "Arrange into a coherent paragraph: (A) Nevertheless, several startups have found creative ways to overcome this obstacle. (B) Access to funding remains one of the biggest hurdles for early-stage startups. (C) Traditional banks are often reluctant to lend to unproven businesses. (D) These strategies include crowdfunding and angel investment networks.",
+        "options": ["B-C-A-D", "B-A-C-D", "C-B-A-D", "B-C-D-A"],
+        "answerIndex": 0,
+        "explanation": "B introduces the topic. C explains a specific reason for the hurdle. A introduces a contrast — startups overcoming this obstacle ('nevertheless'). D elaborates on the strategies mentioned in A.",
+        "whyWrong": [null, "Placing A before C skips the specific explanation of why funding is hard to get.", "Starting with C is incorrect since it lacks the initial topic introduction that B provides.", "Placing D before A is illogical — D's 'these strategies' can only follow A, which introduces the idea of overcoming the obstacle."],
+        "shortcut": "Sentences with 'these' or 'this' referring to a plural/abstract idea must follow the sentence that first introduces that idea."
+      },
+      {
+        "id": "sp-h-10",
+        "subtopic": "Sentence Improvement",
+        "question": "Choose the best improvement for: \"Having been informed about the delay, the passengers decision was to wait at the gate.\"",
+        "options": ["Having been informed about the delay, the passengers decided to wait at the gate.", "Having been informed about the delay, the passengers' decision was to wait at the gate.", "Having been informed about the delay, the decision of the passengers was to wait at the gate.", "No improvement"],
+        "answerIndex": 0,
+        "explanation": "The introductory phrase \"having been informed\" logically describes a person performing an action, not a noun like \"decision\" — restructuring so \"the passengers\" directly perform the verb (\"decided\") fixes the modifier attachment.",
+        "whyWrong": [null, "Adding an apostrophe fixes the possessive spelling but leaves the awkward, indirect construction and modifier mismatch unresolved.", "Reordering to 'the decision of the passengers' still keeps 'decision' as the subject the modifier attaches to.", "There is a modifier attachment issue and unnecessarily indirect phrasing in the original sentence."],
+        "shortcut": "When an introductory participial phrase describes an action done by people, make sure the very next noun is those people themselves."
+      }
+    ]
+  },
+  "revision": {
+    "quickSheet": [
+      "'No improvement' is a valid answer when the original sentence is already grammatically correct and concise — don't force a change.",
+      "Watch for double comparatives/superlatives ('more taller', 'most best') and double negatives ('unless...don't').",
+      "Fixed pairs matter: 'scarcely...when' not 'scarcely...than'; 'not only...but also' requires inversion when starting a sentence.",
+      "For para jumbles, find the sentence that introduces the topic by name (the opener) and trace pronoun/connector references to link the rest.",
+      "Subjunctive mood ('it is essential that he submit', 'I wish I were') uses the base form or 'were', even when it sounds unusual casually."
+    ],
+    "oneMinute": [
+      "Read the full replacement option in context, not in isolation.",
+      "Sentences starting with 'this/it/however/as a result' never open a paragraph.",
+      "Match question tags and pronoun cases to the actual grammar of the main clause."
+    ],
+    "summary": "Sentence improvement and para jumbles both test the same underlying skill: reading for logical and grammatical consistency across an entire sentence or paragraph. For sentence improvement, check the full corrected sentence against grammar, clarity, and conciseness — including the possibility that no change is needed. For para jumbles, find the definite opener first, then trace pronoun and connector references to lock the rest into place."
+  }
+}

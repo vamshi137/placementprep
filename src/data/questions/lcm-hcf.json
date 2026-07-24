@@ -1,0 +1,401 @@
+{
+  "topicId": "lcm-hcf",
+  "subtopics": ["LCM", "HCF", "HCF of Fractions"],
+  "learn": {
+    "title": "LCM & HCF",
+    "intro": "These two ideas are opposite sides of the same coin — LCM finds the smallest shared multiple, HCF finds the largest shared factor. Master both and word-problem recognition becomes automatic.",
+    "sections": [
+      {
+        "subtopic": "LCM",
+        "explanation": "The LCM (Least Common Multiple) of two or more numbers is the smallest number that is a multiple of every one of them. The fastest method is prime factorization: break each number into its prime factors, then take the highest power of every prime that appears in any of the numbers, and multiply those together.",
+        "realLifeExample": "Two office shuttles leave the same bus stop — one every 12 minutes, one every 18 minutes. If they both leave together now, they'll next leave together after LCM(12, 18) = 36 minutes.",
+        "memoryTrick": "LCM is Large — it's always greater than or equal to the biggest number in the list.",
+        "shortcutTrick": "For two numbers a and b: LCM(a,b) = (a × b) / HCF(a,b). Find the HCF fast using Euclid's division method, then just divide the product by it — much quicker than factorizing large numbers directly.",
+        "formulaCard": ["LCM(a,b) × HCF(a,b) = a × b", "LCM of fractions = LCM(numerators) / HCF(denominators)"],
+        "commonMistakes": [
+          "Multiplying all the numbers together and calling it the LCM, instead of using the highest power of each common prime.",
+          "Forgetting to include a prime factor that only appears in one of the numbers."
+        ],
+        "talentSprintTip": "TalentSprint's aptitude section often gives 3-number LCM questions under a 40-second time limit — practice mental prime factorization for numbers up to 100 so you're not doing long division under pressure.",
+        "tcsNqtTip": "TCS NQT loves 'bells ring together' or 'traffic lights change together' word problems — these are always LCM in disguise. Spot keywords like 'together again' or 'at the same time'."
+      },
+      {
+        "subtopic": "HCF",
+        "explanation": "The HCF (Highest Common Factor), also called GCD, is the largest number that divides every given number exactly. The fastest method for two numbers is Euclid's division algorithm: divide the larger by the smaller, replace the larger with the remainder, and repeat until the remainder is 0 — the last non-zero remainder is the HCF.",
+        "realLifeExample": "You have 48 laddus and 60 chocolates and want to pack identical gift boxes with no leftovers and the same count of each sweet per box. The largest possible box uses HCF(48, 60) = 12 of each.",
+        "memoryTrick": "HCF is Humble — it's always less than or equal to the smallest number in the list.",
+        "shortcutTrick": "Euclid's algorithm in action: HCF(48,60) → 60 = 1×48 + 12 → 48 = 4×12 + 0 → HCF = 12. Two or three quick divisions beat full factorization for large numbers.",
+        "formulaCard": ["HCF(a,b) = a, if a divides b exactly", "HCF(a,b) × LCM(a,b) = a × b"],
+        "commonMistakes": [
+          "Dividing the smaller number by the larger one in Euclid's algorithm instead of the other way round.",
+          "Stopping one step too early, before the remainder actually reaches 0."
+        ],
+        "talentSprintTip": "TalentSprint frequently disguises HCF as 'the greatest number that divides both X and Y leaving remainder r' — subtract r from each number first, then find the HCF of the results.",
+        "tcsNqtTip": "TCS NQT's 'maximum equal pieces without leftover' problems (ropes, tiles, packets) are always HCF — look for the words 'maximum', 'equal size', or 'exactly divides'."
+      },
+      {
+        "subtopic": "HCF of Fractions",
+        "explanation": "For fractions, HCF = HCF(numerators) / LCM(denominators). Notice this is the opposite pairing from LCM of fractions — that's exactly why it trips people up in a timed test.",
+        "realLifeExample": "You're cutting ribbon pieces of length 2/3 m and 4/5 m into the largest possible equal pieces with none left over. The piece length is HCF(2/3, 4/5) = HCF(2,4)/LCM(3,5) = 2/15 m.",
+        "memoryTrick": "For fractions, HCF and LCM SWAP partners: HCF pairs with LCM of denominators; LCM pairs with HCF of denominators.",
+        "shortcutTrick": "Always reduce every fraction to lowest terms first — an unsimplified fraction throws off both the numerator-HCF and the denominator-LCM.",
+        "formulaCard": ["HCF of fractions = HCF(numerators) / LCM(denominators)", "LCM of fractions = LCM(numerators) / HCF(denominators)"],
+        "commonMistakes": [
+          "Using LCM of numerators and HCF of denominators — that's the formula for LCM of fractions, not HCF, and the two are mirror images of each other.",
+          "Not reducing fractions to lowest terms before applying the formula."
+        ],
+        "talentSprintTip": "This subtopic is a favorite 'trick question' in TalentSprint mocks precisely because of the swapped formula — expect at least one question testing whether you remember which pairs with which.",
+        "tcsNqtTip": "TCS NQT rarely asks fraction HCF/LCM directly, but uses it inside 'minimum length of rope pieces' problems where lengths are given as fractions or decimals — convert decimals to fractions first."
+      }
+    ]
+  },
+  "solvedExamples": [
+    {
+      "id": "lh-se-01",
+      "subtopic": "LCM",
+      "question": "Find the LCM of 12, 18 and 30.",
+      "solution": "Prime factorize each number: 12 = 2²×3, 18 = 2×3², 30 = 2×3×5.\nTake the highest power of every prime that appears: 2² , 3² , 5¹.\nLCM = 2²×3²×5 = 4×9×5 = 180.",
+      "answer": "180"
+    },
+    {
+      "id": "lh-se-02",
+      "subtopic": "HCF",
+      "question": "Find the HCF of 84 and 126 using Euclid's division algorithm.",
+      "solution": "126 = 1×84 + 42\n84 = 2×42 + 0\nThe remainder became 0, so the last non-zero remainder, 42, is the HCF.",
+      "answer": "42"
+    },
+    {
+      "id": "lh-se-03",
+      "subtopic": "LCM",
+      "question": "The product of two numbers is 1350 and their HCF is 15. Find their LCM.",
+      "solution": "Using LCM × HCF = product of the two numbers:\nLCM = 1350 / 15 = 90.",
+      "answer": "90"
+    },
+    {
+      "id": "lh-se-04",
+      "subtopic": "HCF",
+      "question": "Find the greatest number that divides 70 and 125, leaving remainders 5 and 8 respectively.",
+      "solution": "Subtract the remainders first: 70−5 = 65, and 125−8 = 117.\nNow find HCF(65, 117): 117 = 1×65 + 52; 65 = 1×52 + 13; 52 = 4×13 + 0.\nHCF = 13.",
+      "answer": "13"
+    },
+    {
+      "id": "lh-se-05",
+      "subtopic": "HCF of Fractions",
+      "question": "Find the HCF of 4/9 and 10/21.",
+      "solution": "HCF of fractions = HCF(numerators) / LCM(denominators).\nHCF(4, 10) = 2.\nLCM(9, 21): 9 = 3², 21 = 3×7, so LCM = 3²×7 = 63.\nHCF of the fractions = 2/63.",
+      "answer": "2/63"
+    }
+  ],
+  "practiceExamples": [
+    {
+      "id": "lh-pe-01",
+      "subtopic": "LCM",
+      "question": "Find the LCM of 8, 9 and 21.",
+      "answer": "504",
+      "hint": "Prime factorize each: 8 = 2³, 9 = 3², 21 = 3×7. Multiply the highest powers together."
+    },
+    {
+      "id": "lh-pe-02",
+      "subtopic": "HCF",
+      "question": "Find the HCF of 36 and 60.",
+      "answer": "12",
+      "hint": "Use Euclid's algorithm: 60 = 1×36+24, 36 = 1×24+12, 24 = 2×12+0."
+    },
+    {
+      "id": "lh-pe-03",
+      "subtopic": "LCM",
+      "question": "Two numbers have HCF 6 and product 216. Find their LCM.",
+      "answer": "36",
+      "hint": "Use LCM = product ÷ HCF."
+    },
+    {
+      "id": "lh-pe-04",
+      "subtopic": "HCF",
+      "question": "Find the HCF of 245 and 1029.",
+      "answer": "49",
+      "hint": "Apply Euclid's algorithm directly: 1029 = 4×245 + 49, then 245 = 5×49 + 0."
+    },
+    {
+      "id": "lh-pe-05",
+      "subtopic": "HCF of Fractions",
+      "question": "Find the LCM of 3/4 and 5/6.",
+      "answer": "15/2",
+      "hint": "LCM of fractions = LCM(numerators) / HCF(denominators) = LCM(3,5) / HCF(4,6)."
+    }
+  ],
+  "quiz": {
+    "easy": [
+      {
+        "id": "lh-e-01",
+        "subtopic": "LCM",
+        "question": "What is the LCM of 4 and 6?",
+        "options": ["10", "12", "24", "2"],
+        "answerIndex": 1,
+        "explanation": "Multiples of 4: 4, 8, 12... Multiples of 6: 6, 12... The smallest common multiple is 12.",
+        "whyWrong": ["10 is not a multiple of either 4 or 6.", null, "24 is a common multiple, but it's twice the LCM — not the smallest one.", "2 is the HCF of 4 and 6, not the LCM — an easy mix-up."],
+        "shortcut": "LCM(4,6) = (4×6)/HCF(4,6) = 24/2 = 12."
+      },
+      {
+        "id": "lh-e-02",
+        "subtopic": "HCF",
+        "question": "What is the HCF of 15 and 20?",
+        "options": ["5", "10", "15", "60"],
+        "answerIndex": 0,
+        "explanation": "Factors of 15: 1, 3, 5, 15. Factors of 20: 1, 2, 4, 5, 10, 20. The largest common factor is 5.",
+        "whyWrong": [null, "10 divides 20 but not 15, so it isn't even a common factor.", "15 divides itself but not 20.", "60 is the LCM of 15 and 20, not the HCF."],
+        "shortcut": "Euclid's algorithm in two steps: 20 = 1×15+5, then 15 = 3×5+0 → HCF = 5."
+      },
+      {
+        "id": "lh-e-03",
+        "subtopic": "LCM",
+        "question": "The LCM of two numbers is 72 and their HCF is 6. If one number is 24, find the other.",
+        "options": ["18", "24", "36", "12"],
+        "answerIndex": 0,
+        "explanation": "Using LCM × HCF = product of the numbers: 72×6 = 432. The other number = 432/24 = 18.",
+        "whyWrong": [null, "24 is the number already given, not the one you're solving for.", "36×24 = 864, which doesn't equal 432.", "12×24 = 288, which doesn't equal 432."],
+        "shortcut": "Other number = (LCM × HCF) ÷ known number."
+      },
+      {
+        "id": "lh-e-04",
+        "subtopic": "HCF",
+        "question": "Which statement is always true for two numbers a and b?",
+        "options": ["HCF ≥ LCM", "LCM ≥ HCF", "LCM = HCF always", "HCF has no relation to LCM"],
+        "answerIndex": 1,
+        "explanation": "HCF divides both numbers so it can never exceed either one, while LCM is a multiple of both, so LCM is always ≥ HCF (they're equal only when a = b).",
+        "whyWrong": ["This reverses the true relationship — HCF can never exceed LCM.", null, "They're only equal when a = b, not in general.", "They're directly linked by LCM × HCF = a × b."],
+        "shortcut": "Remember: 'HCF is Humble, LCM is Large.'"
+      },
+      {
+        "id": "lh-e-05",
+        "subtopic": "HCF of Fractions",
+        "question": "Find the HCF of 9/16 and 3/8.",
+        "options": ["3/16", "3/8", "9/16", "1/2"],
+        "answerIndex": 0,
+        "explanation": "HCF of fractions = HCF(numerators)/LCM(denominators) = HCF(9,3)/LCM(16,8) = 3/16.",
+        "whyWrong": [null, "3/8 is one of the original fractions, not their HCF.", "9/16 is the other original fraction.", "1/2 doesn't come from applying the correct formula."],
+        "shortcut": "HCF(9,3) = 3, LCM(16,8) = 16 → answer 3/16."
+      }
+    ],
+    "medium": [
+      {
+        "id": "lh-m-01",
+        "subtopic": "LCM",
+        "question": "Find the LCM of 15, 20 and 35.",
+        "options": ["210", "420", "105", "140"],
+        "answerIndex": 1,
+        "explanation": "15 = 3×5, 20 = 2²×5, 35 = 5×7. Taking highest powers: 2²×3×5×7 = 420.",
+        "whyWrong": ["210 is exactly half the correct LCM — it's missing a factor of 2.", null, "105 = 3×5×7 leaves out the 2² from 20.", "140 = 2²×5×7 leaves out the 3 from 15."],
+        "shortcut": "List each number's prime factors in a grid and take the highest power in each column."
+      },
+      {
+        "id": "lh-m-02",
+        "subtopic": "LCM",
+        "question": "Two bells toll at intervals of 20 minutes and 30 minutes. If both toll together at 9:00 AM, when will they next toll together?",
+        "options": ["9:40 AM", "10:00 AM", "9:50 AM", "9:30 AM"],
+        "answerIndex": 1,
+        "explanation": "LCM(20,30): 20 = 2²×5, 30 = 2×3×5, so LCM = 2²×3×5 = 60 minutes. 9:00 AM + 60 minutes = 10:00 AM.",
+        "whyWrong": ["40 minutes is not a common multiple of 20 and 30.", null, "50 minutes isn't divisible by 30.", "30 minutes is just one bell's own interval, not when both align together."],
+        "shortcut": "The phrase 'ring together' always signals an LCM problem."
+      },
+      {
+        "id": "lh-m-03",
+        "subtopic": "HCF",
+        "question": "Find the HCF of 96, 144 and 192.",
+        "options": ["48", "24", "16", "32"],
+        "answerIndex": 0,
+        "explanation": "96 = 2⁵×3, 144 = 2⁴×3², 192 = 2⁶×3. Taking the lowest common powers: 2⁴×3 = 48.",
+        "whyWrong": [null, "24 uses only 2³, one power of 2 too low.", "16 forgets the common factor of 3 entirely.", "32 = 2⁵ uses the wrong power of 2 and also drops the 3."],
+        "shortcut": "For three or more numbers, find the HCF of any two first, then find the HCF of that result with the third."
+      },
+      {
+        "id": "lh-m-04",
+        "subtopic": "LCM",
+        "question": "The HCF and LCM of two numbers are 12 and 600 respectively. If one number is 60, find the other.",
+        "options": ["100", "110", "120", "140"],
+        "answerIndex": 2,
+        "explanation": "a×b = HCF×LCM = 12×600 = 7200. The other number = 7200/60 = 120.",
+        "whyWrong": ["100×60 = 6000, not 7200.", "110×60 = 6600, not 7200.", null, "140×60 = 8400, not 7200."],
+        "shortcut": "Always verify with a×b = HCF×LCM once you have an answer."
+      },
+      {
+        "id": "lh-m-05",
+        "subtopic": "HCF",
+        "question": "Find the greatest number which divides 445, 572 and 699, leaving remainders 4, 5 and 6 respectively.",
+        "options": ["63", "49", "21", "91"],
+        "answerIndex": 0,
+        "explanation": "Subtract the remainders first: 445−4=441, 572−5=567, 699−6=693. HCF(441, 567, 693) = 63.",
+        "whyWrong": [null, "49 = 7² ignores that only a single factor of 7 is common to all three.", "21 is a common factor, but not the greatest — 63 divides all three too.", "91 = 7×13, but 13 isn't even a factor of 441."],
+        "shortcut": "'Divides ... leaving remainders' always means: subtract the remainders first, then take the HCF."
+      },
+      {
+        "id": "lh-m-06",
+        "subtopic": "HCF of Fractions",
+        "question": "Find the LCM of 2/3, 4/9 and 6/15.",
+        "options": ["4", "4/45", "2/3", "36/1"],
+        "answerIndex": 0,
+        "explanation": "Simplify 6/15 to 2/5 first. LCM(numerators 2,4,2)=4. HCF(denominators 3,9,5)=1. LCM of fractions = 4/1 = 4.",
+        "whyWrong": [null, "4/45 wrongly multiplies the denominators together, as if the rule needed their product.", "2/3 is just one of the original fractions.", "36/1 uses the product of the numerators instead of their LCM."],
+        "shortcut": "Always reduce every fraction to lowest terms before applying the LCM-of-fractions formula."
+      },
+      {
+        "id": "lh-m-07",
+        "subtopic": "HCF",
+        "question": "The product of two numbers is 2160 and their HCF is 12. How many such distinct pairs of numbers are possible?",
+        "options": ["1", "2", "3", "4"],
+        "answerIndex": 1,
+        "explanation": "Write the numbers as 12m and 12n with gcd(m,n)=1. Then 144mn = 2160, so mn = 15. Co-prime factor pairs of 15 are (1,15) and (3,5) — exactly 2 pairs.",
+        "whyWrong": ["This misses that 15 factorizes into two distinct co-prime pairs.", null, "This overcounts — (1,15) and (15,1) represent the same unordered pair, not two separate ones.", "15 has no third co-prime factor pair."],
+        "shortcut": "Divide the product by HCF² to get mn, then count the co-prime factor pairs of that quotient."
+      },
+      {
+        "id": "lh-m-08",
+        "subtopic": "HCF",
+        "question": "Find the HCF of 2.4, 0.36 and 1.8.",
+        "options": ["0.12", "0.06", "0.36", "1.2"],
+        "answerIndex": 0,
+        "explanation": "Pad every number to 2 decimal places: 2.40, 0.36, 1.80. Treat as integers 240, 36, 180 — their HCF is 12. Placing the decimal back two places gives 0.12.",
+        "whyWrong": [null, "0.06 divides all three, but 0.12 also divides all three and is larger, so 0.06 isn't the greatest.", "0.36 is one of the original numbers, not a common factor of all three.", "1.2 doesn't divide 0.36 exactly."],
+        "shortcut": "For decimal HCF, always pad every number to the same number of decimal places first."
+      },
+      {
+        "id": "lh-m-09",
+        "subtopic": "HCF",
+        "question": "Two ropes of length 45 m and 75 m must be cut into equal pieces with none left over. Find the greatest possible piece length and the total number of pieces.",
+        "options": ["15 m, 8 pieces", "15 m, 6 pieces", "5 m, 24 pieces", "15 m, 5 pieces"],
+        "answerIndex": 0,
+        "explanation": "Greatest piece length = HCF(45,75) = 15 m. Total pieces = 45/15 + 75/15 = 3 + 5 = 8.",
+        "whyWrong": [null, "6 pieces undercounts — it omits the pieces from one of the two ropes.", "5 m is a valid common divisor but not the greatest one, so it isn't the intended answer even though its piece count (24) is arithmetically correct for that length.", "5 pieces only accounts for the 75 m rope, ignoring the 45 m rope entirely."],
+        "shortcut": "Piece length = HCF of all given lengths; total pieces = sum of (each length ÷ HCF)."
+      },
+      {
+        "id": "lh-m-10",
+        "subtopic": "LCM",
+        "question": "If two numbers a and b are co-prime (HCF = 1), what is their LCM?",
+        "options": ["a + b", "a − b", "a × b", "1"],
+        "answerIndex": 2,
+        "explanation": "Since LCM × HCF = a × b and HCF = 1 here, LCM = a × b directly.",
+        "whyWrong": ["Addition plays no role in the LCM/HCF product relationship.", "Subtraction is unrelated to the formula.", null, "1 would only be the LCM if both a and b equalled 1."],
+        "shortcut": "For co-prime numbers, the LCM is simply their product — no extra calculation needed."
+      }
+    ],
+    "hard": [
+      {
+        "id": "lh-h-01",
+        "subtopic": "HCF",
+        "question": "Three tankers contain 403, 434 and 465 litres of diesel. Find the maximum capacity of a container that can measure the diesel in each tanker an exact number of times.",
+        "options": ["31", "13", "7", "29"],
+        "answerIndex": 0,
+        "explanation": "403 = 13×31, 434 = 2×7×31, 465 = 3×5×31 — the only prime common to all three is 31.",
+        "whyWrong": [null, "13 divides 403 but not 434 or 465.", "7 divides 434 but not 403 or 465.", "29 doesn't divide any of the three numbers."],
+        "shortcut": "Factorize each number fully and scan for the prime(s) that appear in every list."
+      },
+      {
+        "id": "lh-h-02",
+        "subtopic": "LCM",
+        "question": "Find the least number which, when divided by 6, 15 and 18, leaves remainder 5 in each case.",
+        "options": ["95", "85", "90", "455"],
+        "answerIndex": 0,
+        "explanation": "LCM(6,15,18) = 90. Since the remainder 5 is the same in every case, the least such number is 90 + 5 = 95.",
+        "whyWrong": [null, "85 ÷ 18 leaves remainder 13, not 5.", "90 is the LCM itself — it leaves remainder 0, not 5.", "455 is a much larger common multiple plus 5, not the least one."],
+        "shortcut": "'Same remainder every time' → least number = LCM + remainder."
+      },
+      {
+        "id": "lh-h-03",
+        "subtopic": "LCM",
+        "question": "Find the least number which, when divided by 20, 25 and 35, leaves remainders 14, 19 and 29 respectively.",
+        "options": ["694", "700", "706", "688"],
+        "answerIndex": 0,
+        "explanation": "Check: 20−14=6, 25−19=6, 35−29=6 — the same constant every time. LCM(20,25,35) = 700. The least number is 700 − 6 = 694.",
+        "whyWrong": [null, "700 is the LCM itself — it leaves remainder 0 in every case, not the required remainders.", "706 = 700+6 uses the wrong sign — the constant must be subtracted, not added.", "688 mod 20 = 8, not 14, so it fails the first condition."],
+        "shortcut": "Whenever (divisor − remainder) is the same constant for every divisor, answer = LCM − that constant."
+      },
+      {
+        "id": "lh-h-04",
+        "subtopic": "LCM",
+        "question": "Traffic lights at three crossings change every 48, 72 and 108 seconds respectively. If they all change together at 8:20:00, when will they next change together?",
+        "options": ["8:27:12 hrs", "8:26:00 hrs", "8:24:00 hrs", "8:30:12 hrs"],
+        "answerIndex": 0,
+        "explanation": "LCM(48,72,108) = 432 seconds = 7 minutes 12 seconds. Adding this to 8:20:00 gives 8:27:12.",
+        "whyWrong": [null, "8:26:00 corresponds to 360 seconds, not the correct 432-second LCM.", "8:24:00 corresponds to only 240 seconds — too small to be a common multiple of all three.", "8:30:12 wrongly adds 10 minutes 12 seconds instead of 7 minutes 12 seconds."],
+        "shortcut": "Convert the LCM from seconds into minutes:seconds before adding it to a clock time."
+      },
+      {
+        "id": "lh-h-05",
+        "subtopic": "HCF of Fractions",
+        "question": "Find the LCM of 3/4, 9/10 and 21/25.",
+        "options": ["63", "63/1000", "21/4", "9/25"],
+        "answerIndex": 0,
+        "explanation": "LCM(numerators 3,9,21) = 63. HCF(denominators 4,10,25) = 1, since they share no common prime factor. LCM of fractions = 63/1 = 63.",
+        "whyWrong": [null, "63/1000 wrongly multiplies the denominators instead of finding their HCF.", "21/4 is just one of the original fractions.", "9/25 doesn't follow from the correct formula at all."],
+        "shortcut": "When the denominators share no common prime factor, their HCF is 1, so the LCM of fractions is just LCM(numerators)."
+      },
+      {
+        "id": "lh-h-06",
+        "subtopic": "LCM",
+        "question": "A, B and C start together on a circular track. A completes one round in 2 minutes, B in 4 minutes, and C in 5 minutes. After how many minutes will all three meet again at the start?",
+        "options": ["20", "10", "40", "8"],
+        "answerIndex": 0,
+        "explanation": "They meet at the start again after a common multiple of all three lap times — the least such time is LCM(2,4,5) = 20 minutes.",
+        "whyWrong": [null, "10 isn't divisible by 4 (10/4 = 2.5), so B wouldn't be back at the start.", "40 is a common multiple, but not the least one — 20 already works.", "8 isn't divisible by 5, so C wouldn't be back at the start."],
+        "shortcut": "'Meet again at the start' on a circular track is always LCM of the individual lap times."
+      },
+      {
+        "id": "lh-h-07",
+        "subtopic": "LCM",
+        "question": "What is the smallest 4-digit number exactly divisible by 12, 15 and 18?",
+        "options": ["1080", "1000", "900", "1170"],
+        "answerIndex": 0,
+        "explanation": "LCM(12,15,18) = 180. The smallest 4-digit multiple of 180 is 180×6 = 1080 (180×5 = 900 is only 3 digits).",
+        "whyWrong": [null, "1000 isn't divisible by 180 — 1000/180 isn't a whole number.", "900 = 180×5 is a 3-digit number, too small.", "1170/180 = 6.5, so it isn't a multiple of 180."],
+        "shortcut": "Divide the smallest 4-digit number (1000) by the LCM, round up, then multiply back by the LCM."
+      },
+      {
+        "id": "lh-h-08",
+        "subtopic": "LCM",
+        "question": "Find the largest 3-digit number exactly divisible by 8, 12 and 15.",
+        "options": ["960", "900", "840", "1080"],
+        "answerIndex": 0,
+        "explanation": "LCM(8,12,15) = 120. The largest 3-digit multiple of 120 is 120×8 = 960 (120×9 = 1080 exceeds 3 digits).",
+        "whyWrong": [null, "900/120 = 7.5, so 900 isn't a multiple of 120.", "840 is a valid multiple of 120, but not the largest 3-digit one — 960 is larger and still valid.", "1080 is a 4-digit number, out of range."],
+        "shortcut": "Divide the largest 3-digit number (999) by the LCM and round down to get the right multiplier."
+      },
+      {
+        "id": "lh-h-09",
+        "subtopic": "HCF",
+        "question": "The HCF of two numbers is 23 and their LCM is 1449. If one number lies between 200 and 300, find both numbers.",
+        "options": ["161 and 207", "184 and 265", "138 and 253", "115 and 299"],
+        "answerIndex": 0,
+        "explanation": "Numbers are 23m and 23n with mn = 1449/23 = 63 and gcd(m,n)=1. The co-prime pair (7,9) gives 23×7=161 and 23×9=207 — and 207 lies between 200 and 300.",
+        "whyWrong": [null, "184 = 23×8 is fine, but 265 isn't a multiple of 23, so their HCF wouldn't be 23.", "138 = 23×6, but 253 isn't divisible by 23.", "115 = 23×5 and 299 = 23×13, but 5×13 = 65 ≠ 63, so their LCM wouldn't be 1449."],
+        "shortcut": "Divide LCM by HCF to get mn, then test co-prime factor pairs of that quotient against the given range."
+      },
+      {
+        "id": "lh-h-10",
+        "subtopic": "HCF",
+        "question": "Three numbers are in the ratio 2:3:4 and their LCM is 240. Find their HCF.",
+        "options": ["20", "12", "24", "40"],
+        "answerIndex": 0,
+        "explanation": "Write the numbers as 2x, 3x, 4x. Their LCM is 12x (since LCM(2,3,4)=12) = 240, giving x = 20. The actual numbers are 40, 60, 80, whose HCF is indeed 20.",
+        "whyWrong": [null, "12 is the LCM of the ratio terms (2,3,4), not the HCF of the actual numbers.", "24 doesn't divide 40 exactly, so it can't be a common factor.", "40 is one of the actual numbers, not their HCF."],
+        "shortcut": "For numbers in ratio a:b:c, solve LCM(a,b,c)·x = given LCM — the resulting x is the HCF of the actual numbers."
+      }
+    ]
+  },
+  "revision": {
+    "quickSheet": [
+      "LCM × HCF = product of the two numbers (only holds for exactly two numbers).",
+      "LCM is always ≥ both numbers; HCF is always ≤ both numbers.",
+      "Use Euclid's division algorithm for fast HCF of large numbers.",
+      "HCF of fractions = HCF(numerators)/LCM(denominators); LCM of fractions = LCM(numerators)/HCF(denominators) — don't swap them.",
+      "'Leaves the same remainder every time' → least number = LCM + remainder.",
+      "'(Divisor − remainder) is constant' → least number = LCM − that constant."
+    ],
+    "oneMinute": [
+      "LCM = smallest common multiple, built from the highest power of each prime.",
+      "HCF = largest common factor, built from the lowest power of each shared prime, or via Euclid's algorithm.",
+      "LCM × HCF = a × b, for two numbers only.",
+      "Fraction rules swap — memorize 'HCF needs LCM of denominators.'"
+    ],
+    "summary": "LCM and HCF are two sides of the same number-theory coin — LCM finds the smallest shared multiple (used in 'together again' and 'least number divisible by' problems), while HCF finds the largest shared factor (used in 'maximum equal size' and 'greatest number that divides' problems). Master prime factorization and Euclid's algorithm, memorize LCM×HCF = a×b, and always double-check which formula applies when fractions are involved."
+  }
+}

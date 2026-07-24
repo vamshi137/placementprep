@@ -1,0 +1,393 @@
+{
+  "topicId": "unit-digit-cyclicity",
+  "subtopics": ["Unit Digit", "Cyclicity"],
+  "learn": {
+    "title": "Unit Digit & Cyclicity",
+    "intro": "These questions look intimidating because the numbers involved are huge — but you never actually need to compute them. Only the last digit matters, and it always follows a predictable pattern.",
+    "sections": [
+      {
+        "subtopic": "Unit Digit",
+        "explanation": "The unit digit (last digit) of a sum or product depends only on the unit digits of the numbers involved — you never need to compute the whole number. Track just the last digit through each step of addition or multiplication.",
+        "realLifeExample": "Cashiers often mentally sanity-check a large bill total by verifying just its last digit against a quick sum, instead of re-adding every item.",
+        "memoryTrick": "Only the last digit talks — every other digit stays silent in a unit-digit question.",
+        "shortcutTrick": "To find the unit digit of a product of several numbers, multiply just their unit digits together, dropping the tens digit at each step: unit digit of 23×47×88 = unit digit of (3×7×8) = unit digit of (21×8) = unit digit of 168 = 8.",
+        "formulaCard": ["Unit digit of (a×b) = unit digit of (unit digit of a × unit digit of b)", "Unit digit of (a+b) = unit digit of (unit digit of a + unit digit of b)"],
+        "commonMistakes": [
+          "Computing the full product before finding the unit digit, wasting time.",
+          "Forgetting to drop the tens digit at every intermediate multiplication step, not just the final one."
+        ],
+        "talentSprintTip": "TalentSprint often gives products of 3-4 numbers with 2-3 digits each — track unit digits step by step rather than multiplying the whole numbers out.",
+        "tcsNqtTip": "TCS NQT sometimes asks for the unit digit of a sum of many terms — add all the unit digits first, then take the unit digit of that smaller sum."
+      },
+      {
+        "subtopic": "Cyclicity",
+        "explanation": "When a digit is raised to increasing powers, its unit digit repeats in a cycle. Every digit 0-9 has a cycle length of 1, 2, or 4. To find the unit digit of a^b: find that digit's cycle, then compute b mod (cycle length) to know which position to use — using the cycle length itself (the last position) instead of 0 when the remainder is 0.",
+        "realLifeExample": "Just like clock hands return to the same position every 12 hours, unit digits of powers return to the same value after a fixed number of steps — that fixed number of steps is exactly what a 'cycle' means here.",
+        "memoryTrick": "4 and 9 have a short fuse — cycle of 2. 2, 3, 7, 8 go the full round — cycle of 4. 0, 1, 5, 6 never change — cycle of 1.",
+        "shortcutTrick": "Cycle lengths: 2,3,7,8 → cycle of 4. 4,9 → cycle of 2. 0,1,5,6 → cycle of 1. To find the unit digit of a^b: find remainder r = b mod (cycle length); if r=0, use the cycle's last position instead of the first.",
+        "formulaCard": [
+          "Cycle of 2: 2, 4, 8, 6 (repeats every 4 powers)",
+          "Cycle of 3: 3, 9, 7, 1 (repeats every 4 powers)",
+          "Cycle of 7: 7, 9, 3, 1 (repeats every 4 powers)",
+          "Cycle of 8: 8, 4, 2, 6 (repeats every 4 powers)",
+          "Cycle of 4: 4, 6 (repeats every 2 powers)",
+          "Cycle of 9: 9, 1 (repeats every 2 powers)",
+          "0, 1, 5, 6 always end in themselves, at any power"
+        ],
+        "commonMistakes": [
+          "Using remainder 0 directly as 'position 0' instead of mapping it to the last element of the cycle.",
+          "Mixing up which digits have a cycle of 2 (4, 9) versus a cycle of 4 (2, 3, 7, 8)."
+        ],
+        "talentSprintTip": "TalentSprint tests cyclicity almost every week with questions like 'unit digit of 47^93' — memorize the three cycle groups (length 4, length 2, length 1) so you can answer in under 15 seconds.",
+        "tcsNqtTip": "TCS NQT often asks for the unit digit of a^b where b is a large exponent — the entire trick is reducing that huge exponent modulo the cycle length, never computing the actual power."
+      }
+    ]
+  },
+  "solvedExamples": [
+    {
+      "id": "udc-se-01",
+      "subtopic": "Unit Digit",
+      "question": "Find the unit digit of 23 × 47 × 89.",
+      "solution": "Take only the unit digits: 3, 7, 9.\n3 × 7 = 21 → unit digit 1.\n1 × 9 = 9.",
+      "answer": "9"
+    },
+    {
+      "id": "udc-se-02",
+      "subtopic": "Unit Digit",
+      "question": "Find the unit digit of 234 + 567 + 891.",
+      "solution": "Add only the unit digits: 4 + 7 + 1 = 12 → unit digit 2.",
+      "answer": "2"
+    },
+    {
+      "id": "udc-se-03",
+      "subtopic": "Cyclicity",
+      "question": "Find the unit digit of 7^45.",
+      "solution": "7 has a 4-cycle: 7, 9, 3, 1.\n45 mod 4 = 1, so we use the 1st position: 7.",
+      "answer": "7"
+    },
+    {
+      "id": "udc-se-04",
+      "subtopic": "Cyclicity",
+      "question": "Find the unit digit of 8^102.",
+      "solution": "8 has a 4-cycle: 8, 4, 2, 6.\n102 mod 4 = 2, so we use the 2nd position: 4.",
+      "answer": "4"
+    },
+    {
+      "id": "udc-se-05",
+      "subtopic": "Cyclicity",
+      "question": "Find the unit digit of 24^37 × 13^24.",
+      "solution": "24 → unit digit 4, cycle 4,6 (length 2). 37 is odd → 1st position = 4.\n13 → unit digit 3, cycle 3,9,7,1 (length 4). 24 mod 4 = 0 → last position = 1.\nUnit digit of the product = unit digit of (4 × 1) = 4.",
+      "answer": "4"
+    }
+  ],
+  "practiceExamples": [
+    {
+      "id": "udc-pe-01",
+      "subtopic": "Unit Digit",
+      "question": "Find the unit digit of 56 × 78 × 34.",
+      "answer": "2",
+      "hint": "Multiply the unit digits 6 × 8 × 4 step by step, dropping the tens digit each time."
+    },
+    {
+      "id": "udc-pe-02",
+      "subtopic": "Unit Digit",
+      "question": "Find the unit digit of 145 + 278 + 369.",
+      "answer": "2",
+      "hint": "Add just the unit digits: 5 + 8 + 9."
+    },
+    {
+      "id": "udc-pe-03",
+      "subtopic": "Cyclicity",
+      "question": "Find the unit digit of 3^58.",
+      "answer": "9",
+      "hint": "3's cycle is 3,9,7,1 (length 4). Find 58 mod 4."
+    },
+    {
+      "id": "udc-pe-04",
+      "subtopic": "Cyclicity",
+      "question": "Find the unit digit of 9^124.",
+      "answer": "1",
+      "hint": "9's cycle is 9,1 (length 2). An even exponent lands on the 2nd position."
+    },
+    {
+      "id": "udc-pe-05",
+      "subtopic": "Cyclicity",
+      "question": "Find the unit digit of 12^35 × 17^22.",
+      "answer": "2",
+      "hint": "Find each base's unit-digit cycle separately, reduce each exponent mod its cycle length, then multiply the two resulting digits."
+    }
+  ],
+  "quiz": {
+    "easy": [
+      {
+        "id": "udc-e-01",
+        "subtopic": "Unit Digit",
+        "question": "Find the unit digit of 7 × 8.",
+        "options": ["6", "4", "8", "2"],
+        "answerIndex": 0,
+        "explanation": "7 × 8 = 56, so the unit digit is 6.",
+        "whyWrong": [null, "4 is not the last digit of 56.", "8 was one of the original numbers, not the product's unit digit.", "2 doesn't match 56 at all."],
+        "shortcut": "For small numbers, just multiply them directly."
+      },
+      {
+        "id": "udc-e-02",
+        "subtopic": "Unit Digit",
+        "question": "Find the unit digit of 123 × 154.",
+        "options": ["2", "4", "1", "3"],
+        "answerIndex": 0,
+        "explanation": "Multiply only the unit digits: 3 × 4 = 12, unit digit 2.",
+        "whyWrong": [null, "4 was one of the unit digits used, not the final answer.", "1 is the tens digit of 12, not its unit digit.", "3 was the other original unit digit, not the product's."],
+        "shortcut": "Ignore the rest of each number — only their unit digits matter."
+      },
+      {
+        "id": "udc-e-03",
+        "subtopic": "Cyclicity",
+        "question": "What is the cycle length of the unit digit of powers of 2?",
+        "options": ["4", "2", "1", "3"],
+        "answerIndex": 0,
+        "explanation": "Powers of 2 cycle as 2, 4, 8, 6, 2, 4, 8, 6... repeating every 4 powers.",
+        "whyWrong": [null, "A cycle of 2 belongs to digits like 4 and 9, not 2.", "A cycle of 1 belongs to digits like 0, 1, 5, 6 whose unit digit never changes.", "There's no standard 3-length cycle in unit digit patterns."],
+        "shortcut": "Memorize: 2, 3, 7, 8 always have a 4-cycle."
+      },
+      {
+        "id": "udc-e-04",
+        "subtopic": "Cyclicity",
+        "question": "Find the unit digit of 4^7.",
+        "options": ["4", "6", "8", "2"],
+        "answerIndex": 0,
+        "explanation": "Powers of 4 alternate 4, 16, 64, 256... with unit digits 4, 6, 4, 6... Since 7 is odd, the unit digit is 4.",
+        "whyWrong": [null, "6 would be correct only for an even exponent.", "8 doesn't appear anywhere in the cycle of 4.", "2 doesn't appear in the cycle of 4 either."],
+        "shortcut": "Odd power of 4 → unit digit 4; even power of 4 → unit digit 6."
+      },
+      {
+        "id": "udc-e-05",
+        "subtopic": "Unit Digit",
+        "question": "Find the unit digit of 15 + 27 + 38.",
+        "options": ["0", "8", "2", "5"],
+        "answerIndex": 0,
+        "explanation": "Add just the unit digits: 5 + 7 + 8 = 20, unit digit 0.",
+        "whyWrong": [null, "8 was one of the original unit digits, not the sum's.", "2 is the tens digit of 20, not its unit digit.", "5 was another original unit digit, not the final sum's."],
+        "shortcut": "Add just the unit digits and take the unit digit of that smaller sum."
+      }
+    ],
+    "medium": [
+      {
+        "id": "udc-m-01",
+        "subtopic": "Cyclicity",
+        "question": "Find the unit digit of 17^23.",
+        "options": ["3", "7", "9", "1"],
+        "answerIndex": 0,
+        "explanation": "Unit digit of 17 is 7, cycle 7,9,3,1 (length 4). 23 mod 4 = 3, so we use the 3rd position: 3.",
+        "whyWrong": [null, "7 would be the answer only if the exponent mod 4 equalled 1.", "9 would be the answer only if the exponent mod 4 equalled 2.", "1 would be the answer only if the exponent mod 4 equalled 0."],
+        "shortcut": "Reduce the exponent mod 4 first — never compute the full power."
+      },
+      {
+        "id": "udc-m-02",
+        "subtopic": "Cyclicity",
+        "question": "Find the unit digit of 89^101.",
+        "options": ["9", "1", "8", "0"],
+        "answerIndex": 0,
+        "explanation": "Unit digit of 89 is 9, cycle 9,1 (length 2). Since 101 is odd, the unit digit is 9.",
+        "whyWrong": [null, "1 would be correct only for an even exponent.", "8 isn't part of the cycle of 9 at all.", "0 never appears in the cycle of 9."],
+        "shortcut": "Odd power of 9 → unit digit 9; even power → unit digit 1."
+      },
+      {
+        "id": "udc-m-03",
+        "subtopic": "Cyclicity",
+        "question": "Find the unit digit of 6^100.",
+        "options": ["6", "0", "4", "2"],
+        "answerIndex": 0,
+        "explanation": "Any power of a number ending in 6 also ends in 6 — 6 has a cycle length of 1.",
+        "whyWrong": [null, "0 never occurs in powers of 6.", "4 isn't part of the cycle of 6.", "2 isn't part of the cycle of 6."],
+        "shortcut": "0, 1, 5, 6 as unit digits never change, no matter the power."
+      },
+      {
+        "id": "udc-m-04",
+        "subtopic": "Cyclicity",
+        "question": "Find the unit digit of 33^33 × 44^44.",
+        "options": ["8", "3", "6", "2"],
+        "answerIndex": 0,
+        "explanation": "Unit digit of 33^33 is 3 (33 mod 4 = 1, first position). Unit digit of 44^44 is 6 (even exponent on cycle-2 digit 4). Unit digit of 3×6=18 is 8.",
+        "whyWrong": [null, "3 is only 33^33's own unit digit, before multiplying by 44^44's.", "6 is only 44^44's own unit digit, before multiplying.", "2 doesn't come from 3×6=18."],
+        "shortcut": "Solve each power's unit digit separately first, then multiply just those two digits together."
+      },
+      {
+        "id": "udc-m-05",
+        "subtopic": "Cyclicity",
+        "question": "Find the unit digit of 123^56.",
+        "options": ["1", "3", "9", "7"],
+        "answerIndex": 0,
+        "explanation": "Unit digit of 123 is 3, cycle 3,9,7,1. 56 mod 4 = 0, so we use the 4th (last) position: 1.",
+        "whyWrong": [null, "3 is the 1st position, used only when the exponent mod 4 = 1.", "9 is the 2nd position, used only when the exponent mod 4 = 2.", "7 is the 3rd position, used only when the exponent mod 4 = 3."],
+        "shortcut": "When the exponent is exactly divisible by the cycle length, always take the last digit of the cycle, not the first."
+      },
+      {
+        "id": "udc-m-06",
+        "subtopic": "Cyclicity",
+        "question": "Find the unit digit of 2^10 + 3^10.",
+        "options": ["3", "7", "4", "9"],
+        "answerIndex": 0,
+        "explanation": "Unit digit of 2^10 is 4 (10 mod 4=2, 2nd position of 2,4,8,6). Unit digit of 3^10 is 9 (10 mod 4=2, 2nd position of 3,9,7,1). Their sum's unit digit is unit digit of 4+9=13, which is 3.",
+        "whyWrong": [null, "7 doesn't come from adding 4 and 9.", "4 is only 2^10's own unit digit, before adding 3^10's.", "9 is only 3^10's own unit digit, before adding 2^10's."],
+        "shortcut": "Find each term's unit digit separately, then add just those digits."
+      },
+      {
+        "id": "udc-m-07",
+        "subtopic": "Cyclicity",
+        "question": "Find the unit digit of 78^15.",
+        "options": ["2", "8", "4", "6"],
+        "answerIndex": 0,
+        "explanation": "Unit digit of 78 is 8, cycle 8,4,2,6. 15 mod 4 = 3, so the 3rd position is 2.",
+        "whyWrong": [null, "8 is the 1st position, used when exponent mod 4=1.", "4 is the 2nd position, used when exponent mod 4=2.", "6 is the 4th (last) position, used when exponent mod 4=0."],
+        "shortcut": "List out the 4-term cycle once and just count positions — no long multiplication needed."
+      },
+      {
+        "id": "udc-m-08",
+        "subtopic": "Unit Digit",
+        "question": "What is the unit digit of 5^999?",
+        "options": ["5", "1", "0", "6"],
+        "answerIndex": 0,
+        "explanation": "Any power of a number ending in 5 always ends in 5.",
+        "whyWrong": [null, "1 isn't part of the cycle of 5.", "0 never appears as the unit digit of a power of 5.", "6 belongs to the cycle of 4, not 5."],
+        "shortcut": "5 is a cycle-1 digit — the exponent never matters."
+      },
+      {
+        "id": "udc-m-09",
+        "subtopic": "Cyclicity",
+        "question": "Find the unit digit of 29^13 − 19^13.",
+        "options": ["0", "9", "1", "8"],
+        "answerIndex": 0,
+        "explanation": "Both 29^13 and 19^13 end in 9 (unit digit 9, cycle 9,1, and 13 is odd → 1st position). Their difference ends in 0.",
+        "whyWrong": [null, "9 is each term's own unit digit before subtracting.", "1 would be each term's unit digit only for an even exponent.", "8 doesn't come from 9−9."],
+        "shortcut": "When two numbers share the same unit-digit cycle and the same exponent parity, check whether their difference ends in 0 before doing the full subtraction."
+      },
+      {
+        "id": "udc-m-10",
+        "subtopic": "Unit Digit",
+        "question": "Find the unit digit of 14^4 × 15^4.",
+        "options": ["0", "6", "5", "4"],
+        "answerIndex": 0,
+        "explanation": "Unit digit of 14^4 is 6 (even exponent on cycle-2 digit 4). Unit digit of 15^4 is 5 (cycle-1 digit). Unit digit of 6×5=30 is 0.",
+        "whyWrong": [null, "6 is only 14^4's own unit digit before multiplying.", "5 is only 15^4's own unit digit before multiplying.", "4 doesn't come from 6×5=30."],
+        "shortcut": "Whenever one factor's unit digit is 5 and the other's is even, the product's unit digit is always 0."
+      }
+    ],
+    "hard": [
+      {
+        "id": "udc-h-01",
+        "subtopic": "Cyclicity",
+        "question": "Find the unit digit of 2^(2^10).",
+        "options": ["6", "2", "4", "8"],
+        "answerIndex": 0,
+        "explanation": "First evaluate the exponent: 2^10 = 1024. Now find the unit digit of 2^1024. Since 2 has a 4-cycle (2,4,8,6) and 1024 mod 4 = 0, we use the last position: 6.",
+        "whyWrong": [null, "2 is the 1st position, used when the exponent mod 4=1.", "4 is the 2nd position, used when the exponent mod 4=2.", "8 is the 3rd position, used when the exponent mod 4=3."],
+        "shortcut": "With power towers, always evaluate the topmost exponent first, then reduce it mod the base's cycle length."
+      },
+      {
+        "id": "udc-h-02",
+        "subtopic": "Unit Digit",
+        "question": "Find the unit digit of 1! + 2! + 3! + ... + 100!.",
+        "options": ["3", "0", "33", "9"],
+        "answerIndex": 0,
+        "explanation": "From 5! onward, every factorial contains both 2 and 5 as factors, so it ends in 0 and doesn't affect the unit digit. Only 1!+2!+3!+4! = 1+2+6+24 = 33 matters — unit digit 3.",
+        "whyWrong": [null, "0 would be true only if the first four factorials also didn't contribute, but they do.", "33 is the partial sum itself, not just its unit digit.", "9 doesn't come from summing 1+2+6+24."],
+        "shortcut": "For 'sum of factorials up to n!' where n ≥ 5, only add 1!+2!+3!+4! — every later term is a multiple of 10."
+      },
+      {
+        "id": "udc-h-03",
+        "subtopic": "Cyclicity",
+        "question": "Find the unit digit of 7^(7^7).",
+        "options": ["3", "7", "9", "1"],
+        "answerIndex": 0,
+        "explanation": "We need 7^7 mod 4 to know which position in 7's 4-cycle to use. Since 7 ≡ 3 (mod 4), and powers of 3 mod 4 alternate 3,1,3,1... an odd exponent (7) gives 3. So the reduced exponent is 3. Position 3 in 7's cycle (7,9,3,1) is 3.",
+        "whyWrong": [null, "7 is position 1, used only if the reduced exponent were 1.", "9 is position 2, used only if the reduced exponent were 2.", "1 is position 4 (last), used only if the reduced exponent were a multiple of 4."],
+        "shortcut": "For power towers, reduce the topmost exponent modulo the cycle length of the base's unit digit, working from the top down."
+      },
+      {
+        "id": "udc-h-04",
+        "subtopic": "Unit Digit",
+        "question": "Find the unit digit of 36^45 + 44^45 + 53^45.",
+        "options": ["3", "7", "13", "9"],
+        "answerIndex": 0,
+        "explanation": "Unit digit of 36^45 is 6 (cycle-1). Unit digit of 44^45 is 4 (odd exponent on cycle-2 digit 4). Unit digit of 53^45 is 3 (45 mod 4=1). Sum of unit digits 6+4+3=13, so the final unit digit is 3.",
+        "whyWrong": [null, "7 doesn't come from adding 6+4+3.", "13 is the intermediate sum itself, not just its unit digit.", "9 doesn't come from 6+4+3 either."],
+        "shortcut": "Work out each term's unit digit independently, then add just those digits at the end."
+      },
+      {
+        "id": "udc-h-05",
+        "subtopic": "Cyclicity",
+        "question": "If a number a ends in 9 and the unit digit of a^b is 1, which of the following must be true about b?",
+        "options": ["b is even", "b is odd", "b is a multiple of 4", "b is a multiple of 3"],
+        "answerIndex": 0,
+        "explanation": "The cycle of 9 is: 9 (odd powers), 1 (even powers). For the unit digit to be 1, b must be even.",
+        "whyWrong": [null, "An odd b would give unit digit 9, not 1.", "9's cycle length is only 2, not 4, so requiring a multiple of 4 is stricter than necessary — any even b works.", "9's cycle has no connection to multiples of 3."],
+        "shortcut": "For a 2-cycle digit like 9, just check whether the exponent is odd or even — nothing more granular is needed."
+      },
+      {
+        "id": "udc-h-06",
+        "subtopic": "Cyclicity",
+        "question": "Find the unit digit of 3^100 + 2^100.",
+        "options": ["7", "3", "9", "1"],
+        "answerIndex": 0,
+        "explanation": "100 mod 4 = 0 for both, so use the last position in each cycle: 1 for base 3 (cycle 3,9,7,1), and 6 for base 2 (cycle 2,4,8,6). Sum of unit digits 1+6=7.",
+        "whyWrong": [null, "3 is only 3^100's own unit digit if the exponent mod 4 were 1, which it isn't.", "9 would apply if the exponent mod 4 were 2, which it isn't.", "1 is only 3^100's own unit digit, before adding 2^100's."],
+        "shortcut": "Whenever the exponent is an exact multiple of the cycle length, always take the last (not first) digit of the cycle."
+      },
+      {
+        "id": "udc-h-07",
+        "subtopic": "Cyclicity",
+        "question": "Find the unit digit of 12^34 × 13^34 × 14^34.",
+        "options": ["6", "4", "9", "2"],
+        "answerIndex": 0,
+        "explanation": "Unit digits are 4 (from 12^34, since 34 mod 4=2), 9 (from 13^34, 34 mod 4=2), and 6 (from 14^34, even exponent). Multiplying step by step: 4×9=36→6, then 6×6=36→6.",
+        "whyWrong": [null, "4 is only 12^34's own unit digit before multiplying by the others.", "9 is only 13^34's own unit digit before multiplying by the others.", "2 doesn't come from 4×9×6 at any stage."],
+        "shortcut": "Multiply the unit digits pairwise, dropping the tens digit after every single multiplication — never wait until the end."
+      },
+      {
+        "id": "udc-h-08",
+        "subtopic": "Cyclicity",
+        "question": "A number ends in 8 and is raised to an odd power greater than 1. What is its unit digit?",
+        "options": ["Cannot be determined from parity alone", "8", "2", "6"],
+        "answerIndex": 0,
+        "explanation": "Unlike 2-cycle digits (4 or 9) where parity alone fixes the unit digit, 8 has a 4-cycle (8,4,2,6). An odd exponent could land on position 1 (unit digit 8, when exponent ≡1 mod 4) or position 3 (unit digit 2, when exponent ≡3 mod 4) — so parity alone isn't enough.",
+        "whyWrong": [null, "8 is only correct when the exponent ≡1 (mod 4), not for every odd exponent.", "2 is only correct when the exponent ≡3 (mod 4), not for every odd exponent.", "6 only occurs for even exponents, so it can't be right for an odd one."],
+        "shortcut": "Always check whether a digit's cycle length is 2 or 4 before assuming parity alone determines the unit digit — only cycle-2 digits (4, 9) are parity-determined."
+      },
+      {
+        "id": "udc-h-09",
+        "subtopic": "Unit Digit",
+        "question": "Find the unit digit of 25^25 − 24^24.",
+        "options": ["9", "1", "5", "6"],
+        "answerIndex": 0,
+        "explanation": "Unit digit of 25^25 is 5. Unit digit of 24^24 is 6 (even exponent on cycle-2 digit 4). Since 5<6, borrow 10: unit digit of the difference is (5+10)−6=9.",
+        "whyWrong": [null, "1 would result from subtracting in the wrong order (6−5).", "5 is only 25^25's own unit digit before subtracting.", "6 is only 24^24's own unit digit before subtracting."],
+        "shortcut": "When the top number's unit digit is smaller than the one being subtracted, borrow 10 first — just like normal column subtraction."
+      },
+      {
+        "id": "udc-h-10",
+        "subtopic": "Unit Digit",
+        "question": "Find the unit digit of 2^100 × 5^100.",
+        "options": ["0", "6", "5", "2"],
+        "answerIndex": 0,
+        "explanation": "Since 2×5=10, the product 2^100 × 5^100 = (2×5)^100 = 10^100, which clearly ends in 0 — also confirmed by multiplying the individual unit digits 6 (from 2^100) and 5 (from 5^100): 6×5=30, unit digit 0.",
+        "whyWrong": [null, "6 is only 2^100's own unit digit before multiplying by 5^100's.", "5 is only 5^100's own unit digit before multiplying by 2^100's.", "2 doesn't come from 6×5=30."],
+        "shortcut": "Whenever a power of 2 is multiplied by an equal power of 5, recognize it instantly as a power of 10 — unit digit is always 0."
+      }
+    ]
+  },
+  "revision": {
+    "quickSheet": [
+      "Unit digit of a product/sum depends only on the unit digits of the numbers involved.",
+      "Cycle lengths: 2,3,7,8 → 4; 4,9 → 2; 0,1,5,6 → 1.",
+      "To find the unit digit of a^b: compute r = b mod (cycle length); if r=0, use the cycle's last position instead of the first.",
+      "For power towers (a^(b^c)), reduce the topmost exponent modulo the base's cycle length, working top-down.",
+      "From 5! onward, every factorial ends in 0 — for factorial-sum questions, only 1!+2!+3!+4! matter."
+    ],
+    "oneMinute": [
+      "Only the last digit matters — ignore the rest of the number.",
+      "Memorize the three cycle groups: 4-cycle (2,3,7,8), 2-cycle (4,9), 1-cycle (0,1,5,6).",
+      "Remainder 0 in the cycle → use the cycle's last digit, never zero."
+    ],
+    "summary": "Unit digit and cyclicity problems reward pattern recognition over computation — never multiply out a huge number when only its last digit is asked. Learn the three cycle groups (length 4, length 2, length 1) cold, always reduce the exponent modulo the cycle length, and remember that a remainder of 0 means 'use the last digit of the cycle,' not zero itself."
+  }
+}

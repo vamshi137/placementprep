@@ -1,0 +1,441 @@
+{
+  "topicId": "coding-decoding",
+  "subtopics": ["Alphabet Coding", "Letter Shift", "Reverse Coding", "Position Based Coding", "Mixed Coding", "Pattern Recognition"],
+  "learn": {
+    "title": "Coding-Decoding",
+    "intro": "Every coding-decoding question hides one simple, mechanical rule behind a worked example. The entire skill is decoding that rule correctly using every letter of the example, then applying it exactly — no creativity needed, just careful arithmetic.",
+    "sections": [
+      {
+        "subtopic": "Alphabet Coding",
+        "explanation": "Each letter is replaced by another letter or number based on a fixed rule — usually its position in the alphabet, or a fixed offset from it. The key skill is decoding the rule from an example, then applying it to a new word.",
+        "realLifeExample": "A simple substitution cipher, where every letter is systematically replaced, works exactly like this — old military or spy codes used offset alphabets for basic message secrecy.",
+        "memoryTrick": "Letters are just numbers in disguise: A=1, B=2, ... Z=26 — convert to numbers first, do the arithmetic, then convert back.",
+        "shortcutTrick": "Write out the alphabet with numbers underneath (A1 B2 C3...) once at the start of the question, and refer back to it instead of counting on your fingers each time.",
+        "formulaCard": ["A=1, B=2, C=3, ... Z=26", "Coded letter = original position ± fixed offset (wrapping from 26 back to 1 if needed)"],
+        "commonMistakes": [
+          "Losing count of a letter's position, especially for letters past M.",
+          "Forgetting to wrap around (after Z, the alphabet cycles back to A) when adding an offset near the end."
+        ],
+        "talentSprintTip": "TalentSprint's alphabet coding usually gives one worked example — figure out the letter-by-letter shift from it first, then apply the same shift to the new word.",
+        "tcsNqtTip": "TCS NQT sometimes codes using the alphabet's REVERSE position (A=26, Z=1) instead of the forward one — always verify direction using the given example before assuming forward coding."
+      },
+      {
+        "subtopic": "Letter Shift",
+        "explanation": "Letter shift coding moves each letter forward or backward by a fixed number of places in the alphabet (a Caesar shift). The shift amount is usually constant for the whole word.",
+        "realLifeExample": "This is exactly the classic 'Caesar cipher' used in ancient Rome to send military messages — shift every letter by a fixed number of places.",
+        "memoryTrick": "Shift right = move forward in the alphabet (add); shift left = move backward (subtract).",
+        "shortcutTrick": "Once you know the shift amount from an example, apply it directly to every letter of the new word without re-deriving it — the shift stays constant within a single question unless stated otherwise.",
+        "formulaCard": ["Forward shift by n: new position = (original position + n − 1) mod 26 + 1", "Backward shift by n: new position = (original position − n − 1 + 26) mod 26 + 1"],
+        "commonMistakes": [
+          "Assuming the shift changes letter to letter without checking whether the pattern actually is meant to change.",
+          "Miscounting the wrap-around at the alphabet boundary."
+        ],
+        "talentSprintTip": "TalentSprint sometimes uses an increasing shift (each letter shifts by 1 more than the previous) — check at least 2-3 letters of the example before assuming a constant shift.",
+        "tcsNqtTip": "TCS NQT's letter-shift questions are usually the fastest points in the section if the shift is constant — verify with just the first 2 letters, then apply mechanically to the rest."
+      },
+      {
+        "subtopic": "Reverse Coding",
+        "explanation": "Reverse coding writes the letters of a word in reverse order, sometimes combined with a shift or position-based rule on top of the reversal.",
+        "realLifeExample": "Writing your name backward as a childhood 'secret code' is exactly reverse coding — most words become a completely different-looking string when reversed.",
+        "memoryTrick": "Reverse coding is a mirror — read the original word's letters from right to left.",
+        "shortcutTrick": "When a question combines reversal with a shift, do the reversal first, then apply the shift to the already-reversed letters — but always check the given example to confirm this order, since some questions do it the other way around.",
+        "formulaCard": ["Reverse of a word: read all letters right to left", "Combined reverse+shift: confirm order of operations using the example given"],
+        "commonMistakes": [
+          "Applying a shift before reversing when the example shows reversal happening first, or vice versa.",
+          "Miscounting letters when reversing longer words, especially with repeated letters."
+        ],
+        "talentSprintTip": "TalentSprint's reverse coding questions often hide the reversal inside a longer combined rule — write the reversed word out fully before applying any further rule.",
+        "tcsNqtTip": "TCS NQT sometimes reverses only part of a word (like reversing pairs of letters) — read the given example extremely carefully before assuming a full-word reversal."
+      },
+      {
+        "subtopic": "Position Based Coding",
+        "explanation": "Position-based coding replaces or rearranges letters based on their exact position within the word (1st, 2nd, 3rd...) rather than their position in the alphabet.",
+        "realLifeExample": "A locker code that swaps the 1st and 3rd digits of your birth year is a simple form of position-based encoding — order within the sequence matters more than the digit's own value.",
+        "memoryTrick": "Position-based coding cares about WHERE a letter sits in the word, not WHAT letter it is.",
+        "shortcutTrick": "Number each letter of the word by its position (1st, 2nd, 3rd...) before applying any rule — this prevents confusing 'position in the word' with 'position in the alphabet.'",
+        "formulaCard": ["Position in word ≠ position in alphabet — always confirm which one a rule refers to", "Common rules: swap adjacent or symmetric positions, or apply a different shift to each position"],
+        "commonMistakes": [
+          "Confusing a letter's position within the WORD with its position within the ALPHABET.",
+          "Miscounting positions in words with repeated letters."
+        ],
+        "talentSprintTip": "TalentSprint's position-based questions often swap specific positions (like 1st and last) — write numbered positions above each letter before making any swaps.",
+        "tcsNqtTip": "TCS NQT sometimes applies a DIFFERENT shift to each position (1st letter +1, 2nd letter +2...) — verify this pattern using at least the first 3 letters of the given example."
+      },
+      {
+        "subtopic": "Mixed Coding",
+        "explanation": "Mixed coding combines two or more of the rules above (shift, reversal, position-based rules) into a single question, requiring you to identify and apply each rule in the correct sequence.",
+        "realLifeExample": "Modern multi-layer encryption combines several simple transformations in sequence, exactly like a mixed-coding question — no single step is complex, but the combination needs careful, ordered execution.",
+        "memoryTrick": "Mixed coding is just multiple simple codes stacked — solve them one layer at a time, never all at once.",
+        "shortcutTrick": "Write down each transformation as a separate, labeled step (Step 1: shift, Step 2: reverse...) based on what the example shows, then apply the same sequence to the new word.",
+        "formulaCard": ["Identify each individual rule separately from the given example first", "Apply the rules in the same order shown by the example — order changes the result"],
+        "commonMistakes": [
+          "Trying to apply all the rules simultaneously in your head instead of one clear step at a time.",
+          "Applying the rules in a different order than the example demonstrates."
+        ],
+        "talentSprintTip": "TalentSprint's mixed coding questions are usually worth extra time — budget 45-60 seconds to carefully separate out each individual rule before applying anything.",
+        "tcsNqtTip": "TCS NQT often re-uses the exact same combined rule across 2-3 questions — once decoded correctly, apply it directly to the rest without re-deriving it."
+      },
+      {
+        "subtopic": "Pattern Recognition",
+        "explanation": "Some coding questions don't state an explicit rule — instead, you must spot the numeric or alphabetic pattern directly from a sequence of coded examples, similar to a mini number-series question but with letters.",
+        "realLifeExample": "Recognizing that house numbers on a street increase by a fixed pattern (odd on one side, even on the other) is the same skill as spotting a coding pattern from limited examples.",
+        "memoryTrick": "No stated rule means you're the codebreaker — look for what changes consistently between each given example.",
+        "shortcutTrick": "Convert every letter to its alphabet-position number first — patterns that look confusing in letters often become obvious once written as numbers.",
+        "formulaCard": ["Convert letters to numbers first — patterns are almost always easier to spot numerically", "Check position-wise differences between corresponding letters across multiple examples"],
+        "commonMistakes": [
+          "Trying to spot the pattern directly in letter form instead of converting to numbers first.",
+          "Assuming a pattern from just one example instead of confirming it across all given examples."
+        ],
+        "talentSprintTip": "TalentSprint's pattern-recognition questions often give 2-3 worked examples specifically so you can cross-verify your guessed rule — always check against every example, not just the first.",
+        "tcsNqtTip": "TCS NQT sometimes mixes a numeric pattern with an alphabetic one in the same sequence — separate the numbers and letters into two parallel patterns rather than solving them as one."
+      }
+    ]
+  },
+  "solvedExamples": [
+    {
+      "id": "cd-se-01",
+      "subtopic": "Alphabet Coding",
+      "question": "If CAT is coded as DBU, how is DOG coded using the same rule?",
+      "solution": "C(3)→D(4), A(1)→B(2), T(20)→U(21) — each letter shifts forward by 1.\nApplying the same rule: D(4)→E(5), O(15)→P(16), G(7)→H(8).",
+      "answer": "EPH"
+    },
+    {
+      "id": "cd-se-02",
+      "subtopic": "Letter Shift",
+      "question": "In a certain code, each letter is shifted back by 3 places. How is HELLO coded?",
+      "solution": "H(8)→E(5), E(5)→B(2), L(12)→I(9), L(12)→I(9), O(15)→L(12).",
+      "answer": "EBIIL"
+    },
+    {
+      "id": "cd-se-03",
+      "subtopic": "Reverse Coding",
+      "question": "If the code for WORLD is DLROW, how is PLANET coded using the same rule?",
+      "solution": "The rule simply reverses the word: WORLD→DLROW confirms this.\nReversing PLANET letter by letter gives TENALP.",
+      "answer": "TENALP"
+    },
+    {
+      "id": "cd-se-04",
+      "subtopic": "Position Based Coding",
+      "question": "In a code, the 1st and last letters of a word are swapped, and the middle letters stay unchanged. How is TIGER coded?",
+      "solution": "TIGER: 1st=T, last=R. Swapping these two: RIGET.",
+      "answer": "RIGET"
+    },
+    {
+      "id": "cd-se-05",
+      "subtopic": "Mixed Coding",
+      "question": "If MANGO is coded as OCPIQ by shifting each letter forward by 2 places, how is APPLE coded using the same rule?",
+      "solution": "Confirm the rule: M(13)→O(15), A(1)→C(3), N(14)→P(16), G(7)→I(9), O(15)→Q(17) — each letter +2.\nApplying to APPLE: A→C, P→R, P→R, L→N, E→G.",
+      "answer": "CRRNG"
+    }
+  ],
+  "practiceExamples": [
+    {
+      "id": "cd-pe-01",
+      "subtopic": "Alphabet Coding",
+      "question": "If BOOK is coded as CPPL, how is PAGE coded using the same rule?",
+      "answer": "QBHF",
+      "hint": "Find the shift from BOOK→CPPL (each letter +1), then apply it to PAGE."
+    },
+    {
+      "id": "cd-pe-02",
+      "subtopic": "Letter Shift",
+      "question": "Each letter in a word is shifted forward by 4 places. How is CODE coded?",
+      "answer": "GSHI",
+      "hint": "C(3)+4=G(7), O(15)+4=S(19), D(4)+4=H(8), E(5)+4=I(9)."
+    },
+    {
+      "id": "cd-pe-03",
+      "subtopic": "Reverse Coding",
+      "question": "If MUSIC is coded as CISUM, how is TABLE coded?",
+      "answer": "ELBAT",
+      "hint": "Simply reverse the letters of TABLE."
+    },
+    {
+      "id": "cd-pe-04",
+      "subtopic": "Position Based Coding",
+      "question": "In a code, the 2nd and 4th letters of a 5-letter word are swapped. How is CHAIR coded?",
+      "answer": "CIAHR",
+      "hint": "CHAIR positions: 1-C, 2-H, 3-A, 4-I, 5-R; swap positions 2 and 4 (H and I)."
+    },
+    {
+      "id": "cd-pe-05",
+      "subtopic": "Mixed Coding",
+      "question": "If FOX is coded as XOF (reversed) and then each letter is shifted back by 1, how is CAT coded using the same rule?",
+      "answer": "SZB",
+      "hint": "First reverse CAT to get TAC, then shift each letter back by 1 (remember A wraps to Z)."
+    }
+  ],
+  "quiz": {
+    "easy": [
+      {
+        "id": "cd-e-01",
+        "subtopic": "Alphabet Coding",
+        "question": "If APPLE is coded as BQQMF (each letter shifted forward by 1), how is MANGO coded using the same rule?",
+        "options": ["NBOHP", "OCPIQ", "LZMFN", "NBOPH"],
+        "answerIndex": 0,
+        "explanation": "The rule shifts each letter forward by 1 (confirmed across all of APPLE→BQQMF). Applying +1 to MANGO: M→N, A→B, N→O, G→H, O→P, giving NBOHP.",
+        "whyWrong": [null, "OCPIQ results from a +2 shift, not the +1 shift shown in the example.", "LZMFN results from a −1 shift, the wrong direction.", "NBOPH has two letters out of order compared to the correct shift result."],
+        "shortcut": "Verify the shift direction and amount using every letter of the given example, not just the first one."
+      },
+      {
+        "id": "cd-e-02",
+        "subtopic": "Letter Shift",
+        "question": "If each letter in a word is shifted back by 2 places, how is FLOWER coded?",
+        "options": ["DJMUCP", "HNQYGT", "DJMUCQ", "EJMUCP"],
+        "answerIndex": 0,
+        "explanation": "Shifting each letter of FLOWER back by 2: F→D, L→J, O→M, W→U, E→C, R→P, giving DJMUCP.",
+        "whyWrong": [null, "HNQYGT results from shifting forward by 2, the wrong direction.", "DJMUCQ has the last letter wrong — R shifted back by 2 gives P, not Q.", "EJMUCP has the first letter wrong — F shifted back by 2 gives D, not E."],
+        "shortcut": "Shift 'back' always means subtract from the letter's position, wrapping from A back to Z if needed."
+      },
+      {
+        "id": "cd-e-03",
+        "subtopic": "Reverse Coding",
+        "question": "If the code for CHAIR is RIAHC, how is TABLE coded using the same rule?",
+        "options": ["ELBAT", "ETBLA", "TABEL", "ELBTA"],
+        "answerIndex": 0,
+        "explanation": "The rule simply reverses the letters: CHAIR→RIAHC confirms this. Reversing TABLE gives ELBAT.",
+        "whyWrong": [null, "ETBLA doesn't match the letters of TABLE in reverse order.", "TABEL is not a reversal at all — it's the original word with two letters swapped.", "ELBTA has the last two letters swapped compared to a true reversal."],
+        "shortcut": "Write the word backward letter by letter, double-checking against the given example's pattern."
+      },
+      {
+        "id": "cd-e-04",
+        "subtopic": "Position Based Coding",
+        "question": "In a code, the first and last letters of a word are swapped, and the middle letters stay unchanged. How is WATER coded?",
+        "options": ["RATEW", "RETAW", "WATER", "RAWET"],
+        "answerIndex": 0,
+        "explanation": "Swapping only the first (W) and last (R) letters of WATER, keeping ATE unchanged in the middle, gives RATEW.",
+        "whyWrong": [null, "RETAW rearranges more letters than just the first and last.", "WATER is the unchanged original word — no swap was applied.", "RAWET incorrectly rearranges the middle letters as well."],
+        "shortcut": "Identify only the two positions the rule affects, and leave every other letter exactly where it is."
+      },
+      {
+        "id": "cd-e-05",
+        "subtopic": "Pattern Recognition",
+        "question": "If B is coded as 2, D is coded as 4, and F is coded as 6, what is H coded as?",
+        "options": ["8", "7", "9", "6"],
+        "answerIndex": 0,
+        "explanation": "Each letter is coded as its own position in the alphabet (B=2nd, D=4th, F=6th). H is the 8th letter, so it's coded as 8.",
+        "whyWrong": [null, "7 doesn't match H's actual alphabet position.", "9 doesn't match it either.", "6 was F's code, not H's."],
+        "shortcut": "Convert each letter to its alphabet position number — the pattern becomes obvious immediately."
+      }
+    ],
+    "medium": [
+      {
+        "id": "cd-m-01",
+        "subtopic": "Alphabet Coding",
+        "question": "If TIGER is coded as WLJHU, how is LION coded using the same rule?",
+        "options": ["OLRQ", "MJPO", "OLRP", "NKQP"],
+        "answerIndex": 0,
+        "explanation": "TIGER→WLJHU shows each letter shifted forward by 3. Applying the same +3 shift to LION: L→O, I→L, O→R, N→Q, giving OLRQ.",
+        "whyWrong": [null, "MJPO results from a +1 shift, not the +3 shift shown in the example.", "OLRP has the last letter wrong — N shifted by 3 gives Q, not P.", "NKQP results from a +2 shift, still not matching the example."],
+        "shortcut": "Check the shift amount using at least 2 letters of the example to rule out coincidental matches."
+      },
+      {
+        "id": "cd-m-02",
+        "subtopic": "Letter Shift",
+        "question": "If each letter in a word is shifted back by 4 places, how is MONKEY coded?",
+        "options": ["IKJGAU", "QSRODC", "IKJGAV", "HKJGAU"],
+        "answerIndex": 0,
+        "explanation": "Shifting each letter of MONKEY back by 4: M→I, O→K, N→J, K→G, E→A, Y→U, giving IKJGAU.",
+        "whyWrong": [null, "QSRODC results from shifting forward by 4, the wrong direction.", "IKJGAV has the last letter wrong — Y shifted back by 4 gives U, not V.", "HKJGAU has the first letter wrong — M shifted back by 4 gives I, not H."],
+        "shortcut": "For a backward shift near the start of the alphabet, double-check whether wrap-around is actually needed."
+      },
+      {
+        "id": "cd-m-03",
+        "subtopic": "Reverse Coding",
+        "question": "If the code for GARDEN is NEDRAG, how is KITCHEN coded using the same rule?",
+        "options": ["NEHCTIK", "NEHCTKI", "KEHCTIN", "NEHTCIK"],
+        "answerIndex": 0,
+        "explanation": "GARDEN→NEDRAG confirms a simple reversal rule. Reversing KITCHEN letter by letter gives NEHCTIK.",
+        "whyWrong": [null, "NEHCTKI has the last two letters swapped compared to a true reversal.", "KEHCTIN keeps the first letter of the original word instead of moving it to the end.", "NEHTCIK has two middle letters swapped out of the correct reversed order."],
+        "shortcut": "For longer words, write the letters in a column and read upward to reverse accurately without missing any."
+      },
+      {
+        "id": "cd-m-04",
+        "subtopic": "Position Based Coding",
+        "question": "In a code, the first and last letters of a word are swapped. How is BRIDGE coded?",
+        "options": ["ERIDGB", "EBIRDG", "GRIDEB", "ERIDBG"],
+        "answerIndex": 0,
+        "explanation": "Swapping only the first (B) and last (E) letters of BRIDGE, keeping RIDG unchanged in the middle, gives ERIDGB.",
+        "whyWrong": [null, "EBIRDG rearranges more letters than just the first and last.", "GRIDEB swaps the wrong pair of letters.", "ERIDBG has the middle letters in the wrong order."],
+        "shortcut": "Identify only the two positions the rule affects, and leave every other letter exactly where it is."
+      },
+      {
+        "id": "cd-m-05",
+        "subtopic": "Position Based Coding",
+        "question": "In a code, the 2nd and 5th letters of a word are swapped. How is CANDLE coded?",
+        "options": ["CLNDAE", "CANDLE", "CADNLE", "CLNDLE"],
+        "answerIndex": 0,
+        "explanation": "CANDLE has letters C-A-N-D-L-E at positions 1-6. Swapping the 2nd (A) and 5th (L) letters gives C-L-N-D-A-E, i.e. CLNDAE.",
+        "whyWrong": [null, "CANDLE is the unchanged original word — no swap applied.", "CADNLE swaps the wrong pair of adjacent letters instead of positions 2 and 5.", "CLNDLE incorrectly duplicates a letter instead of swapping properly."],
+        "shortcut": "Number each letter's position above the word before making any swap, to avoid counting errors in longer words."
+      },
+      {
+        "id": "cd-m-06",
+        "subtopic": "Mixed Coding",
+        "question": "If WINDOW is coded as YQFPKY by first shifting each letter forward by 2 and then reversing the result, how is SIMPLE coded using the same rule?",
+        "options": ["GNROKU", "UOKRNG", "GNROKV", "GNOKRU"],
+        "answerIndex": 0,
+        "explanation": "Shift SIMPLE forward by 2 first: UKORNG. Then reverse that result: GNROKU.",
+        "whyWrong": [null, "UOKRNG is the shifted word without being reversed.", "GNROKV has the last letter wrong.", "GNOKRU has two middle letters swapped compared to the correct reversal."],
+        "shortcut": "In a mixed rule, always perform the steps in the exact order the example demonstrates — shift first, then reverse, here."
+      },
+      {
+        "id": "cd-m-07",
+        "subtopic": "Mixed Coding",
+        "question": "If SIMPLE is coded as GNROKU by first reversing the word and then shifting each letter forward by 2, how is GARDEN coded using the same rule?",
+        "options": ["PGFTCI", "ICTFGP", "PGFTCJ", "QHGUDJ"],
+        "answerIndex": 0,
+        "explanation": "Reverse GARDEN first: NEDRAG. Then shift each letter forward by 2: PGFTCI.",
+        "whyWrong": [null, "ICTFGP is the reversed word without the shift applied.", "PGFTCJ has the last letter wrong.", "QHGUDJ results from shifting by 3 instead of 2."],
+        "shortcut": "Notice this example reverses FIRST and shifts SECOND — the opposite order from the previous question — always re-check the order from scratch for each new example."
+      },
+      {
+        "id": "cd-m-08",
+        "subtopic": "Position Based Coding",
+        "question": "In a code, the 2nd and 5th letters of a word are swapped. How is MARKET coded?",
+        "options": ["MERKAT", "MARKET", "METKAR", "MERKTA"],
+        "answerIndex": 0,
+        "explanation": "MARKET has letters M-A-R-K-E-T at positions 1-6. Swapping the 2nd (A) and 5th (E) letters gives M-E-R-K-A-T, i.e. MERKAT.",
+        "whyWrong": [null, "MARKET is the unchanged original word — no swap applied.", "METKAR rearranges more letters than the specified swap.", "MERKTA has the last two letters also swapped, which wasn't part of the rule."],
+        "shortcut": "Only swap the two specified positions — every other letter, including ones that look similar, stays exactly where it was."
+      },
+      {
+        "id": "cd-m-09",
+        "subtopic": "Letter Shift",
+        "question": "In a code, the 1st letter of a word shifts forward by 1, the 2nd by 2, the 3rd by 3, and so on. How is PLANE coded?",
+        "options": ["QNDRJ", "QNEUJ", "QMDRJ", "QNDSJ"],
+        "answerIndex": 0,
+        "explanation": "P(+1)=Q, L(+2)=N, A(+3)=D, N(+4)=R, E(+5)=J, giving QNDRJ.",
+        "whyWrong": [null, "QNEUJ has the 3rd and 4th letters shifted by the wrong amounts.", "QMDRJ has the 2nd letter shifted by only 1 instead of 2.", "QNDSJ has the 4th letter shifted by 5 instead of 4."],
+        "shortcut": "Write the shift amount (1,2,3,4,5...) above each letter's position before doing any arithmetic, so you never lose track of which shift applies where."
+      },
+      {
+        "id": "cd-m-10",
+        "subtopic": "Pattern Recognition",
+        "question": "If B is coded as 4, C is coded as 9, and D is coded as 16, what is E coded as?",
+        "options": ["25", "20", "24", "22"],
+        "answerIndex": 0,
+        "explanation": "Each letter's alphabet position is squared: B(2)→4, C(3)→9, D(4)→16. E is the 5th letter, so its code is 5²=25.",
+        "whyWrong": [null, "20 doesn't match 5² at all.", "24 is one less than the correct square.", "22 doesn't follow the squaring pattern either."],
+        "shortcut": "Convert each letter to its alphabet position first, then look for the numeric relationship — squaring becomes obvious immediately in number form."
+      }
+    ],
+    "hard": [
+      {
+        "id": "cd-h-01",
+        "subtopic": "Alphabet Coding",
+        "question": "If COMPUTER is coded as HTRUZYJW using a fixed forward shift, how is KEYBOARD coded using the same rule?",
+        "options": ["PJDGTFWI", "PJDGTFVI", "OICFSEVH", "PJEGTFWI"],
+        "answerIndex": 0,
+        "explanation": "COMPUTER→HTRUZYJW confirms a forward shift of 5 (C→H is +5). Applying +5 to KEYBOARD: K→P, E→J, Y→D, B→G, O→T, A→F, R→W, D→I, giving PJDGTFWI.",
+        "whyWrong": [null, "PJDGTFVI has the last letter wrong — D shifted by 5 gives I, not V.", "OICFSEVH results from a +4 shift, not the +5 shift shown in the example.", "PJEGTFWI has the 3rd letter wrong — Y shifted by 5 gives D, not E."],
+        "shortcut": "Verify the shift using at least the first 3 letters of a long example before committing to a shift amount."
+      },
+      {
+        "id": "cd-h-02",
+        "subtopic": "Reverse Coding",
+        "question": "If the code for ELEPHANT is TNAHPELE, how is DAUGHTER coded using the same rule?",
+        "options": ["RETHGUAD", "RETHGAUD", "DAUGHTER", "RETHGUDA"],
+        "answerIndex": 0,
+        "explanation": "ELEPHANT→TNAHPELE confirms a simple full-word reversal. Reversing DAUGHTER gives RETHGUAD.",
+        "whyWrong": [null, "RETHGAUD has two middle letters swapped compared to the true reversal.", "DAUGHTER is the unchanged original word — no reversal was applied.", "RETHGUDA has the last two letters swapped compared to the correct reversal."],
+        "shortcut": "For 8-letter words, write both halves separately and reverse each before combining, to avoid losing track midway."
+      },
+      {
+        "id": "cd-h-03",
+        "subtopic": "Position Based Coding",
+        "question": "If TRIANGLE is coded as ERIANGLT by swapping only its first and last letters, how is JOURNEY coded using the same rule?",
+        "options": ["YOURNEJ", "JOURNEY", "YOURNJE", "EOURNJY"],
+        "answerIndex": 0,
+        "explanation": "Swapping only the first (J) and last (Y) letters of JOURNEY, keeping OURNE unchanged in the middle, gives YOURNEJ.",
+        "whyWrong": [null, "JOURNEY is the unchanged original word — no swap applied.", "YOURNJE has the middle letters rearranged as well, beyond just the first/last swap.", "EOURNJY doesn't correctly place either the original first or last letter."],
+        "shortcut": "Even for longer words, this rule only ever touches 2 positions — resist the urge to rearrange anything else."
+      },
+      {
+        "id": "cd-h-04",
+        "subtopic": "Mixed Coding",
+        "question": "If SQUARE is coded as BOXRNP by first reversing the word and then shifting each letter back by 3, how is CIRCLE coded using the same rule?",
+        "options": ["BIZOFZ", "ELCRIC", "BIZOFY", "BHZOFZ"],
+        "answerIndex": 0,
+        "explanation": "Reverse CIRCLE first: ELCRIC. Then shift each letter back by 3: BIZOFZ.",
+        "whyWrong": [null, "ELCRIC is the reversed word without the shift applied.", "BIZOFY has the last letter wrong.", "BHZOFZ has the first letter wrong — E shifted back by 3 gives B, not H."],
+        "shortcut": "Reverse first, then shift — exactly the order confirmed by the SQUARE→BOXRNP example."
+      },
+      {
+        "id": "cd-h-05",
+        "subtopic": "Mixed Coding",
+        "question": "If CIRCLE is coded as HOFULF by first shifting each letter forward by 3 and then reversing the result, how is SQUARE coded using the same rule?",
+        "options": ["HUDXTV", "VTXDUH", "HUDXTW", "GUDXTV"],
+        "answerIndex": 0,
+        "explanation": "Shift SQUARE forward by 3 first: VTXDUH. Then reverse that result: HUDXTV.",
+        "whyWrong": [null, "VTXDUH is the shifted word without being reversed.", "HUDXTW has the last letter wrong.", "GUDXTV has the first letter wrong."],
+        "shortcut": "Shift first, then reverse — the opposite order from the previous question, confirmed by the CIRCLE→HOFULF example. Always re-verify order per question."
+      },
+      {
+        "id": "cd-h-06",
+        "subtopic": "Letter Shift",
+        "question": "If ACE is coded as BEH using an increasing shift (1st letter +1, 2nd letter +2, 3rd letter +3), how is CEG coded using the same rule?",
+        "options": ["DGJ", "DGI", "DFJ", "EGJ"],
+        "answerIndex": 0,
+        "explanation": "C(+1)=D, E(+2)=G, G(+3)=J, giving DGJ.",
+        "whyWrong": [null, "DGI has the last letter wrong — G shifted by 3 gives J, not I.", "DFJ has the 2nd letter wrong — E shifted by 2 gives G, not F.", "EGJ has the 1st letter wrong — C shifted by 1 gives D, not E."],
+        "shortcut": "Label each letter's position number above it (1st, 2nd, 3rd) before applying the matching shift amount."
+      },
+      {
+        "id": "cd-h-07",
+        "subtopic": "Position Based Coding",
+        "question": "In a code, the first and last letters of a word are swapped. How is MOUNTAIN coded?",
+        "options": ["NOUNTAIM", "MOUNTAIN", "NIATNUOM", "NOUNTAMI"],
+        "answerIndex": 0,
+        "explanation": "Swapping only the first (M) and last (N) letters of MOUNTAIN, keeping OUNTAI unchanged in the middle, gives NOUNTAIM.",
+        "whyWrong": [null, "MOUNTAIN is the unchanged original word — no swap applied.", "NIATNUOM is a full reversal of the word, not just a first/last swap.", "NOUNTAMI has the last two letters of the middle section swapped as well, beyond the specified rule."],
+        "shortcut": "Double-check that only the two specified positions change — everything else, including letters that look easy to shift, must stay put."
+      },
+      {
+        "id": "cd-h-08",
+        "subtopic": "Position Based Coding",
+        "question": "In a 7-letter code, the 3rd and 5th letters of a word are swapped. How is STATION coded?",
+        "options": ["STITAON", "STATION", "STAITON", "SIATTON"],
+        "answerIndex": 0,
+        "explanation": "STATION has letters S-T-A-T-I-O-N at positions 1-7. Swapping the 3rd (A) and 5th (I) letters gives S-T-I-T-A-O-N, i.e. STITAON.",
+        "whyWrong": [null, "STATION is the unchanged original word — no swap applied.", "STAITON swaps the wrong pair of adjacent letters instead of positions 3 and 5.", "SIATTON incorrectly moves the letter from position 1 as well."],
+        "shortcut": "Number every position in longer words explicitly — with 7 letters, it's easy to miscount by one without writing the positions down."
+      },
+      {
+        "id": "cd-h-09",
+        "subtopic": "Position Based Coding",
+        "question": "In a code, the first and last letters of a word are swapped. How is COMPUTER coded?",
+        "options": ["ROMPUTEC", "COMPUTER", "RETUPMOC", "ROMPUTCE"],
+        "answerIndex": 0,
+        "explanation": "Swapping only the first (C) and last (R) letters of COMPUTER, keeping OMPUTE unchanged in the middle, gives ROMPUTEC.",
+        "whyWrong": [null, "COMPUTER is the unchanged original word — no swap applied.", "RETUPMOC is a full reversal, not just a first/last swap.", "ROMPUTCE has the last two middle letters swapped as well, beyond the specified rule."],
+        "shortcut": "For long words especially, resist reversing the whole thing when the rule only specifies a single first/last swap."
+      },
+      {
+        "id": "cd-h-10",
+        "subtopic": "Pattern Recognition",
+        "question": "If B is coded as 8 and C is coded as 27, what is D coded as?",
+        "options": ["64", "36", "48", "81"],
+        "answerIndex": 0,
+        "explanation": "Each letter's alphabet position is cubed: B(2)→2³=8, C(3)→3³=27. D is the 4th letter, so its code is 4³=64.",
+        "whyWrong": [null, "36 doesn't match 4³ at all.", "48 doesn't follow the cubing pattern either.", "81 is 3⁴, not 4³ — a different exponent pattern than the one shown."],
+        "shortcut": "Once two examples both match a cube pattern (2³=8, 3³=27), test the next letter's cube directly rather than guessing a different rule."
+      }
+    ]
+  },
+  "revision": {
+    "quickSheet": [
+      "Convert letters to alphabet-position numbers (A=1...Z=26) before doing any arithmetic — patterns and shifts are far easier to spot in numbers.",
+      "Verify a shift or rule using EVERY letter of the given example, not just the first one.",
+      "For mixed rules, identify each individual step separately, then apply them in the exact order the example shows.",
+      "Position-based rules only touch the specified positions — never rearrange anything else.",
+      "When no rule is stated, convert to numbers and look for a consistent numeric relationship (add, multiply, square, cube) across all given examples."
+    ],
+    "oneMinute": [
+      "Shift, reverse, and position-swap are the three basic moves — everything else is a combination of these.",
+      "Wrap-around matters: after Z, the alphabet cycles back to A.",
+      "Re-verify the rule's order of operations for every new mixed-coding example — it can flip between questions."
+    ],
+    "summary": "Coding-decoding rewards mechanical discipline over cleverness. Convert letters to numbers, extract the rule using every letter of the given example (not just a convenient one), and for mixed or pattern-based questions, work through each layer as a separate, labeled step. Speed comes from not re-deriving a rule you've already confirmed, and accuracy comes from never skipping the verification step."
+  }
+}

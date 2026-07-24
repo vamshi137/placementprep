@@ -1,0 +1,375 @@
+{
+  "topicId": "remainders",
+  "subtopics": ["Basic Remainders"],
+  "learn": {
+    "title": "Basic Remainders",
+    "intro": "Remainder questions reward the same instinct as unit-digit questions: reduce early, reduce often, and never carry a huge number through a full calculation when only the leftover matters.",
+    "sections": [
+      {
+        "subtopic": "Basic Remainders",
+        "explanation": "The remainder is what's left over after dividing one number by another. For large numbers, products, or powers, modular arithmetic shortcuts let you find the remainder without ever computing the full value.",
+        "realLifeExample": "Splitting 47 candies among 5 friends equally, each gets 9 candies with 2 left over — that leftover 2 is the remainder, and the same idea scales up to huge numbers using the same logic.",
+        "memoryTrick": "The remainder is always smaller than the divisor — if it isn't, you haven't finished dividing.",
+        "shortcutTrick": "To find the remainder of a large product or power divided by a number, reduce each factor to its own remainder first, then multiply those remainders together and reduce again — never carry the full large number through the calculation.",
+        "formulaCard": [
+          "If N = D×Q + R, then R is the remainder, with 0 ≤ R < D",
+          "(a×b) mod n = [(a mod n)×(b mod n)] mod n",
+          "(a+b) mod n = [(a mod n)+(b mod n)] mod n"
+        ],
+        "commonMistakes": [
+          "Allowing the remainder to be ≥ the divisor — a sign the division isn't actually finished.",
+          "Computing the full large product or power before reducing, wasting time and risking arithmetic errors."
+        ],
+        "talentSprintTip": "TalentSprint often gives 'remainder of a large product mod a small number' — reduce every individual number mod the divisor FIRST, then multiply the small remainders together.",
+        "tcsNqtTip": "TCS NQT sometimes uses remainder chains or successive division (divide, take the quotient, divide again) — always work strictly step by step, never skip ahead."
+      }
+    ]
+  },
+  "solvedExamples": [
+    {
+      "id": "rem-se-01",
+      "subtopic": "Basic Remainders",
+      "question": "Find the remainder when 47 is divided by 5.",
+      "solution": "47 = 5×9 + 2.",
+      "answer": "2"
+    },
+    {
+      "id": "rem-se-02",
+      "subtopic": "Basic Remainders",
+      "question": "Find the remainder when 1234 is divided by 9.",
+      "solution": "Use the digit-sum shortcut for mod 9: 1+2+3+4=10, and 10 mod 9 = 1.",
+      "answer": "1"
+    },
+    {
+      "id": "rem-se-03",
+      "subtopic": "Basic Remainders",
+      "question": "Find the remainder when 15×22 is divided by 7.",
+      "solution": "15 mod 7 = 1, 22 mod 7 = 1.\nProduct of remainders: (1×1) mod 7 = 1.",
+      "answer": "1"
+    },
+    {
+      "id": "rem-se-04",
+      "subtopic": "Basic Remainders",
+      "question": "Find the remainder when 2^10 is divided by 7.",
+      "solution": "2³ = 8 ≡ 1 (mod 7), so 2 has a cycle length of 3 mod 7.\n2^10 = 2^(9+1) = (2³)³ × 2¹ ≡ 1³ × 2 = 2 (mod 7).",
+      "answer": "2"
+    },
+    {
+      "id": "rem-se-05",
+      "subtopic": "Basic Remainders",
+      "question": "Find the remainder when 1000×1001×1002 is divided by 7.",
+      "solution": "1001 = 7×143 exactly, so 1001 mod 7 = 0.\nSince one factor is 0 mod 7, the entire product is 0 mod 7.",
+      "answer": "0"
+    }
+  ],
+  "practiceExamples": [
+    {
+      "id": "rem-pe-01",
+      "subtopic": "Basic Remainders",
+      "question": "Find the remainder when 58 is divided by 7.",
+      "answer": "2",
+      "hint": "7×8=56, remainder = 58−56."
+    },
+    {
+      "id": "rem-pe-02",
+      "subtopic": "Basic Remainders",
+      "question": "Find the remainder when 5678 is divided by 9.",
+      "answer": "8",
+      "hint": "Use the digit-sum shortcut: 5+6+7+8=26, then reduce again."
+    },
+    {
+      "id": "rem-pe-03",
+      "subtopic": "Basic Remainders",
+      "question": "Find the remainder when 23×31 is divided by 5.",
+      "answer": "3",
+      "hint": "Reduce each number mod 5 first (23→3, 31→1), multiply, then reduce again."
+    },
+    {
+      "id": "rem-pe-04",
+      "subtopic": "Basic Remainders",
+      "question": "Find the remainder when 3^15 is divided by 5.",
+      "answer": "2",
+      "hint": "Find the cycle of 3 mod 5 first (3,4,2,1, repeating every 4)."
+    },
+    {
+      "id": "rem-pe-05",
+      "subtopic": "Basic Remainders",
+      "question": "Find the remainder when 999×888 is divided by 7.",
+      "answer": "2",
+      "hint": "Reduce each number mod 7 first (999→5, 888→6), multiply, then reduce again."
+    }
+  ],
+  "quiz": {
+    "easy": [
+      {
+        "id": "rem-e-01",
+        "subtopic": "Basic Remainders",
+        "question": "Find the remainder when 25 is divided by 4.",
+        "options": ["1", "2", "3", "0"],
+        "answerIndex": 0,
+        "explanation": "4×6=24, and 25−24=1.",
+        "whyWrong": [null, "2 doesn't match 25−24.", "3 doesn't match it either.", "0 would mean 25 is exactly divisible by 4, which it isn't."],
+        "shortcut": "Find the nearest multiple of the divisor below the number, then subtract."
+      },
+      {
+        "id": "rem-e-02",
+        "subtopic": "Basic Remainders",
+        "question": "Find the remainder when 100 is divided by 7.",
+        "options": ["2", "1", "3", "0"],
+        "answerIndex": 0,
+        "explanation": "7×14=98, and 100−98=2.",
+        "whyWrong": [null, "1 doesn't match 100−98.", "3 doesn't match it either.", "0 would mean 100 is exactly divisible by 7, which it isn't."],
+        "shortcut": "7×14=98 is the closest multiple below 100 — subtract directly."
+      },
+      {
+        "id": "rem-e-03",
+        "subtopic": "Basic Remainders",
+        "question": "What is the remainder when 81 is divided by 9?",
+        "options": ["0", "1", "2", "9"],
+        "answerIndex": 0,
+        "explanation": "81 = 9×9 exactly, so the remainder is 0.",
+        "whyWrong": [null, "1 would mean 81 isn't exactly divisible by 9, but it is.", "2 doesn't fit either.", "9 can never be the remainder when dividing by 9 — the remainder must be less than the divisor."],
+        "shortcut": "Recognize 81 as a multiple of 9 (9×9) directly."
+      },
+      {
+        "id": "rem-e-04",
+        "subtopic": "Basic Remainders",
+        "question": "Find the remainder when 50 is divided by 6.",
+        "options": ["2", "1", "3", "4"],
+        "answerIndex": 0,
+        "explanation": "6×8=48, and 50−48=2.",
+        "whyWrong": [null, "1 doesn't match 50−48.", "3 doesn't match it either.", "4 doesn't match it either."],
+        "shortcut": "Find the nearest lower multiple of 6, then subtract."
+      },
+      {
+        "id": "rem-e-05",
+        "subtopic": "Basic Remainders",
+        "question": "What is the remainder when 7 is divided by 10?",
+        "options": ["7", "0", "10", "Cannot be determined"],
+        "answerIndex": 0,
+        "explanation": "When the dividend is smaller than the divisor, the entire dividend IS the remainder (quotient is 0): 7 = 10×0 + 7.",
+        "whyWrong": [null, "0 would apply only if 7 were an exact multiple of 10, which it isn't.", "10 is the divisor itself, not the remainder.", "This case is fully determined — the remainder always equals the dividend when it's smaller than the divisor."],
+        "shortcut": "If the dividend is smaller than the divisor, the remainder is just the dividend itself, with quotient 0."
+      }
+    ],
+    "medium": [
+      {
+        "id": "rem-m-01",
+        "subtopic": "Basic Remainders",
+        "question": "Find the remainder when 12345 is divided by 9.",
+        "options": ["6", "5", "7", "3"],
+        "answerIndex": 0,
+        "explanation": "Digit sum: 1+2+3+4+5=15, and 15 mod 9 = 6.",
+        "whyWrong": [null, "5 doesn't match the digit-sum reduction.", "7 doesn't match it either.", "3 doesn't match it either."],
+        "shortcut": "For divisor 9 (and 3), the remainder equals the digit sum's remainder — no long division needed."
+      },
+      {
+        "id": "rem-m-02",
+        "subtopic": "Basic Remainders",
+        "question": "Find the remainder when 17×23 is divided by 5.",
+        "options": ["1", "2", "3", "4"],
+        "answerIndex": 0,
+        "explanation": "17 mod 5=2, 23 mod 5=3. Multiply the remainders: 2×3=6, then reduce again: 6 mod 5=1.",
+        "whyWrong": [null, "2 is just 17's own remainder, before multiplying.", "3 is just 23's own remainder, before multiplying.", "4 doesn't come from (2×3) mod 5."],
+        "shortcut": "Reduce every factor mod the divisor FIRST, multiply those small remainders, then reduce once more."
+      },
+      {
+        "id": "rem-m-03",
+        "subtopic": "Basic Remainders",
+        "question": "Find the remainder when 2^20 is divided by 5.",
+        "options": ["1", "2", "4", "3"],
+        "answerIndex": 0,
+        "explanation": "2⁴=16≡1(mod5). Since 20 is exactly divisible by 4, 2^20=(2⁴)⁵≡1⁵=1(mod5).",
+        "whyWrong": [null, "2 would apply if the exponent left remainder 1 mod the cycle length 4, but 20 is exactly divisible by 4.", "4 would apply for a different position in the cycle.", "3 doesn't correspond to any position in 2's mod-5 cycle."],
+        "shortcut": "Find the cycle length of the base mod the divisor, then reduce the exponent mod that cycle length."
+      },
+      {
+        "id": "rem-m-04",
+        "subtopic": "Basic Remainders",
+        "question": "Find the remainder when 999999 is divided by 7.",
+        "options": ["0", "1", "6", "3"],
+        "answerIndex": 0,
+        "explanation": "999999 = 7×142857 exactly, so the remainder is 0.",
+        "whyWrong": [null, "1 would mean 999999 isn't exactly divisible by 7, but it is.", "6 doesn't fit either.", "3 doesn't fit either."],
+        "shortcut": "Recognize that repunit-like numbers such as 999999 often hide exact divisibility by 7, 11, or 13 — worth testing directly."
+      },
+      {
+        "id": "rem-m-05",
+        "subtopic": "Basic Remainders",
+        "question": "A number leaves remainder 7 when divided by 15. What remainder does it leave when divided by 5?",
+        "options": ["2", "7", "0", "3"],
+        "answerIndex": 0,
+        "explanation": "N=15k+7. Since 15 is a multiple of 5, the 15k term contributes 0 mod 5. The remainder is simply 7 mod 5 = 2.",
+        "whyWrong": [null, "7 is the remainder mod 15, not mod 5 — it must be reduced further since 7≥5.", "0 would mean the number is exactly divisible by 5, but the leftover 7 isn't.", "3 doesn't match 7 mod 5."],
+        "shortcut": "When the new divisor divides the old divisor evenly, just reduce the old remainder by the new divisor directly."
+      },
+      {
+        "id": "rem-m-06",
+        "subtopic": "Basic Remainders",
+        "question": "Find the remainder when 7^100 is divided by 4.",
+        "options": ["1", "3", "2", "0"],
+        "answerIndex": 0,
+        "explanation": "7≡3(mod4), and 3's cycle mod 4 is 3,1 (length 2). 100 is even, so we use the 2nd (last) position: 1.",
+        "whyWrong": [null, "3 would be the remainder only for an odd exponent.", "2 doesn't appear anywhere in the cycle of 3 mod 4.", "0 would mean 7^100 is exactly divisible by 4, which it isn't."],
+        "shortcut": "Reduce the base mod the divisor first, then find that smaller number's own cycle, exactly like a unit-digit cyclicity problem."
+      },
+      {
+        "id": "rem-m-07",
+        "subtopic": "Basic Remainders",
+        "question": "Find the remainder when the sum 1+2+...+100 is divided by 9.",
+        "options": ["1", "2", "3", "4"],
+        "answerIndex": 0,
+        "explanation": "Sum of 1 to 100 = 100×101/2 = 5050. Using the digit-sum shortcut: 5+0+5+0=10, and 10 mod 9 = 1.",
+        "whyWrong": [null, "2 doesn't match the digit-sum reduction of 5050.", "3 doesn't match it either.", "4 doesn't match it either."],
+        "shortcut": "Compute the sum first using n(n+1)/2, then apply the digit-sum rule for 9 to that total."
+      },
+      {
+        "id": "rem-m-08",
+        "subtopic": "Basic Remainders",
+        "question": "A number leaves remainder 4 when divided by 9. What remainder does its square leave when divided by 9?",
+        "options": ["7", "4", "16", "2"],
+        "answerIndex": 0,
+        "explanation": "If N≡4(mod9), then N²≡4²=16≡7(mod9), since 16−9=7.",
+        "whyWrong": [null, "4 is N's own remainder, not N²'s.", "16 is correct before the final reduction mod 9, but it must be reduced further since 16≥9.", "2 doesn't match 16 mod 9."],
+        "shortcut": "Square the original remainder first, then reduce THAT result mod the same divisor — the remainder doesn't stay unchanged under squaring."
+      },
+      {
+        "id": "rem-m-09",
+        "subtopic": "Basic Remainders",
+        "question": "A number leaves remainder 3 when divided by 8. What remainder does twice that number leave when divided by 8?",
+        "options": ["6", "3", "2", "0"],
+        "answerIndex": 0,
+        "explanation": "N=8k+3, so 2N=16k+6. Since 16k is a multiple of 8, the remainder is simply 6.",
+        "whyWrong": [null, "3 is N's own remainder, not 2N's.", "2 doesn't match 6 mod 8.", "0 would mean 2N is exactly divisible by 8, but it isn't."],
+        "shortcut": "Double the original remainder first, then reduce THAT result mod the divisor if it exceeds it."
+      },
+      {
+        "id": "rem-m-10",
+        "subtopic": "Basic Remainders",
+        "question": "Find the remainder when 50! is divided by 7.",
+        "options": ["0", "1", "6", "7"],
+        "answerIndex": 0,
+        "explanation": "Since 7 is one of the integers multiplied together in 50! (as 50≥7), 50! is exactly divisible by 7 — remainder 0.",
+        "whyWrong": [null, "1 would apply only if 7 didn't divide 50! at all, which isn't the case.", "6 doesn't fit either.", "7 can never be the remainder when dividing by 7 itself — the remainder must be less than the divisor."],
+        "shortcut": "If n≥p for a prime p, then n! is always exactly divisible by p — remainder 0 instantly, no calculation needed."
+      }
+    ],
+    "hard": [
+      {
+        "id": "rem-h-01",
+        "subtopic": "Basic Remainders",
+        "question": "Find the remainder when 2^100 is divided by 7.",
+        "options": ["2", "4", "1", "6"],
+        "answerIndex": 0,
+        "explanation": "2³≡1(mod7), a cycle of length 3 (2,4,1). 100 mod 3=1, so we use the 1st position: 2.",
+        "whyWrong": [null, "4 would apply if the exponent mod 3 equalled 2.", "1 would apply if the exponent mod 3 equalled 0.", "6 doesn't appear anywhere in 2's mod-7 cycle."],
+        "shortcut": "Find the base's cycle length mod the divisor first, then reduce the exponent mod that cycle length."
+      },
+      {
+        "id": "rem-h-02",
+        "subtopic": "Basic Remainders",
+        "question": "Find the remainder when 3^40 is divided by 11.",
+        "options": ["1", "3", "9", "5"],
+        "answerIndex": 0,
+        "explanation": "3⁵≡1(mod11), giving a cycle length of 5 (3,9,5,4,1). 40 is exactly divisible by 5, so we use the last position of the cycle: 1.",
+        "whyWrong": [null, "3 is the 1st position, used only if the exponent mod 5 equalled 1.", "9 is the 2nd position, used if the exponent mod 5 equalled 2.", "5 is the 3rd position, used if the exponent mod 5 equalled 3."],
+        "shortcut": "Find the smallest exponent that gives remainder 1 (the cycle length), then reduce the actual exponent mod that cycle length."
+      },
+      {
+        "id": "rem-h-03",
+        "subtopic": "Basic Remainders",
+        "question": "Find the remainder when 1! + 2! + 3! + ... + 100! is divided by 15.",
+        "options": ["3", "8", "13", "0"],
+        "answerIndex": 0,
+        "explanation": "From 6! onward, every factorial is divisible by 15 (since 6!=720 already contains both 3 and 5). Only 1!+2!+3!+4!+5!=1+2+6+24+120=153 matters. 153 mod 15 = 3 (since 15×10=150).",
+        "whyWrong": [null, "8 doesn't match 153 mod 15.", "13 doesn't match it either.", "0 would require 153 to be exactly divisible by 15, but it isn't."],
+        "shortcut": "Identify the smallest n! that becomes divisible by the target divisor, then only sum the factorials before that point."
+      },
+      {
+        "id": "rem-h-04",
+        "subtopic": "Basic Remainders",
+        "question": "A number N leaves remainder 5 when divided by 12. Find the remainder when N² is divided by 12.",
+        "options": ["1", "5", "25", "13"],
+        "answerIndex": 0,
+        "explanation": "N≡5(mod12), so N²≡25(mod12). Since 24=12×2, 25−24=1, so the remainder is 1.",
+        "whyWrong": [null, "5 is N's own remainder, not N²'s.", "25 is correct before the final reduction, but must be reduced further since 25≥12.", "13 doesn't match 25 mod 12."],
+        "shortcut": "Square the given remainder, then reduce that squared value mod the same divisor — don't skip the final reduction step."
+      },
+      {
+        "id": "rem-h-05",
+        "subtopic": "Basic Remainders",
+        "question": "Find the remainder when 7^45 is divided by 100.",
+        "options": ["7", "49", "43", "1"],
+        "answerIndex": 0,
+        "explanation": "7 mod 100 cycles with length 4: 7, 49, 43, 1. 45 mod 4 = 1, so we use the 1st position: 7.",
+        "whyWrong": [null, "49 is the 2nd position, used if the exponent mod 4 equalled 2.", "43 is the 3rd position, used if the exponent mod 4 equalled 3.", "1 is the 4th (last) position, used if the exponent mod 4 equalled 0."],
+        "shortcut": "For mod-100 (last two digits) questions, find the base's own cycle length first — it's often shorter than you'd expect."
+      },
+      {
+        "id": "rem-h-06",
+        "subtopic": "Basic Remainders",
+        "question": "Find the remainder when 12^50 is divided by 7.",
+        "options": ["4", "5", "6", "2"],
+        "answerIndex": 0,
+        "explanation": "12≡5(mod7). The cycle of 5 mod 7 is 5,4,6,2,3,1 (length 6). 50 mod 6=2, so we use the 2nd position: 4.",
+        "whyWrong": [null, "5 is the 1st position, used if the exponent mod 6 equalled 1.", "6 is the 3rd position, used if the exponent mod 6 equalled 3.", "2 is the 4th position, used if the exponent mod 6 equalled 4."],
+        "shortcut": "Always reduce the base mod the divisor first (12→5) before working out the cycle — never use the cycle of the original large base."
+      },
+      {
+        "id": "rem-h-07",
+        "subtopic": "Basic Remainders",
+        "question": "A number leaves remainder 2 when divided by 3, and remainder 3 when divided by 5. Find the remainder when it's divided by 15.",
+        "options": ["8", "13", "2", "3"],
+        "answerIndex": 0,
+        "explanation": "Testing values that satisfy both conditions: 8 mod 3=2 ✓ and 8 mod 5=3 ✓. So the number leaves remainder 8 when divided by 15.",
+        "whyWrong": [null, "13 mod 3=1, not 2, so it fails the first condition.", "2 mod 5=2, not 3, so it fails the second condition.", "3 mod 3=0, not 2, so it fails the first condition too."],
+        "shortcut": "For two simultaneous remainder conditions with co-prime divisors, test small numbers directly against both conditions rather than using the full Chinese Remainder Theorem machinery."
+      },
+      {
+        "id": "rem-h-08",
+        "subtopic": "Basic Remainders",
+        "question": "Find the remainder when 2^2023 is divided by 9.",
+        "options": ["2", "4", "8", "1"],
+        "answerIndex": 0,
+        "explanation": "2 has a cycle of length 6 mod 9 (2,4,8,7,5,1). 2023 mod 6 = 1, so we use the 1st position: 2.",
+        "whyWrong": [null, "4 would apply if the exponent mod 6 equalled 2.", "8 would apply if the exponent mod 6 equalled 3.", "1 would apply if the exponent mod 6 equalled 0."],
+        "shortcut": "For large exponents, always reduce modulo the cycle length first — never attempt to compute the power directly."
+      },
+      {
+        "id": "rem-h-09",
+        "subtopic": "Basic Remainders",
+        "question": "Find the remainder when 25×26×27×28 is divided by 6.",
+        "options": ["0", "2", "4", "1"],
+        "answerIndex": 0,
+        "explanation": "25 mod 6=1, 26 mod 6=2, 27 mod 6=3, 28 mod 6=4. Product of remainders: 1×2×3×4=24, and 24 mod 6=0.",
+        "whyWrong": [null, "2 doesn't match 24 mod 6.", "4 doesn't match it either.", "1 doesn't match it either."],
+        "shortcut": "Among 4 consecutive integers, one is always a multiple of the divisor if the divisor is small enough — here 27 is itself a multiple of 3, and combined with the even numbers, the product is a multiple of 6."
+      },
+      {
+        "id": "rem-h-10",
+        "subtopic": "Basic Remainders",
+        "question": "A number, when divided successively by 3 and then 5 (dividing the first quotient by 5), leaves remainders 2 and 3 respectively, with a final quotient of 4. Find the original number.",
+        "options": ["71", "65", "83", "59"],
+        "answerIndex": 0,
+        "explanation": "Work backward: first quotient = (4×5)+3 = 23. Original number = (23×3)+2 = 71.",
+        "whyWrong": [null, "65 doesn't satisfy the successive division chain when worked backward.", "83 doesn't satisfy it either.", "59 doesn't satisfy it either."],
+        "shortcut": "For successive division problems, always work backward from the final quotient, rebuilding one division step at a time."
+      }
+    ]
+  },
+  "revision": {
+    "quickSheet": [
+      "Reduce every number to its remainder BEFORE multiplying or adding — never carry a large number through the full calculation.",
+      "(a×b) mod n = [(a mod n)×(b mod n)] mod n; the same pattern applies to addition.",
+      "For powers, find the base's cycle length mod the divisor, then reduce the exponent mod that cycle length.",
+      "Digit-sum shortcut works for mod 3 and mod 9 specifically — not for other divisors.",
+      "For successive division problems, work backward from the final quotient, rebuilding one step at a time."
+    ],
+    "oneMinute": [
+      "The remainder is always smaller than the divisor.",
+      "Squaring or doubling a remainder still needs a final reduction if the result exceeds the divisor.",
+      "If n! includes a prime p as one of its factors (n≥p), n! is exactly divisible by p."
+    ],
+    "summary": "Remainder questions are really unit-digit and cyclicity questions wearing a different name — the same 'reduce early, reduce often' instinct applies. Convert every large number, product, or power to its remainder as early as possible, use cycle lengths for powers, and for successive division problems, always rebuild the answer working backward from the final quotient."
+  }
+}

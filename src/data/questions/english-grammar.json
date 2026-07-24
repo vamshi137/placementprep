@@ -1,0 +1,433 @@
+{
+  "topicId": "english-grammar",
+  "subtopics": ["Prepositions", "Articles", "Tenses", "Subject Verb Agreement", "Error Spotting"],
+  "learn": {
+    "title": "English Grammar Essentials",
+    "intro": "Grammar questions in placement exams reward a checklist mindset over deep theory — memorize the fixed patterns, learn to trace back to the true subject, and watch for tense signal words.",
+    "sections": [
+      {
+        "subtopic": "Prepositions",
+        "explanation": "Prepositions show the relationship between a noun/pronoun and other words in a sentence — indicating place, time, direction, or manner. Many are fixed by convention with specific verbs/adjectives (afraid OF, good AT) and must be memorized rather than derived logically.",
+        "realLifeExample": "Saying 'I am good AT cooking' rather than 'good IN cooking' — native speakers instantly recognize 'good at' as correct through repeated exposure, exactly the pattern-recognition skill this section tests.",
+        "memoryTrick": "Prepositions of time: IN for long periods (in 2024, in July), ON for specific days (on Monday), AT for exact times (at 5 pm).",
+        "shortcutTrick": "When two prepositions seem equally plausible, check if the phrase is a well-known fixed collocation (depend ON, married TO, different FROM) — these fixed pairings override general logic.",
+        "formulaCard": ["IN: months, years, long periods", "ON: days, dates", "AT: precise times, points", "Common fixed pairs: depend ON, interested IN, afraid OF, married TO, different FROM, good AT"],
+        "commonMistakes": [
+          "Translating prepositions directly from one's native language, which often doesn't match English convention.",
+          "Confusing 'different FROM' (standard) with 'different THAN' in formal test contexts."
+        ],
+        "talentSprintTip": "TalentSprint's preposition questions often test fixed collocations with common verbs (rely ON, consist OF, apologize FOR) — build a personal list of 30-40 fixed pairs and revise it weekly.",
+        "tcsNqtTip": "TCS NQT frequently tests time prepositions (in/on/at) in context sentences — read the whole sentence for the exact time reference type before choosing."
+      },
+      {
+        "subtopic": "Articles",
+        "explanation": "Articles (a, an, the) specify whether a noun is general/unspecific (a, an) or particular/specific (the). 'A' is used before consonant sounds, 'an' before vowel sounds — based on pronunciation, not spelling.",
+        "realLifeExample": "'I saw AN elephant' (vowel sound) versus 'I saw A university' (starts with a consonant SOUND despite the letter U) — articles follow sound, not spelling.",
+        "memoryTrick": "A/an is for ANY one of a kind; THE is for THE one specific, already-known item.",
+        "shortcutTrick": "Say the word out loud mentally — if it starts with a vowel SOUND use 'an'; if a consonant SOUND use 'a' — this catches tricky cases like 'an hour' (silent H) and 'a university' (consonant Y sound).",
+        "formulaCard": ["A: before consonant sounds (a book, a European, a one-way ticket)", "AN: before vowel sounds (an apple, an hour, an MBA)", "THE: specific/already-mentioned nouns, superlatives, unique objects"],
+        "commonMistakes": [
+          "Choosing a/an based on the spelled letter instead of the actual pronounced sound.",
+          "Adding 'the' before plural/uncountable nouns used in a general sense."
+        ],
+        "talentSprintTip": "TalentSprint tests the silent-H and consonant-sound-vowel-letter tricks (hour, honest, university, one-time) heavily — memorize this short list of exceptions.",
+        "tcsNqtTip": "TCS NQT often tests 'zero article' cases with abstract nouns and proper nouns — recognize when NO article is the correct answer."
+      },
+      {
+        "subtopic": "Tenses",
+        "explanation": "Tenses show when an action happens (past, present, future) and its aspect (simple, continuous, perfect, perfect continuous). Getting the right tense means matching both the time reference AND the aspect implied by context words.",
+        "realLifeExample": "'I have lived here for 5 years' (present perfect, still living there) versus 'I lived here for 5 years' (simple past, finished) — the choice changes the meaning entirely.",
+        "memoryTrick": "Perfect tenses = a connection between two time points; simple tenses = a single, standalone point or habit.",
+        "shortcutTrick": "Look for signal words: 'since/for' + duration often signals present perfect; 'yesterday/ago' signals simple past; 'by the time/already' often signals perfect tenses.",
+        "formulaCard": ["Present perfect: have/has + past participle (signals: since, for, already, just, yet)", "Simple past: verb + -ed / irregular form (signals: yesterday, ago)", "Future perfect: will have + past participle (signals: by the time, by next year)"],
+        "commonMistakes": [
+          "Using simple past with 'since/for', which requires present perfect instead.",
+          "Mixing tenses within the same sentence when both clauses should share the same time frame."
+        ],
+        "talentSprintTip": "TalentSprint's tense questions often hide the signal word in the middle of a longer sentence — scan the whole sentence for time-clue words before picking the verb form.",
+        "tcsNqtTip": "TCS NQT's error-spotting questions frequently include a tense mismatch as the 'hidden' error — check tense consistency across every clause."
+      },
+      {
+        "subtopic": "Subject Verb Agreement",
+        "explanation": "The verb in a sentence must agree in number with its subject. Distractions like clauses or phrases positioned between the subject and verb often obscure the true subject.",
+        "realLifeExample": "'The list of items IS on the table' — even though 'items' (plural) sits right before the verb, the true subject is 'list' (singular), so the verb stays singular.",
+        "memoryTrick": "Find the REAL subject first — ignore everything sitting between the subject and the verb.",
+        "shortcutTrick": "Mentally delete any phrase starting with 'along with,' 'as well as,' 'together with,' or any prepositional phrase between the subject and verb — what's left is the true subject.",
+        "formulaCard": [
+          "Singular subject + singular verb; plural subject + plural verb",
+          "'Each,' 'every,' 'either,' 'neither,' 'anyone,' 'everyone' → always singular verb",
+          "Collective nouns (team, family, group) → singular verb when acting as one unit",
+          "'A number of' → plural verb; 'The number of' → singular verb"
+        ],
+        "commonMistakes": [
+          "Matching the verb to the nearest noun instead of the actual grammatical subject.",
+          "Treating 'a number of' and 'the number of' as interchangeable — they take different verb forms."
+        ],
+        "talentSprintTip": "TalentSprint frequently plants a plural noun right before the verb as a distractor when the true subject earlier is singular — always trace back to the true subject.",
+        "tcsNqtTip": "TCS NQT tests 'each/every/neither' agreement heavily — these always demand a singular verb even when followed by a plural-looking phrase."
+      },
+      {
+        "subtopic": "Error Spotting",
+        "explanation": "Error-spotting questions present a sentence divided into parts and ask which part (if any) contains a grammatical error — testing multiple rules simultaneously within one sentence.",
+        "realLifeExample": "Proofreading a colleague's email before sending is exactly this skill — spotting the one part that breaks a grammar rule, without rewriting the whole message.",
+        "memoryTrick": "Read each segment as its own mini-check: does THIS part follow the rules on its own?",
+        "shortcutTrick": "Check the most error-prone categories first, in this order: subject-verb agreement, tense consistency, prepositions, articles — most errors fall into one of these four buckets.",
+        "formulaCard": ["Check segments in order: 1) subject-verb agreement 2) tense consistency 3) prepositions 4) articles", "If no segment breaks a rule, the answer is 'No error'"],
+        "commonMistakes": [
+          "Overthinking a segment that's actually correct, especially when it 'sounds a bit off' but follows the rules.",
+          "Missing an error because it's a small, single-word issue buried in a longer segment."
+        ],
+        "talentSprintTip": "TalentSprint's error-spotting sets often include at least one genuinely correct 'No error' sentence — don't force an error where none exists.",
+        "tcsNqtTip": "TCS NQT error-spotting questions are usually worth doing FIRST in the English section, since the 4-category checklist is faster than most other question types once practiced."
+      }
+    ]
+  },
+  "solvedExamples": [
+    {
+      "id": "eg-se-01",
+      "subtopic": "Prepositions",
+      "question": "Fill in the blank: \"She is good ___ mathematics.\"",
+      "solution": "\"Good at\" is the fixed collocation used for skills and abilities.",
+      "answer": "at"
+    },
+    {
+      "id": "eg-se-02",
+      "subtopic": "Articles",
+      "question": "Fill in the blank (choose a/an): \"He is ___ honest man.\"",
+      "solution": "\"Honest\" starts with a silent H, so it's pronounced starting with a vowel sound (\"on-est\"), requiring \"an\".",
+      "answer": "an"
+    },
+    {
+      "id": "eg-se-03",
+      "subtopic": "Tenses",
+      "question": "Choose the correct form: \"I ___ (live) in this city since 2015.\"",
+      "solution": "The signal word \"since\" + a starting point requires present perfect: \"have lived\".",
+      "answer": "have lived"
+    },
+    {
+      "id": "eg-se-04",
+      "subtopic": "Subject Verb Agreement",
+      "question": "Choose the correct verb: \"The bouquet of flowers ___ (was/were) beautiful.\"",
+      "solution": "The true subject is \"bouquet\" (singular); \"of flowers\" is a prepositional phrase to ignore.",
+      "answer": "was"
+    },
+    {
+      "id": "eg-se-05",
+      "subtopic": "Error Spotting",
+      "question": "Find the error: \"Neither of the students / have completed / their assignment / No error\"",
+      "solution": "\"Neither\" is always singular, so it requires \"has completed\", not \"have completed\".",
+      "answer": "\"have completed\" should be \"has completed\""
+    }
+  ],
+  "practiceExamples": [
+    {
+      "id": "eg-pe-01",
+      "subtopic": "Prepositions",
+      "question": "Fill in the blank: \"He apologized ___ being late.\"",
+      "answer": "for",
+      "hint": "This is the fixed pair \"apologize for\"."
+    },
+    {
+      "id": "eg-pe-02",
+      "subtopic": "Articles",
+      "question": "Fill in the blank (a/an): \"She bought ___ umbrella.\"",
+      "answer": "an",
+      "hint": "\"Umbrella\" starts with a vowel sound."
+    },
+    {
+      "id": "eg-pe-03",
+      "subtopic": "Tenses",
+      "question": "Choose the correct form: \"By the time we arrived, the movie ___ (already start).\"",
+      "answer": "had already started",
+      "hint": "The signals 'by the time' and 'already' together point to past perfect."
+    },
+    {
+      "id": "eg-pe-04",
+      "subtopic": "Subject Verb Agreement",
+      "question": "Choose the correct verb: \"Each of the boys ___ (is/are) responsible for his own work.\"",
+      "answer": "is",
+      "hint": "\"Each\" is always singular."
+    },
+    {
+      "id": "eg-pe-05",
+      "subtopic": "Error Spotting",
+      "question": "Find the error: \"The number of accidents have increased this year.\"",
+      "answer": "\"have increased\" should be \"has increased\"",
+      "hint": "\"The number of\" takes a singular verb."
+    }
+  ],
+  "quiz": {
+    "easy": [
+      {
+        "id": "eg-e-01",
+        "subtopic": "Prepositions",
+        "question": "Choose the correct preposition: \"She is afraid ___ spiders.\"",
+        "options": ["of", "from", "in", "at"],
+        "answerIndex": 0,
+        "explanation": "\"Afraid of\" is the standard fixed collocation in English.",
+        "whyWrong": [null, "\"Afraid from\" is not standard English usage.", "\"Afraid in\" doesn't fit this fixed expression.", "\"Afraid at\" isn't the correct pairing either."],
+        "shortcut": "Memorize \"afraid OF\" as a fixed pair — it doesn't follow general logic, just convention."
+      },
+      {
+        "id": "eg-e-02",
+        "subtopic": "Articles",
+        "question": "Choose the correct article: \"I saw ___ elephant at the zoo.\"",
+        "options": ["an", "a", "the", "No article needed"],
+        "answerIndex": 0,
+        "explanation": "\"Elephant\" starts with a vowel sound, so \"an\" is correct.",
+        "whyWrong": [null, "\"A\" is used before consonant sounds, not vowel sounds.", "\"The\" would imply a specific, already-known elephant, which isn't the case on first mention.", "An article is needed since \"elephant\" is a countable singular noun being introduced for the first time."],
+        "shortcut": "Say the word out loud — \"elephant\" starts with a vowel sound, so use \"an\"."
+      },
+      {
+        "id": "eg-e-03",
+        "subtopic": "Tenses",
+        "question": "Choose the correct form: \"She ___ (go) to school every day.\"",
+        "options": ["goes", "go", "going", "gone"],
+        "answerIndex": 0,
+        "explanation": "For a habitual action with a third-person singular subject (\"She\"), simple present requires \"goes\".",
+        "whyWrong": [null, "\"go\" doesn't agree with the singular subject \"She\" — it needs the -s ending.", "\"going\" alone isn't a complete verb form without an auxiliary like \"is\".", "\"gone\" is a past participle, not appropriate for a habitual present action."],
+        "shortcut": "For habitual actions ('every day', 'always'), use simple present, adding -s/-es for third-person singular subjects."
+      },
+      {
+        "id": "eg-e-04",
+        "subtopic": "Subject Verb Agreement",
+        "question": "Choose the correct verb: \"The team ___ (is/are) playing well this season.\"",
+        "options": ["is", "are", "were", "have been"],
+        "answerIndex": 0,
+        "explanation": "\"Team\" is a collective noun treated as a single unit here, so it takes the singular verb \"is\".",
+        "whyWrong": [null, "\"are\" would treat \"team\" as multiple separate individuals, not the standard usage here.", "\"were\" is past tense, but the sentence describes an ongoing present situation.", "\"have been\" doesn't match the present continuous structure needed with \"playing\"."],
+        "shortcut": "Collective nouns (team, family, group, committee) take a singular verb when acting as one unit."
+      },
+      {
+        "id": "eg-e-05",
+        "subtopic": "Error Spotting",
+        "question": "Find the error: \"He don't like coffee.\"",
+        "options": ["\"don't\" should be \"doesn't\"", "\"like\" should be \"likes\"", "\"coffee\" should be \"a coffee\"", "No error"],
+        "answerIndex": 0,
+        "explanation": "\"He\" is third-person singular, so the correct negative form is \"doesn't\", not \"don't\".",
+        "whyWrong": [null, "\"like\" is correct as is, once \"doesn't\" (which already carries the -s) replaces \"don't\".", "\"coffee\" is an uncountable noun here and correctly takes no article.", "There is a clear subject-verb agreement error in this sentence."],
+        "shortcut": "Third-person singular subjects (he/she/it) always pair with \"doesn't\", never \"don't\"."
+      }
+    ],
+    "medium": [
+      {
+        "id": "eg-m-01",
+        "subtopic": "Prepositions",
+        "question": "Choose the correct prepositions: \"The train arrived ___ the station ___ 5 pm.\"",
+        "options": ["at, at", "in, on", "at, on", "on, at"],
+        "answerIndex": 0,
+        "explanation": "\"Arrived AT the station\" uses 'at' for a specific point/place, and \"AT 5 pm\" uses 'at' for a precise time — both blanks take 'at'.",
+        "whyWrong": [null, "\"in, on\" doesn't fit either blank correctly.", "\"at, on\" gets the first blank right but the second wrong — precise times take 'at', not 'on'.", "\"on, at\" swaps the correct prepositions for each blank."],
+        "shortcut": "'At' consistently marks specific points — both physical locations and precise clock times."
+      },
+      {
+        "id": "eg-m-02",
+        "subtopic": "Articles",
+        "question": "Choose the correct option: \"___ Ganga is the holiest river in ___ India.\"",
+        "options": ["The, (no article)", "A, the", "The, the", "(no article), the"],
+        "answerIndex": 0,
+        "explanation": "River names take \"the\" (the Ganga), but country names generally take no article (India, not \"the India\").",
+        "whyWrong": [null, "\"A\" is wrong for a specific, named river — rivers take 'the', not 'a'.", "The second \"the\" incorrectly adds an article before the country name 'India'.", "Omitting 'the' before 'Ganga' is incorrect — river names conventionally require 'the'."],
+        "shortcut": "Rivers, seas, and oceans take 'the'; most country names (except a few like 'the USA') take no article."
+      },
+      {
+        "id": "eg-m-03",
+        "subtopic": "Tenses",
+        "question": "Choose the correct form: \"By next year, I ___ (complete) my degree.\"",
+        "options": ["will have completed", "will complete", "have completed", "completed"],
+        "answerIndex": 0,
+        "explanation": "\"By next year\" signals an action completed before a specific future point — this requires future perfect, \"will have completed\".",
+        "whyWrong": [null, "\"will complete\" is simple future, but 'by next year' specifically signals completion before that point.", "\"have completed\" is present perfect, which doesn't fit a future time reference.", "\"completed\" is simple past, incompatible with a future time marker."],
+        "shortcut": "'By + a future time point' is the standard signal for future perfect tense."
+      },
+      {
+        "id": "eg-m-04",
+        "subtopic": "Subject Verb Agreement",
+        "question": "Choose the correct verb: \"Neither the manager nor the employees ___ (was/were) informed about the change.\"",
+        "options": ["were", "was", "is", "has been"],
+        "answerIndex": 0,
+        "explanation": "With \"neither...nor\" joining a singular and plural subject, the verb agrees with the nearer subject — here \"employees\" (plural), so \"were\" is correct.",
+        "whyWrong": [null, "\"was\" would be correct only if the nearer subject were singular, but 'employees' is plural.", "\"is\" is present tense, not matching the past-tense context.", "\"has been\" doesn't agree with the plural nearer subject."],
+        "shortcut": "For 'either...or' / 'neither...nor,' the verb always agrees with whichever subject is closer to it."
+      },
+      {
+        "id": "eg-m-05",
+        "subtopic": "Subject Verb Agreement",
+        "question": "Choose the correct verb: \"A number of students ___ (has/have) failed the exam.\"",
+        "options": ["have", "has", "having", "had has"],
+        "answerIndex": 0,
+        "explanation": "\"A number of\" is treated as plural (meaning 'several'), so it takes the plural verb \"have\".",
+        "whyWrong": [null, "\"has\" would be correct for 'THE number of', which means a specific count, not 'A number of'.", "\"having\" isn't a complete finite verb form for this sentence.", "\"had has\" isn't grammatically valid at all."],
+        "shortcut": "'A number of' = plural (have); 'The number of' = singular (has) — a classic, frequently tested distinction."
+      },
+      {
+        "id": "eg-m-06",
+        "subtopic": "Error Spotting",
+        "question": "Find the error: \"Each of the players have received their medals.\"",
+        "options": ["\"have\" should be \"has\"", "\"players\" should be \"player\"", "\"received\" should be \"receive\"", "No error"],
+        "answerIndex": 0,
+        "explanation": "\"Each\" is always singular, so it requires \"has received\", not \"have received\".",
+        "whyWrong": [null, "\"players\" is correctly plural since it refers to multiple players collectively.", "\"received\" is grammatically fine once the auxiliary is corrected to \"has\".", "There is a clear subject-verb agreement error with \"each\"."],
+        "shortcut": "\"Each,\" \"every,\" \"either,\" and \"neither\" are always singular, regardless of what plural phrase follows."
+      },
+      {
+        "id": "eg-m-07",
+        "subtopic": "Articles",
+        "question": "Choose the correct option: \"This is ___ best solution ___ have ever seen.\"",
+        "options": ["the, I", "a, I", "the, we", "an, I"],
+        "answerIndex": 0,
+        "explanation": "Superlatives ('best') always take \"the\", and the sentence needs the subject \"I\" to complete \"have ever seen\".",
+        "whyWrong": [null, "\"a\" cannot be used with a superlative like 'best' — superlatives require 'the'.", "\"we\" changes the sentence's original single-speaker meaning.", "\"an\" is incorrect before 'best', which starts with a consonant sound."],
+        "shortcut": "Superlative adjectives ('best,' 'tallest,' 'most beautiful') always pair with 'the'."
+      },
+      {
+        "id": "eg-m-08",
+        "subtopic": "Tenses",
+        "question": "Choose the correct form: \"While she ___ (cook) dinner, the phone rang.\"",
+        "options": ["was cooking", "cooked", "cooks", "has cooked"],
+        "answerIndex": 0,
+        "explanation": "An ongoing past action interrupted by another past action ('the phone rang') requires past continuous: \"was cooking\".",
+        "whyWrong": [null, "\"cooked\" (simple past) doesn't convey the ongoing, interrupted nature of the action.", "\"cooks\" is present tense, which doesn't fit the past-tense context of 'rang'.", "\"has cooked\" (present perfect) doesn't fit a purely past-tense narrative."],
+        "shortcut": "'While' + an ongoing action interrupted by a sudden past event signals past continuous for the ongoing action."
+      },
+      {
+        "id": "eg-m-09",
+        "subtopic": "Prepositions",
+        "question": "Choose the correct preposition: \"The book is different ___ what I expected.\"",
+        "options": ["from", "than", "to", "of"],
+        "answerIndex": 0,
+        "explanation": "\"Different FROM\" is the standard, formally correct preposition in English.",
+        "whyWrong": [null, "\"different than\" is common informally in American English but isn't the standard formal choice.", "\"different to\" is more common in British informal speech, not the standard formal choice.", "\"different of\" isn't standard usage at all."],
+        "shortcut": "Default to \"different FROM\" as the safest, most universally accepted choice in formal English tests."
+      },
+      {
+        "id": "eg-m-10",
+        "subtopic": "Error Spotting",
+        "question": "Find the error: \"She has been working here since three years.\"",
+        "options": ["\"since\" should be \"for\"", "\"has\" should be \"have\"", "\"working\" should be \"worked\"", "No error"],
+        "answerIndex": 0,
+        "explanation": "\"Since\" is used with a starting point in time, while \"for\" is used with a duration — the sentence needs \"for\", not \"since\".",
+        "whyWrong": [null, "\"has\" correctly agrees with the singular subject \"She\".", "\"working\" is correct as part of the present perfect continuous structure.", "There is a clear preposition error — duration requires 'for', not 'since'."],
+        "shortcut": "'Since' pairs with a starting POINT in time; 'for' pairs with a DURATION or length of time."
+      }
+    ],
+    "hard": [
+      {
+        "id": "eg-h-01",
+        "subtopic": "Subject Verb Agreement",
+        "question": "Choose the correct verb: \"The quality of the products, along with the packaging and delivery time, ___ (has/have) improved significantly.\"",
+        "options": ["has", "have", "having", "had have"],
+        "answerIndex": 0,
+        "explanation": "The true subject is \"quality\" (singular); \"along with the packaging and delivery time\" is a parenthetical phrase that doesn't affect the verb's number.",
+        "whyWrong": [null, "\"have\" incorrectly matches the verb to the plural nouns inside the 'along with' phrase, rather than the true singular subject.", "\"having\" isn't a complete finite verb form for this sentence.", "\"had have\" isn't grammatically valid at all."],
+        "shortcut": "'Along with,' 'as well as,' and 'together with' never change the number of the main subject — they're parenthetical."
+      },
+      {
+        "id": "eg-h-02",
+        "subtopic": "Tenses",
+        "question": "Choose the correct form: \"If she ___ (study) harder, she would have passed the exam.\"",
+        "options": ["had studied", "studied", "studies", "would study"],
+        "answerIndex": 0,
+        "explanation": "This third conditional (an unreal past situation) requires 'if + past perfect, would have + past participle' — so \"had studied\" is correct.",
+        "whyWrong": [null, "\"studied\" (simple past) fits a second conditional, not this sentence's structure with 'would have passed'.", "\"studies\" (simple present) doesn't fit any conditional with 'would have passed'.", "\"would study\" doesn't match the required 'if' clause structure."],
+        "shortcut": "When the main clause says 'would have + past participle,' the 'if' clause always needs 'had + past participle'."
+      },
+      {
+        "id": "eg-h-03",
+        "subtopic": "Error Spotting",
+        "question": "Find the error: \"One of the biggest challenge that we face are managing time effectively.\"",
+        "options": ["\"challenge\" should be \"challenges\", and \"are\" should be \"is\"", "\"face\" should be \"faces\"", "\"that\" should be \"which\"", "No error"],
+        "answerIndex": 0,
+        "explanation": "Two errors combine here: 'one of the biggest' requires a plural noun ('challenges'), and the true subject 'one' (singular) requires 'is' instead of 'are'.",
+        "whyWrong": [null, "\"face\" correctly agrees with the plural relative pronoun 'that' referring back to 'challenges'.", "\"that\" is an acceptable relative pronoun choice here — 'which' isn't required.", "There are two clear errors in this sentence."],
+        "shortcut": "'One of the [plural noun]' always takes a plural noun after 'of', but the main verb still agrees with the singular 'one'."
+      },
+      {
+        "id": "eg-h-04",
+        "subtopic": "Prepositions",
+        "question": "Choose the correct prepositions: \"The committee consists ___ five members, all of whom are experts ___ their respective fields.\"",
+        "options": ["of, in", "of, of", "in, in", "with, in"],
+        "answerIndex": 0,
+        "explanation": "\"Consists OF\" is the standard fixed pairing, and \"experts IN a field\" is the correct preposition for describing expertise within a domain.",
+        "whyWrong": [null, "The second blank should be 'in' (experts in a field), not 'of'.", "\"consists in\" isn't standard English — it should be 'consists of'.", "\"consists with\" isn't standard English at all."],
+        "shortcut": "Memorize \"consists OF\" and \"expert IN [a field]\" as two separate fixed collocations."
+      },
+      {
+        "id": "eg-h-05",
+        "subtopic": "Tenses",
+        "question": "Choose the correct form: \"She ___ (work) at this company for six years before she was promoted last month.\"",
+        "options": ["had been working", "has been working", "was working", "has worked"],
+        "answerIndex": 0,
+        "explanation": "The action started before another past event (being promoted) and continued up to that point — this requires past perfect continuous, \"had been working\".",
+        "whyWrong": [null, "\"has been working\" (present perfect continuous) suggests continuation into the present, but 'was promoted last month' places everything in the past.", "\"was working\" (past continuous) doesn't convey the duration as clearly as the perfect continuous.", "\"has worked\" (present perfect) doesn't fit the past-tense context set by 'was promoted last month'."],
+        "shortcut": "When one past action's duration leads up to ANOTHER past event, use past perfect continuous."
+      },
+      {
+        "id": "eg-h-06",
+        "subtopic": "Subject Verb Agreement",
+        "question": "Choose the correct verbs: \"Statistics ___ (is/are) a compulsory subject in this course, but the statistics in this report ___ (seem/seems) inaccurate.\"",
+        "options": ["is, seem", "are, seems", "is, seems", "are, seem"],
+        "answerIndex": 0,
+        "explanation": "\"Statistics\" as an academic subject (singular concept) takes \"is\", but \"statistics\" as a set of individual data figures (plural) takes \"seem\".",
+        "whyWrong": [null, "\"are\" is wrong for the first blank, since 'Statistics' as a subject name is treated as singular.", "\"seems\" is wrong for the second blank, since 'statistics' here refers to multiple figures, requiring a plural verb.", "\"are\" is wrong for the first blank for the same reason as above."],
+        "shortcut": "Some nouns (statistics, economics, politics) can be singular OR plural depending on whether they refer to the field of study or actual data — check context each time."
+      },
+      {
+        "id": "eg-h-07",
+        "subtopic": "Error Spotting",
+        "question": "Find the error: \"Despite of his hard work, he could not achieved success in the competition.\"",
+        "options": ["\"Despite of\" should be \"Despite\" or \"In spite of\", and \"achieved\" should be \"achieve\"", "\"hard work\" should be \"a hard work\"", "\"could not\" should be \"did not\"", "No error"],
+        "answerIndex": 0,
+        "explanation": "Two errors combine here: 'despite' is never followed by 'of', and after the modal 'could', the verb must stay in base form ('achieve', not 'achieved').",
+        "whyWrong": [null, "\"hard work\" is an uncountable noun phrase here and correctly takes no article.", "\"could not\" is grammatically appropriate for expressing inability in the past.", "There are two clear errors in this sentence."],
+        "shortcut": "'Despite' NEVER takes 'of' after it (unlike 'in spite of', which does) — and every modal verb is always followed by the base form of the next verb."
+      },
+      {
+        "id": "eg-h-08",
+        "subtopic": "Tenses",
+        "question": "Choose the correct form: \"I ___ (see) that movie already, so I don't want to watch it again.\"",
+        "options": ["have seen", "saw", "see", "had seen"],
+        "answerIndex": 0,
+        "explanation": "\"Already\" combined with a present consequence signals present perfect: \"have seen\".",
+        "whyWrong": [null, "\"saw\" (simple past) doesn't connect as naturally to the present consequence stated in the second clause.", "\"see\" (simple present) doesn't fit a completed action referenced with 'already'.", "\"had seen\" (past perfect) would require another past event as a reference point, which isn't present here."],
+        "shortcut": "'Already' combined with a present-tense consequence is a strong signal for present perfect, not simple past."
+      },
+      {
+        "id": "eg-h-09",
+        "subtopic": "Subject Verb Agreement",
+        "question": "Choose the correct verb: \"The jury ___ (has/have) reached different opinions among its members regarding the verdict.\"",
+        "options": ["have", "has", "is", "was"],
+        "answerIndex": 0,
+        "explanation": "When a collective noun's individual members are acting or thinking separately (shown here by 'different opinions among its members'), it takes a plural verb: \"have\".",
+        "whyWrong": [null, "\"has\" would apply if the jury were acting as a single unified body, but the context signals individual members.", "\"is\" doesn't fit the plural sense required, nor the verb form needed ('reached').", "\"was\" is past tense, and also doesn't match the plural sense required."],
+        "shortcut": "Collective nouns take a plural verb specifically when the sentence emphasizes individual members acting separately."
+      },
+      {
+        "id": "eg-h-10",
+        "subtopic": "Prepositions",
+        "question": "Choose the correct options: \"He has been ___ MBA student ___ 2021, and he is preparing ___ his final exams.\"",
+        "options": ["an, since, for", "a, since, for", "an, for, since", "a, for, for"],
+        "answerIndex": 0,
+        "explanation": "\"MBA\" starts with a vowel SOUND (\"em\"), so \"an\" is correct. \"Since 2021\" marks a starting point in time. \"Preparing FOR exams\" is the standard fixed pairing.",
+        "whyWrong": [null, "\"a\" is wrong before 'MBA' — despite the spelling starting with a consonant letter, it's pronounced starting with a vowel sound.", "The second and third blanks are swapped — 'since' should mark the starting point and 'for' should pair with 'exams'.", "Both the wrong article and the swapped prepositions are incorrect here."],
+        "shortcut": "For abbreviations like MBA, MA, MSc — sound out the first letter's name to decide a/an, not the letter's spelling."
+      }
+    ]
+  },
+  "revision": {
+    "quickSheet": [
+      "Prepositions in fixed collocations (afraid OF, good AT, depend ON, different FROM) must be memorized — they don't follow general logic.",
+      "A/an depends on the SOUND, not the spelled letter (an hour, a university).",
+      "Present perfect (have/has + past participle) pairs with 'since/for/already/yet'; simple past pairs with 'yesterday/ago/last week'.",
+      "'Each/every/either/neither' are always singular; 'a number of' is plural, 'the number of' is singular.",
+      "'Along with'/'as well as'/'together with' never change the main subject's number — they're parenthetical.",
+      "'Despite' never takes 'of' after it; every modal verb is followed by the base form of the next verb."
+    ],
+    "oneMinute": [
+      "Trace back to the TRUE subject before choosing a verb — ignore phrases in between.",
+      "Check tense signal words (since, for, already, by the time, yesterday) before picking a verb form.",
+      "For error spotting, check agreement → tense → preposition → article, in that order."
+    ],
+    "summary": "English grammar questions reward pattern recognition and a checklist mindset over deep theory. Memorize the fixed prepositional pairs, learn the sound-based a/an rule, watch for tense signal words, and always trace back to a sentence's TRUE subject before matching a verb. For error-spotting specifically, run through agreement, tense, prepositions, and articles in that order — most errors fall into one of those four buckets."
+  }
+}

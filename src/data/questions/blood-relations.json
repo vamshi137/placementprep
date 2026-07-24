@@ -1,0 +1,428 @@
+{
+  "topicId": "blood-relations",
+  "subtopics": ["Basic Relations", "Family Tree", "Complex Family Tree", "Generation Problems", "Puzzle Based Blood Relations"],
+  "learn": {
+    "title": "Blood Relations",
+    "intro": "Blood relation questions are structured logic puzzles wearing a family costume. The winning habit is always the same: convert every clue into a small diagram as you read, then build outward from your most certain clue.",
+    "sections": [
+      {
+        "subtopic": "Basic Relations",
+        "explanation": "Blood relation questions test your ability to trace family connections using given clues, one relationship at a time. Learn the core relation words — father, mother, brother, sister, son, daughter, husband, wife — and how they combine, e.g. father's brother = uncle, mother's sister = aunt.",
+        "realLifeExample": "When someone says 'he is my mother's brother,' you instantly know that person is your maternal uncle — blood relation questions just formalize this everyday reasoning into chains of clues.",
+        "memoryTrick": "Build the family from the ground up — write each relation as an equation: 'A is B's father' becomes A → B, an arrow pointing from parent to child.",
+        "shortcutTrick": "Convert every sentence into a simple relationship code using arrows or symbols (e.g. '+' for male, '−' for female, '=' for spouse) as you read — never try to hold the whole puzzle in your head.",
+        "formulaCard": ["Father's father = Grandfather", "Mother's sister = Aunt", "Father's brother = Uncle", "Brother's son = Nephew", "Sister's daughter = Niece"],
+        "commonMistakes": [
+          "Assuming the gender of a person based on the relation name without confirming it from the passage.",
+          "Losing track of whose perspective the relation is being described from."
+        ],
+        "talentSprintTip": "TalentSprint gives single-line relation questions like 'A is B's father. B is C's sister. How is A related to C?' — always draw a 2-second diagram, even for 'simple' looking questions.",
+        "tcsNqtTip": "TCS NQT often uses gender-neutral phrasing like 'A's child' — don't assume gender unless it's explicitly told or forced by another clue such as 'she' or 'daughter'."
+      },
+      {
+        "subtopic": "Family Tree",
+        "explanation": "When a question gives 3+ relation clues, draw a family tree diagram: place each generation on its own horizontal level, connect parent-child pairs vertically, and connect spouses horizontally.",
+        "realLifeExample": "A genealogist mapping an ancestry chart for a family reunion uses exactly this method — generations as rows, marriages as horizontal links, parent-child as vertical links.",
+        "memoryTrick": "Generations stack like floors of a building — grandparents on the top floor, grandchildren on the ground floor.",
+        "shortcutTrick": "Start with the clue that gives you the most 'anchor' information (a clear parent-child or spouse pair), then attach every other clue to that anchor one at a time.",
+        "formulaCard": ["Same generation, same parents = siblings", "Same generation, linked by marriage = spouse or in-law", "One generation apart = parent/child or aunt-uncle/niece-nephew", "Two generations apart = grandparent/grandchild"],
+        "commonMistakes": [
+          "Drawing two people at the same generation level when they're actually a generation apart.",
+          "Forgetting to mark each person's gender on the diagram, causing confusion later when pronouns appear."
+        ],
+        "talentSprintTip": "TalentSprint's family tree questions often involve 5-6 people — dedicate the first 20 seconds purely to drawing the skeleton diagram before answering any sub-question.",
+        "tcsNqtTip": "TCS NQT frequently asks multiple sub-questions about the same family tree — draw it once completely, then answer every sub-question from that single diagram."
+      },
+      {
+        "subtopic": "Complex Family Tree",
+        "explanation": "Complex family trees add extra layers: second marriages, twins, or relations described using 'only', 'except', or negative clues ('X is not the mother of Y'). Handle these by first drawing everything you're certain about, then testing negative or exception clues against that skeleton to eliminate wrong branches.",
+        "realLifeExample": "A blended family with step-siblings and half-siblings requires exactly this careful, step-by-step approach — you can't assume everyone shares both parents.",
+        "memoryTrick": "Negative clues are erasers, not builders — use them last, to rule out branches, not to add new people.",
+        "shortcutTrick": "When a clue uses 'only' (e.g. 'A is the only son of B'), it's telling you there are no other sons — use it to eliminate other candidates, not just to confirm A's relation.",
+        "formulaCard": ["'Only child' clues eliminate sibling possibilities", "'Except' and 'not' clues test/reject a completed diagram — they don't build it"],
+        "commonMistakes": [
+          "Applying a negative clue too early, before enough of the tree is built for it to be useful.",
+          "Assuming a half-sibling relationship implies a full-sibling relationship, when they don't share both parents."
+        ],
+        "talentSprintTip": "TalentSprint's complex trees test whether you can integrate a late-arriving 'only' or 'not' clue into an already-drawn diagram — practice inserting corrections instead of starting over.",
+        "tcsNqtTip": "TCS NQT's complex blood relation sets sometimes span 2-3 questions built on the same intricate tree — get the base diagram fully correct on the first question, since errors compound in later ones."
+      },
+      {
+        "subtopic": "Generation Problems",
+        "explanation": "Generation problems focus on how many 'levels' separate two people — same generation, one apart, two apart — rather than the exact relation name. This matters when a question asks 'how many people are in the same generation as X?' or 'what is the minimum number of people in the family?'",
+        "realLifeExample": "In a company org chart, 'how many levels below the CEO is this employee' uses exactly this generation-counting logic, just applied to reporting lines instead of family trees.",
+        "memoryTrick": "Count floors, not people — each generation is one 'floor' regardless of how many siblings live on it.",
+        "shortcutTrick": "Once your family tree is drawn, label each row with a generation number (0 for the eldest known generation, 1 for their children, 2 for grandchildren) — 'how many generations' or 'same generation as X' becomes a simple count.",
+        "formulaCard": ["Generation gap of 0 = same generation (siblings, cousins)", "Generation gap of 1 = parent-child, uncle/aunt-nephew/niece", "Generation gap of 2 = grandparent-grandchild"],
+        "commonMistakes": [
+          "Counting cousins as a different generation from siblings — cousins are usually the same generation.",
+          "Miscounting total generations by forgetting a level that has only one person on it."
+        ],
+        "talentSprintTip": "TalentSprint often asks for the 'minimum number of people needed for this family to be possible' — check whether any implied people (like a spouse) are missing from the given clues.",
+        "tcsNqtTip": "TCS NQT's generation-count questions are usually the fastest points in the section once you've drawn the tree correctly — just read generation numbers off your diagram."
+      },
+      {
+        "subtopic": "Puzzle Based Blood Relations",
+        "explanation": "Puzzle-based blood relation questions combine the family tree with additional constraints — seating, ranking, or coded relation words — requiring you to solve a small logic puzzle alongside the family structure.",
+        "realLifeExample": "This mirrors real detective-style reasoning — combining multiple independent clues, some about family and some about order or position, to arrive at one consistent solution.",
+        "memoryTrick": "Solve the easiest, most concrete clue first — puzzles unravel fastest from their most certain point, not necessarily from clue #1.",
+        "shortcutTrick": "Use a clue-elimination table: list all people as rows and possible relations/positions as columns, then cross off possibilities as each clue rules them out — exactly like solving a simple logic grid puzzle.",
+        "formulaCard": ["Combine the family-tree diagram with a separate table for the puzzle's other dimension (seating, rank, code)", "Cross-reference both to find the one consistent solution"],
+        "commonMistakes": [
+          "Trying to solve the family relations and the puzzle constraint simultaneously in your head, instead of using separate diagrams or tables.",
+          "Stopping at the first valid-looking solution without checking it doesn't contradict a later clue."
+        ],
+        "talentSprintTip": "TalentSprint's puzzle-based sets are usually worth multiple questions each — investing 60-90 seconds up front on a clean diagram pays off across all of them.",
+        "tcsNqtTip": "TCS NQT sometimes hides puzzle-based blood relations inside a longer reasoning set — recognize the family-relation keywords early so you don't misclassify it as a pure seating or ranking puzzle."
+      }
+    ]
+  },
+  "solvedExamples": [
+    {
+      "id": "br-se-01",
+      "subtopic": "Basic Relations",
+      "question": "Pointing to a photograph, a man said, \"She is the daughter of my grandfather's only son.\" How is the woman related to the man?",
+      "solution": "The man's grandfather's only son must be the man's own father (since the man is a descendant through that line).\nThe woman, being that son's (the father's) daughter, is therefore the man's sister.",
+      "answer": "Sister"
+    },
+    {
+      "id": "br-se-02",
+      "subtopic": "Family Tree",
+      "question": "P is the husband of Q. R is the only son of P. S is the sister of R. How is Q related to S?",
+      "solution": "R is P's only son. S is R's sister, so S is also a child of P — specifically P's daughter.\nSince Q is P's wife, Q is also S's mother.",
+      "answer": "Mother"
+    },
+    {
+      "id": "br-se-03",
+      "subtopic": "Complex Family Tree",
+      "question": "A is B's brother. C is A's mother. D is C's father. E is D's daughter. How is E related to B?",
+      "solution": "A and B are siblings, and C is their mother.\nD, C's father, is the grandfather of A and B.\nE, D's daughter, is therefore C's sister — making E the maternal aunt of B (and A).",
+      "answer": "Aunt (maternal)"
+    },
+    {
+      "id": "br-se-04",
+      "subtopic": "Generation Problems",
+      "question": "A family tree has grandparents, their two children (a son and a daughter, both married), and each married child has 2 children of their own. Counting the grandparents, their children, their children's spouses, and the grandchildren, how many family members are there in total?",
+      "solution": "Grandparents: 2\nTheir 2 children: 2\nSpouses of those 2 children: 2\nGrandchildren: 2 children × 2 each = 4\nTotal = 2 + 2 + 2 + 4 = 10.",
+      "answer": "10"
+    },
+    {
+      "id": "br-se-05",
+      "subtopic": "Puzzle Based Blood Relations",
+      "question": "P is Q's father. R is Q's sister. S is R's husband. T is S's son. How is T related to P?",
+      "solution": "P is Q's father, and R is Q's sister, so R is also P's child.\nS, R's husband, is P's son-in-law.\nT, S's son (and therefore also R's son), is P's grandson.",
+      "answer": "Grandson"
+    }
+  ],
+  "practiceExamples": [
+    {
+      "id": "br-pe-01",
+      "subtopic": "Basic Relations",
+      "question": "Pointing to a man, a woman said, \"His mother is the only daughter of my mother.\" How is the woman related to the man?",
+      "answer": "Mother",
+      "hint": "\"The only daughter of my mother\" refers to the woman herself."
+    },
+    {
+      "id": "br-pe-02",
+      "subtopic": "Family Tree",
+      "question": "A is the father of B and C. D is the wife of B. How is D related to A?",
+      "answer": "Daughter-in-law",
+      "hint": "B is A's son, and D is married to B."
+    },
+    {
+      "id": "br-pe-03",
+      "subtopic": "Complex Family Tree",
+      "question": "P is Q's daughter. R is P's brother. S is R's father. How is S related to Q?",
+      "answer": "Father",
+      "hint": "R and Q are siblings, and siblings share the same father unless stated otherwise."
+    },
+    {
+      "id": "br-pe-04",
+      "subtopic": "Generation Problems",
+      "question": "A family has 2 grandparents, 3 married children, and each couple has exactly 1 child. Excluding the grandchildren's spouses, how many total family members are there?",
+      "answer": "11",
+      "hint": "2 grandparents + 3 children + 3 spouses + 3 grandchildren."
+    },
+    {
+      "id": "br-pe-05",
+      "subtopic": "Puzzle Based Blood Relations",
+      "question": "M is N's mother. N is O's husband. P is O's son. How is M related to P?",
+      "answer": "Grandmother",
+      "hint": "N is P's father, and M is N's mother."
+    }
+  ],
+  "quiz": {
+    "easy": [
+      {
+        "id": "br-e-01",
+        "subtopic": "Basic Relations",
+        "question": "Pointing to a boy, a man said, \"He is the son of my father's son.\" How is the man related to the boy (assuming the man has no brothers)?",
+        "options": ["Son", "Nephew", "Brother", "Grandson"],
+        "answerIndex": 0,
+        "explanation": "\"My father's son\" refers to the speaker himself, since he has no brothers mentioned — so the boy is the man's own son.",
+        "whyWrong": [null, "Nephew would apply only if the man had a brother being referenced, which isn't indicated.", "Brother doesn't fit — the boy is one generation below the man, not the same generation.", "Grandson would need an extra generation not present in the clue."],
+        "shortcut": "\"My father's son\" (with no sibling mentioned) is a classic phrase for \"myself.\""
+      },
+      {
+        "id": "br-e-02",
+        "subtopic": "Basic Relations",
+        "question": "A is B's mother. C is A's father. How is C related to B?",
+        "options": ["Grandfather", "Father", "Uncle", "Brother"],
+        "answerIndex": 0,
+        "explanation": "A is B's mother, and C is A's father — making C the father of B's mother, i.e. B's grandfather.",
+        "whyWrong": [null, "Father would make C the same person as A's spouse, which isn't stated.", "Uncle would require C to be A's brother, not father.", "Brother doesn't fit any generation gap described."],
+        "shortcut": "Chain the relations directly: C→A→B, two steps up means grandparent."
+      },
+      {
+        "id": "br-e-03",
+        "subtopic": "Basic Relations",
+        "question": "P is Q's sister. R is Q's mother. How is R related to P?",
+        "options": ["Mother", "Sister", "Aunt", "Grandmother"],
+        "answerIndex": 0,
+        "explanation": "Since P and Q are siblings, they share the same mother — so R is P's mother too.",
+        "whyWrong": [null, "Sister would require R and P to be the same generation, but R is a generation above.", "Aunt would apply only if R were the mother's sister, not the mother herself.", "Grandmother would need an extra generation not present here."],
+        "shortcut": "Siblings always share the same parents (unless a puzzle states otherwise)."
+      },
+      {
+        "id": "br-e-04",
+        "subtopic": "Basic Relations",
+        "question": "A man says, \"My mother's only son's wife is my ___.\" What is the missing word?",
+        "options": ["Wife", "Sister-in-law", "Sister", "Daughter-in-law"],
+        "answerIndex": 0,
+        "explanation": "Since the man's mother has only one son, that son must be the man himself. His wife is therefore simply his own wife.",
+        "whyWrong": [null, "Sister-in-law would apply only if the man had a brother, but 'only son' rules that out.", "Sister doesn't fit — 'wife' explicitly indicates a spousal relation, not a sibling one.", "Daughter-in-law would require the woman to be married to the man's son, not to the man himself."],
+        "shortcut": "Whenever a clue specifies \"only son\" or \"only daughter\" with no siblings mentioned, that person is the speaker himself."
+      },
+      {
+        "id": "br-e-05",
+        "subtopic": "Basic Relations",
+        "question": "A introduces B saying, \"B is my father's wife.\" How is B related to A?",
+        "options": ["Mother", "Sister", "Aunt", "Wife"],
+        "answerIndex": 0,
+        "explanation": "A person's father's wife is, in the standard case, that person's own mother.",
+        "whyWrong": [null, "Sister doesn't fit — B is described as married to A's father, a generation above A.", "Aunt would require B to be the father's sister, not his wife.", "Wife would only apply if A were the father himself, which isn't the case."],
+        "shortcut": "\"Father's wife\" is simply a roundabout way of saying \"mother\" unless a second marriage is explicitly indicated."
+      }
+    ],
+    "medium": [
+      {
+        "id": "br-m-01",
+        "subtopic": "Basic Relations",
+        "question": "A man, pointing to a photograph, says, \"I am the only son of this man's father.\" How is the man in the photograph related to the speaker?",
+        "options": ["Sister", "Father", "Son", "Brother"],
+        "answerIndex": 0,
+        "explanation": "The phrase means the person in the photo shares the same father as the speaker. Since the speaker is explicitly the ONLY son of that father, the photo cannot be of another son — so it must be the speaker's sister.",
+        "whyWrong": [null, "Father doesn't fit — the clue establishes a shared father, not that the photo IS the father.", "Son would require an extra generation not indicated by the 'same father' relation.", "Brother is ruled out directly, since the speaker is explicitly the ONLY son."],
+        "shortcut": "When a puzzle says \"only son/daughter,\" immediately rule out any sibling of the same gender as a possible answer."
+      },
+      {
+        "id": "br-m-02",
+        "subtopic": "Family Tree",
+        "question": "A and B are brothers. C and D are sisters. A's son is D's brother. How is B related to C?",
+        "options": ["Uncle", "Father", "Brother", "Grandfather"],
+        "answerIndex": 0,
+        "explanation": "A's son is D's brother, so D is A's daughter. Since C and D are sisters, C is also A's daughter. B, being A's brother, is C's paternal uncle.",
+        "whyWrong": [null, "Father would mean B and A are the same person, which contradicts them being described as separate brothers.", "Brother would require B and C to be the same generation, but B is a generation above C.", "Grandfather would need an extra generation not present in the clues."],
+        "shortcut": "Once you establish A is D's (and C's) father, any sibling of A automatically becomes C's uncle or aunt."
+      },
+      {
+        "id": "br-m-03",
+        "subtopic": "Complex Family Tree",
+        "question": "Introducing a man, a woman said, \"He is the son of my grandfather's only son.\" How is the woman related to the man?",
+        "options": ["Brother", "Son", "Father", "Nephew"],
+        "answerIndex": 0,
+        "explanation": "The woman's grandfather's only son must be her own father. The man, being that father's son, is therefore the woman's brother.",
+        "whyWrong": [null, "Son would require an extra generation, but the man is at the same generation as the woman here.", "Father doesn't fit — the man is at the same generation as the woman, not above.", "Nephew would apply only if the 'only son' were someone other than the woman's own father."],
+        "shortcut": "\"My grandfather's only son\" (with no other context) almost always refers to the speaker's own father."
+      },
+      {
+        "id": "br-m-04",
+        "subtopic": "Generation Problems",
+        "question": "P's mother is the sister of Q and daughter of R. S is Q's son. How is S related to P?",
+        "options": ["Cousin", "Brother", "Uncle", "Nephew"],
+        "answerIndex": 0,
+        "explanation": "P's mother and Q are siblings. S, being Q's son, is the child of P's mother's sibling — making S and P cousins.",
+        "whyWrong": [null, "Brother would require S and P to share a parent directly, which isn't the case.", "Uncle would need S to be a generation above P, but S is the same generation.", "Nephew would need S to be a generation below P, which isn't the case either."],
+        "shortcut": "The child of your parent's sibling is always your cousin."
+      },
+      {
+        "id": "br-m-05",
+        "subtopic": "Complex Family Tree",
+        "question": "A is the father of B. C is the daughter of B. D is the brother of C. E is the mother of D. How is E related to A?",
+        "options": ["Daughter-in-law", "Daughter", "Wife", "Granddaughter"],
+        "answerIndex": 0,
+        "explanation": "B is A's child and the father of C and D (C's siblings, both B's children). E, being D's mother, must be B's wife — making E the wife of A's child, i.e. A's daughter-in-law.",
+        "whyWrong": [null, "Daughter would mean E is A's own child, but she's described as married into the family through B.", "Wife would mean E is married to A himself, which isn't stated.", "Granddaughter would need E to be related to A by blood, but she's related by marriage instead."],
+        "shortcut": "Whenever someone is introduced as \"mother of X\" and X's father is already a known child of the main person, that someone is usually a daughter-in-law or son-in-law."
+      },
+      {
+        "id": "br-m-06",
+        "subtopic": "Puzzle Based Blood Relations",
+        "question": "X and Y are sisters. Z is Y's son. W is X's husband. How is W related to Z?",
+        "options": ["Uncle", "Father", "Brother", "Grandfather"],
+        "answerIndex": 0,
+        "explanation": "Since X and Y are sisters, X is Z's aunt. W, being X's husband, becomes Z's uncle through marriage.",
+        "whyWrong": [null, "Father would require W to be Y's husband, but W is married to X, not Y.", "Brother doesn't fit any generation relationship described.", "Grandfather would need an extra generation not present here."],
+        "shortcut": "The husband of your aunt (or the wife of your uncle) is always your uncle (or aunt) by marriage."
+      },
+      {
+        "id": "br-m-07",
+        "subtopic": "Family Tree",
+        "question": "A's father is B. B's mother is C. C's husband is D. How is D related to A?",
+        "options": ["Grandfather", "Father", "Uncle", "Great-grandfather"],
+        "answerIndex": 0,
+        "explanation": "B's mother C is A's grandmother. C's husband D is therefore A's grandfather.",
+        "whyWrong": [null, "Father doesn't fit — D is two generations above A, not one.", "Uncle would require D to be a sibling of B, not B's parent.", "Great-grandfather would need an extra generation not present here."],
+        "shortcut": "Chain the relations one step at a time and count the generation steps."
+      },
+      {
+        "id": "br-m-08",
+        "subtopic": "Puzzle Based Blood Relations",
+        "question": "Looking at a portrait, Rohan said, \"Her mother is the only daughter of my mother-in-law.\" Whose portrait is Rohan looking at?",
+        "options": ["His daughter", "His wife", "His mother-in-law", "His niece"],
+        "answerIndex": 0,
+        "explanation": "Rohan's mother-in-law's only daughter is Rohan's own wife. Since the portrait's subject's mother is Rohan's wife, the portrait must be of Rohan's daughter.",
+        "whyWrong": [null, "His wife is the mother described in the clue, not the person in the portrait herself.", "His mother-in-law is one generation removed from the actual answer.", "Niece doesn't fit — the subject is Rohan's own wife's child, making her his daughter, not a niece."],
+        "shortcut": "\"Only daughter of my mother-in-law\" is a standard way of saying \"my wife\" — decode this phrase first."
+      },
+      {
+        "id": "br-m-09",
+        "subtopic": "Generation Problems",
+        "question": "P is Q's brother. R is Q's father. S is R's mother. T is S's husband. How is T related to P?",
+        "options": ["Grandfather", "Father", "Great-grandfather", "Uncle"],
+        "answerIndex": 0,
+        "explanation": "R (P's father)'s mother S is P's paternal grandmother. S's husband T is therefore P's paternal grandfather.",
+        "whyWrong": [null, "Father doesn't fit — T is two generations above P, not one.", "Great-grandfather would need one more generation than what's given.", "Uncle would require T to be R's sibling, not R's parent."],
+        "shortcut": "\"Mother's husband\" (with no remarriage indicated) is simply the father — apply this consistently up the generations."
+      },
+      {
+        "id": "br-m-10",
+        "subtopic": "Family Tree",
+        "question": "A is B's son. C is A's sister. D is B's mother. How is D related to C?",
+        "options": ["Grandmother", "Mother", "Aunt", "Sister"],
+        "answerIndex": 0,
+        "explanation": "Since C is B's daughter (sibling of A, who is B's son) and D is B's mother, D is C's grandmother.",
+        "whyWrong": [null, "Mother would mean D and B are the same person, which they aren't.", "Aunt would require D to be B's sister, not B's mother.", "Sister doesn't fit any generation gap described here."],
+        "shortcut": "Your parent's mother is always your grandmother, regardless of how many siblings are involved."
+      }
+    ],
+    "hard": [
+      {
+        "id": "br-h-01",
+        "subtopic": "Complex Family Tree",
+        "question": "Introducing a man, a woman said, \"He is the only son of the only son of my grandfather.\" How is the man related to the woman?",
+        "options": ["Brother", "Son", "Father", "Cousin"],
+        "answerIndex": 0,
+        "explanation": "\"The only son of my grandfather\" is the woman's own father. \"The only son\" of that father is therefore the woman's brother.",
+        "whyWrong": [null, "Son would add an extra generation not present — the man is the same generation as the woman.", "Father doesn't fit — the man is the same generation as the woman, not above her.", "Cousin would apply only if a different, non-direct-line son were involved, but the clue specifies a direct father-son chain."],
+        "shortcut": "Peel multi-layered relation phrases one layer at a time, starting from the innermost clause."
+      },
+      {
+        "id": "br-h-02",
+        "subtopic": "Family Tree",
+        "question": "A is B's sister. C is B's mother. D is C's father. E is D's wife. How is E related to A?",
+        "options": ["Grandmother", "Mother", "Aunt", "Great-grandmother"],
+        "answerIndex": 0,
+        "explanation": "C (A's mother)'s father D is A's maternal grandfather. D's wife E is therefore A's maternal grandmother.",
+        "whyWrong": [null, "Mother would mean E and C are the same person, which they aren't.", "Aunt would require E to be C's sister, not C's parent.", "Great-grandmother would need one more generation than what's given."],
+        "shortcut": "Build the chain step by step and count exactly how many generation-steps separate the two people."
+      },
+      {
+        "id": "br-h-03",
+        "subtopic": "Puzzle Based Blood Relations",
+        "question": "P is the grandfather of T. Q is the mother of T. R is Q's brother. S is the wife of R. U is Q's daughter. How is S related to U?",
+        "options": ["Aunt", "Mother", "Grandmother", "Sister-in-law"],
+        "answerIndex": 0,
+        "explanation": "R is Q's brother, making R the maternal uncle of U (Q's daughter). S, being R's wife, is therefore U's aunt by marriage.",
+        "whyWrong": [null, "Mother would mean S and Q are the same person, which they aren't.", "Grandmother would need an extra generation not present here.", "Sister-in-law describes S's relation to Q, not to U — U is a generation below that relationship."],
+        "shortcut": "The wife of your parent's sibling is always your aunt by marriage."
+      },
+      {
+        "id": "br-h-04",
+        "subtopic": "Complex Family Tree",
+        "question": "P is the son of Q. Q and R are sisters. T is the son of R. S is the mother of R. How is S related to P?",
+        "options": ["Grandmother", "Mother", "Aunt", "Great-grandmother"],
+        "answerIndex": 0,
+        "explanation": "Since Q and R are sisters, they share the same mother — so S (R's mother) is also Q's mother. As Q's mother, S is P's grandmother.",
+        "whyWrong": [null, "Mother would mean S and Q are the same person, which contradicts S being introduced as R's (and Q's) mother.", "Aunt would require S to be Q's sister, not Q's mother.", "Great-grandmother would need one more generation than is present here."],
+        "shortcut": "Sisters (or brothers) always share the same mother and father unless a puzzle explicitly states a step- or half-relationship."
+      },
+      {
+        "id": "br-h-05",
+        "subtopic": "Generation Problems",
+        "question": "A family has a couple with three sons. Each son has one wife and two children (one boy, one girl). How many female members are there in total, excluding the grandchildren's future spouses?",
+        "options": ["7", "6", "8", "9"],
+        "answerIndex": 0,
+        "explanation": "Females = 1 grandmother + 3 daughters-in-law (sons' wives) + 3 granddaughters (one girl per son) = 7.",
+        "whyWrong": [null, "6 undercounts by missing either the grandmother or one granddaughter.", "8 overcounts by including a person not described in the family.", "9 overcounts even further."],
+        "shortcut": "Break the count into clear categories — grandparents, their children, their children's spouses, grandchildren — and count females in each separately."
+      },
+      {
+        "id": "br-h-06",
+        "subtopic": "Puzzle Based Blood Relations",
+        "question": "P is Q's father. Q is R's brother. S is R's daughter. T is S's husband. How is T related to P?",
+        "options": ["Grandson-in-law", "Grandson", "Son-in-law", "Nephew"],
+        "answerIndex": 0,
+        "explanation": "Since Q and R are siblings, P is R's father too. S, R's daughter, is P's granddaughter. T, S's husband, is therefore P's grandson-in-law.",
+        "whyWrong": [null, "Grandson would mean T is related to P by blood, but he's related by marriage instead.", "Son-in-law would need T to be married to P's own daughter, one generation higher than S.", "Nephew doesn't fit the two-generation gap and marriage link described here."],
+        "shortcut": "A grandchild's spouse is a 'grandson-in-law' or 'granddaughter-in-law' — one extra '-in-law' step beyond the direct blood relation."
+      },
+      {
+        "id": "br-h-07",
+        "subtopic": "Complex Family Tree",
+        "question": "Pointing to a lady, Vikram said, \"She is the daughter of my father's only brother's wife.\" How is the lady related to Vikram?",
+        "options": ["Cousin", "Sister", "Niece", "Daughter"],
+        "answerIndex": 0,
+        "explanation": "Vikram's father's only brother is his uncle. That uncle's wife is Vikram's aunt. The lady, being the aunt's daughter, is Vikram's cousin.",
+        "whyWrong": [null, "Sister would require the lady to share Vikram's own parents, but she's described through his uncle's family.", "Niece would need the lady to be a generation below Vikram, but she's the same generation.", "Daughter would need an even greater generation gap, which isn't supported here."],
+        "shortcut": "The child of your parent's sibling (by blood or marriage) is always your cousin."
+      },
+      {
+        "id": "br-h-08",
+        "subtopic": "Puzzle Based Blood Relations",
+        "question": "A is married to B. C is the only son of A and B. D is C's sister. E is D's husband. F is E's father. How is F related to A?",
+        "options": ["No direct blood relation — related only through marriage", "Father-in-law", "Brother-in-law", "Grandfather"],
+        "answerIndex": 0,
+        "explanation": "F is the father of A's son-in-law E — this connects the two families through marriage, but there's no direct blood or standard kinship term linking F to A; they're related only via their children's marriage.",
+        "whyWrong": [null, "Father-in-law describes E's relation to D's parents, not F's relation to A.", "Brother-in-law requires a sibling-in-law connection, which isn't present here.", "Grandfather would need F to be a direct ancestor of A's descendants, which isn't the case."],
+        "shortcut": "When two families are connected only through their children's marriage, recognize the pattern rather than forcing a standard relation term."
+      },
+      {
+        "id": "br-h-09",
+        "subtopic": "Family Tree",
+        "question": "A is the grandmother of C. E is A's son and C's father. F is E's wife. Who is C's mother?",
+        "options": ["F", "A", "E", "C"],
+        "answerIndex": 0,
+        "explanation": "Since E is C's father and F is E's wife, F must be C's mother.",
+        "whyWrong": [null, "A is C's grandmother, one generation above C's mother.", "E is C's father, not mother.", "C cannot be their own mother."],
+        "shortcut": "Once you know who the father is, his wife is almost always the mother, unless the puzzle states otherwise."
+      },
+      {
+        "id": "br-h-10",
+        "subtopic": "Generation Problems",
+        "question": "P is the son of Q (male). R is the daughter of P. S is the brother of R. T is the wife of Q. How many of P, Q, R, S and T are male?",
+        "options": ["3", "2", "4", "1"],
+        "answerIndex": 0,
+        "explanation": "Q is male (given), P is Q's son (male), and S is R's brother (male). R and T are female. Total males = 3 (Q, P, S).",
+        "whyWrong": [null, "2 undercounts — it misses one of the three confirmed males.", "4 overcounts — only three people are confirmed male here.", "1 severely undercounts the confirmed males."],
+        "shortcut": "Tag each person's gender on your diagram as soon as it's revealed by a relation word — don't leave anyone unmarked."
+      }
+    ]
+  },
+  "revision": {
+    "quickSheet": [
+      "Convert every clue into a diagram or symbol as you read — never hold a multi-clue puzzle purely in your head.",
+      "Siblings always share the same parents unless the puzzle explicitly states a step/half relationship.",
+      "'Only son/daughter' clues eliminate any other sibling of that gender — use them to rule out branches.",
+      "The spouse of a blood relative from a generation above you is that generation's aunt/uncle/grandparent by marriage.",
+      "Peel multi-layered relation phrases from the innermost clause outward.",
+      "Negative clues ('not', 'except') test or reject an already-drawn diagram — they don't build it from scratch."
+    ],
+    "oneMinute": [
+      "Draw first, answer second — even 'simple' one-line questions benefit from a 5-second diagram.",
+      "Mark gender on every person the moment it's revealed.",
+      "Count generation gaps, not just relation names, for 'same generation' or 'levels' questions."
+    ],
+    "summary": "Blood relation questions reward disciplined diagramming over mental gymnastics. Convert each sentence into a small diagram as you read, build the family tree outward from your most certain clue, and apply 'only' or negative clues last, purely to confirm or rule out branches you've already sketched. Speed comes from the habit, not from memorizing every possible relation combination."
+  }
+}

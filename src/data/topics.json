@@ -1,0 +1,215 @@
+[
+  {
+    "id": "number-basics-divisibility",
+    "name": "Factors, Multiples & Divisibility",
+    "category": "Number System",
+    "icon": "Divide",
+    "color": "route",
+    "description": "Factors, multiples, primes, co-primes, twin primes and divisibility rules.",
+    "status": "available",
+    "questionFile": "number-basics-divisibility.json",
+    "estMinutes": 15,
+    "subtopics": [
+      "Factors",
+      "Multiples",
+      "Prime Numbers",
+      "Composite Numbers",
+      "Co-prime Numbers",
+      "Twin Prime Numbers",
+      "Divisibility Rules"
+    ]
+  },
+  {
+    "id": "lcm-hcf",
+    "name": "LCM & HCF",
+    "category": "Number System",
+    "icon": "GitMerge",
+    "color": "transit",
+    "description": "LCM, HCF, and HCF of fractions \u2014 the most tested Number System skill.",
+    "status": "available",
+    "questionFile": "lcm-hcf.json",
+    "estMinutes": 15,
+    "subtopics": [
+      "LCM",
+      "HCF",
+      "HCF of Fractions"
+    ]
+  },
+  {
+    "id": "squares-cubes",
+    "name": "Perfect Squares & Cubes",
+    "category": "Number System",
+    "icon": "Square",
+    "color": "route",
+    "description": "Spotting perfect squares and cubes fast, without a calculator.",
+    "status": "available",
+    "questionFile": "squares-cubes.json",
+    "estMinutes": 10,
+    "subtopics": [
+      "Perfect Squares",
+      "Perfect Cubes"
+    ]
+  },
+  {
+    "id": "unit-digit-cyclicity",
+    "name": "Unit Digit & Cyclicity",
+    "category": "Number System",
+    "icon": "RefreshCw",
+    "color": "transit",
+    "description": "Find the last digit of huge powers using cyclicity patterns.",
+    "status": "available",
+    "questionFile": "unit-digit-cyclicity.json",
+    "estMinutes": 15,
+    "subtopics": [
+      "Unit Digit",
+      "Cyclicity"
+    ]
+  },
+  {
+    "id": "factorials",
+    "name": "Factorials",
+    "category": "Number System",
+    "icon": "X",
+    "color": "route",
+    "description": "Factorial properties, trailing zeros, and divisibility shortcuts.",
+    "status": "available",
+    "questionFile": "factorials.json",
+    "estMinutes": 10,
+    "subtopics": [
+      "Factorials"
+    ]
+  },
+  {
+    "id": "remainders",
+    "name": "Basic Remainders",
+    "category": "Number System",
+    "icon": "Divide",
+    "color": "transit",
+    "description": "Remainder theorem basics for quick TCS NQT-style questions.",
+    "status": "available",
+    "questionFile": "remainders.json",
+    "estMinutes": 12,
+    "subtopics": [
+      "Basic Remainders"
+    ]
+  },
+  {
+    "id": "averages",
+    "name": "Averages",
+    "category": "Average",
+    "icon": "Sigma",
+    "color": "route",
+    "description": "Basic, weighted, group, replacement, age and mixed average problems.",
+    "status": "available",
+    "questionFile": "averages.json",
+    "estMinutes": 18,
+    "subtopics": [
+      "Average Basics",
+      "Weighted Average",
+      "Average of Groups",
+      "Replacement Average",
+      "Average Age",
+      "Mixed Average"
+    ]
+  },
+  {
+    "id": "coding-decoding",
+    "name": "Coding-Decoding",
+    "category": "Coding-Decoding",
+    "icon": "KeyRound",
+    "color": "transit",
+    "description": "Alphabet coding, letter shifts, reverse and position-based codes.",
+    "status": "available",
+    "questionFile": "coding-decoding.json",
+    "estMinutes": 15,
+    "subtopics": [
+      "Alphabet Coding",
+      "Letter Shift",
+      "Reverse Coding",
+      "Position Based Coding",
+      "Mixed Coding",
+      "Pattern Recognition"
+    ]
+  },
+  {
+    "id": "blood-relations",
+    "name": "Blood Relations",
+    "category": "Blood Relations",
+    "icon": "Users",
+    "color": "route",
+    "description": "Family trees, generation problems and blood relation puzzles.",
+    "status": "available",
+    "questionFile": "blood-relations.json",
+    "estMinutes": 18,
+    "subtopics": [
+      "Basic Relations",
+      "Family Tree",
+      "Complex Family Tree",
+      "Generation Problems",
+      "Puzzle Based Blood Relations"
+    ]
+  },
+  {
+    "id": "english-grammar",
+    "name": "English Grammar Essentials",
+    "category": "English",
+    "icon": "SpellCheck",
+    "color": "transit",
+    "description": "Prepositions, articles, tenses, subject-verb agreement and error spotting.",
+    "status": "available",
+    "questionFile": "english-grammar.json",
+    "estMinutes": 15,
+    "subtopics": [
+      "Prepositions",
+      "Articles",
+      "Tenses",
+      "Subject Verb Agreement",
+      "Error Spotting"
+    ]
+  },
+  {
+    "id": "vocabulary",
+    "name": "Vocabulary Builder",
+    "category": "English",
+    "icon": "Type",
+    "color": "route",
+    "description": "Vocabulary, synonyms and antonyms for verbal ability rounds.",
+    "status": "available",
+    "questionFile": "vocabulary.json",
+    "estMinutes": 10,
+    "subtopics": [
+      "Vocabulary",
+      "Synonyms",
+      "Antonyms"
+    ]
+  },
+  {
+    "id": "sentence-paragraph",
+    "name": "Sentence & Paragraph Skills",
+    "category": "English",
+    "icon": "AlignLeft",
+    "color": "transit",
+    "description": "Sentence improvement and para jumbles.",
+    "status": "available",
+    "questionFile": "sentence-paragraph.json",
+    "estMinutes": 12,
+    "subtopics": [
+      "Sentence Improvement",
+      "Para Jumbles"
+    ]
+  },
+  {
+    "id": "reading-comprehension",
+    "name": "Reading Comprehension",
+    "category": "English",
+    "icon": "BookOpen",
+    "color": "route",
+    "description": "Short passages with inference-based questions.",
+    "status": "available",
+    "questionFile": "reading-comprehension.json",
+    "estMinutes": 15,
+    "subtopics": [
+      "Reading Comprehension"
+    ]
+  }
+]

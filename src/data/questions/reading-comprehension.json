@@ -1,0 +1,371 @@
+{
+  "topicId": "reading-comprehension",
+  "subtopics": ["Reading Comprehension"],
+  "learn": {
+    "title": "Reading Comprehension",
+    "intro": "RC passages test how well you extract explicit facts, infer implied meanings, and identify tone — all within a limited time. The key skill is efficient, targeted reading, not exhaustive re-reading.",
+    "sections": [
+      {
+        "subtopic": "Reading Comprehension",
+        "explanation": "RC passages test how well you extract explicit facts, infer implied meanings, and identify the author's tone/purpose. The key skill is efficient reading: skim for structure first, then hunt for specific details only when a question requires them.",
+        "realLifeExample": "Scanning a long email from your manager for the 2-3 action items you actually need to respond to is the same skimming-and-targeting skill RC passages test.",
+        "memoryTrick": "Read the questions BEFORE a short passage — it tells you exactly what to hunt for, saving a second full re-read.",
+        "shortcutTrick": "For 'fact-based' questions, the answer is almost always a near-exact match to specific wording in the passage. For 'inference' questions, eliminate options that are outside the passage's scope or contradict it, then pick the one best SUPPORTED (not explicitly stated) by the text.",
+        "formulaCard": ["Fact-based questions: locate the exact sentence in the passage", "Inference questions: eliminate contradicted/unsupported options, then pick the best-supported one", "Tone/purpose questions: identify word choices across the WHOLE passage, not just one line"],
+        "commonMistakes": [
+          "Choosing an inference option that's true in general but not actually supported by THIS specific passage.",
+          "Confusing the author's stated opinion with a fact reported neutrally within the passage."
+        ],
+        "talentSprintTip": "TalentSprint RC passages often include a main-idea/title question — this requires understanding the WHOLE passage's balance, not just its first paragraph.",
+        "tcsNqtTip": "TCS NQT sometimes includes vocabulary-in-context questions within an RC set — always check the surrounding sentence, since a word's meaning there might differ from its everyday usage."
+      }
+    ]
+  },
+  "solvedExamples": [
+    {
+      "id": "rc-se-01",
+      "subtopic": "Reading Comprehension",
+      "question": "Passage: \"Remote work has changed how companies evaluate employee productivity. Traditionally, managers relied on visible presence in the office as a proxy for effort. Now, with employees working from various locations, organizations are shifting toward outcome-based metrics — measuring what gets delivered rather than hours logged at a desk.\"\n\nQuestion: According to the passage, what change in evaluation method has occurred due to remote work?",
+      "solution": "The passage explicitly states organizations are \"shifting toward outcome-based metrics — measuring what gets delivered rather than hours logged,\" so companies moved from a presence-based evaluation to a results-based one.",
+      "answer": "A shift from evaluating based on office presence/hours to evaluating based on outcomes/results delivered."
+    },
+    {
+      "id": "rc-se-02",
+      "subtopic": "Reading Comprehension",
+      "question": "Passage: \"The Great Barrier Reef, stretching over 2,300 kilometers off the coast of Australia, is the largest living structure on Earth, visible even from space. It is home to thousands of species of marine life. However, rising ocean temperatures have caused repeated bleaching events, threatening the reef's long-term survival.\"\n\nQuestion: What is implied about the reef's future based on the passage?",
+      "solution": "The passage doesn't state the reef will definitely die, but \"repeated bleaching events\" and \"threatening the reef's long-term survival\" imply the reef faces serious risk if conditions don't change — this is an inference, not a stated certainty.",
+      "answer": "The reef's long-term survival is at risk due to ongoing environmental damage (implied, not stated as certain)."
+    },
+    {
+      "id": "rc-se-03",
+      "subtopic": "Reading Comprehension",
+      "question": "Passage: \"Despite initial skepticism, electric vehicles have seen rapid adoption in the past decade. Falling battery costs and government incentives have contributed to this trend. Yet challenges remain: range anxiety, higher upfront costs, and uneven charging access in rural areas continue to slow full-scale adoption.\"\n\nQuestion: What is the author's tone in this passage?",
+      "solution": "The passage presents both positive developments and ongoing challenges without favoring one side — this balanced presentation signals a neutral, informative tone.",
+      "answer": "Neutral/balanced — presents both progress and challenges without taking a strong side."
+    },
+    {
+      "id": "rc-se-04",
+      "subtopic": "Reading Comprehension",
+      "question": "Passage: \"A recent study found that employees who took short breaks every 90 minutes reported higher levels of sustained focus throughout the workday compared to those who worked in longer, uninterrupted stretches. Researchers attribute this to the brain's natural attention cycles.\"\n\nQuestion: What can be concluded from the study described in the passage?",
+      "solution": "The study's finding — that break-takers reported higher sustained focus — directly supports the conclusion that regular short breaks may improve focus over long, uninterrupted sessions.",
+      "answer": "Taking short, regular breaks may improve sustained focus compared to working in long, uninterrupted stretches."
+    },
+    {
+      "id": "rc-se-05",
+      "subtopic": "Reading Comprehension",
+      "question": "Passage: \"The word 'plastic' originally comes from the Greek word 'plastikos,' meaning 'capable of being shaped or molded.' Ironically, this very versatility, once considered plastic's greatest strength, is now central to the global pollution crisis it has helped create.\"\n\nQuestion: What does the word \"ironically\" suggest about the relationship between plastic's versatility and pollution?",
+      "solution": "\"Ironically\" signals a contrast between what was originally a strength (versatility) and its unexpected negative consequence (pollution) — the same quality that made plastic useful is now part of the problem.",
+      "answer": "The passage highlights an unexpected contrast: the same versatility that made plastic valuable is now a major contributor to pollution."
+    }
+  ],
+  "practiceExamples": [
+    {
+      "id": "rc-pe-01",
+      "subtopic": "Reading Comprehension",
+      "question": "Passage: \"Urban gardening has grown in popularity as city dwellers seek ways to grow their own food despite limited space. Beyond food production, these spaces often serve as gathering points that strengthen neighborhood connections.\"\n\nQuestion: According to the passage, what benefit of urban gardening goes beyond food production?",
+      "answer": "It strengthens neighborhood/community connections by serving as gathering points.",
+      "hint": "Look for the last sentence of the passage."
+    },
+    {
+      "id": "rc-pe-02",
+      "subtopic": "Reading Comprehension",
+      "question": "Passage: \"Many companies now offer four-day work weeks on a trial basis. Early results suggest productivity remains steady while stress levels decrease. However, critics argue that compressing the same workload into fewer days may not be sustainable for all industries.\"\n\nQuestion: What concern do critics raise about the four-day work week?",
+      "answer": "Critics worry that compressing the same workload into fewer days may not be sustainable across all industries.",
+      "hint": "Look for the sentence starting with \"However.\""
+    },
+    {
+      "id": "rc-pe-03",
+      "subtopic": "Reading Comprehension",
+      "question": "Passage: \"The invention of the printing press in the 15th century dramatically reduced the cost of producing books, making written knowledge accessible to a much broader population. This accessibility is often credited with accelerating the spread of new ideas across Europe.\"\n\nQuestion: What effect did the printing press have on the spread of ideas?",
+      "answer": "It accelerated the spread of new ideas across Europe by making books cheaper and more accessible.",
+      "hint": "The passage directly states this effect using the word \"accelerating.\""
+    },
+    {
+      "id": "rc-pe-04",
+      "subtopic": "Reading Comprehension",
+      "question": "Passage: \"While artificial intelligence has automated many repetitive tasks, it has simultaneously created new categories of jobs focused on managing these systems. Economists remain divided on whether this shift will result in a net increase or decrease in overall employment.\"\n\nQuestion: What is the passage's stance on AI's overall effect on employment?",
+      "answer": "The passage doesn't take a firm stance — it notes economists are divided on whether AI will increase or decrease overall employment.",
+      "hint": "Look for how the passage characterizes economists' opinions."
+    },
+    {
+      "id": "rc-pe-05",
+      "subtopic": "Reading Comprehension",
+      "question": "Passage: \"Coral reefs cover less than 1% of the ocean floor, yet they support roughly a quarter of all marine species. This disproportionate biodiversity has earned them the nickname 'rainforests of the sea.'\"\n\nQuestion: Why are coral reefs called \"rainforests of the sea\"?",
+      "answer": "Because despite covering a very small portion of the ocean floor, they support a disproportionately large share of marine biodiversity.",
+      "hint": "Compare the two statistics given in the passage."
+    }
+  ],
+  "quiz": {
+    "easy": [
+      {
+        "id": "rc-e-01",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"Solar panels convert sunlight directly into electricity using photovoltaic cells. Once installed, they require minimal maintenance and can operate efficiently for 25 years or more.\"\n\nQuestion: According to the passage, how long can solar panels operate efficiently?",
+        "options": ["25 years or more", "10 years", "5 years", "Indefinitely, with no limit"],
+        "answerIndex": 0,
+        "explanation": "The passage explicitly states solar panels \"can operate efficiently for 25 years or more.\"",
+        "whyWrong": [null, "10 years is not the figure stated in the passage.", "5 years is not the figure stated in the passage either.", "The passage gives a specific figure (25+ years), not an unlimited claim."],
+        "shortcut": "For fact-based questions, locate the exact number or phrase stated in the passage rather than estimating."
+      },
+      {
+        "id": "rc-e-02",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"Reading fiction has been shown to improve empathy by allowing readers to experience the world through another person's perspective. Studies suggest this effect is strongest when readers become deeply immersed in a story's characters.\"\n\nQuestion: According to the passage, when is fiction's empathy-boosting effect strongest?",
+        "options": ["When readers become deeply immersed in a story's characters", "When readers finish a book quickly", "When readers read non-fiction instead", "When readers avoid emotional stories"],
+        "answerIndex": 0,
+        "explanation": "The passage states the effect \"is strongest when readers become deeply immersed in a story's characters.\"",
+        "whyWrong": [null, "Reading speed isn't mentioned as a factor in the passage.", "The passage is specifically about fiction, not non-fiction.", "This contradicts the passage's focus on empathy through emotional engagement with characters."],
+        "shortcut": "Match the question's phrasing closely to a specific sentence in the passage — the answer is usually a near-restatement of it."
+      },
+      {
+        "id": "rc-e-03",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"Bees play a critical role in pollinating crops, contributing to roughly one-third of global food production. Their population decline in recent years has raised concerns among scientists and farmers alike.\"\n\nQuestion: What role do bees play according to the passage?",
+        "options": ["Pollinating crops essential to global food production", "Producing all the world's oxygen", "Controlling global temperatures", "Preventing soil erosion"],
+        "answerIndex": 0,
+        "explanation": "The passage directly states bees are \"critical\" to \"pollinating crops, contributing to roughly one-third of global food production.\"",
+        "whyWrong": [null, "Oxygen production isn't mentioned in the passage at all.", "Temperature control isn't mentioned either.", "Soil erosion prevention isn't discussed in this passage."],
+        "shortcut": "Stick strictly to what the passage states — don't substitute in outside general knowledge."
+      },
+      {
+        "id": "rc-e-04",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"Many historians consider the invention of writing one of humanity's most significant achievements, since it allowed knowledge to be recorded and passed down accurately across generations, rather than relying solely on oral tradition.\"\n\nQuestion: Why do historians consider writing significant, according to the passage?",
+        "options": ["It allowed knowledge to be recorded and passed down accurately", "It made oral tradition completely obsolete", "It was invented before spoken language", "It eliminated the need for memory"],
+        "answerIndex": 0,
+        "explanation": "The passage states writing \"allowed knowledge to be recorded and passed down accurately across generations.\"",
+        "whyWrong": [null, "The passage doesn't claim oral tradition became obsolete, only that writing offered an alternative to relying solely on it.", "The passage doesn't discuss the order of invention between writing and spoken language.", "The passage doesn't state writing eliminated the need for memory."],
+        "shortcut": "Watch for options that overstate or distort the passage's actual claim, even if they sound related."
+      },
+      {
+        "id": "rc-e-05",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"The habit of keeping a daily journal has been linked to reduced stress levels, as writing about one's thoughts and experiences can provide a sense of clarity and emotional release.\"\n\nQuestion: What benefit of journaling does the passage mention?",
+        "options": ["Reduced stress levels", "Improved physical strength", "Better eyesight", "Increased height"],
+        "answerIndex": 0,
+        "explanation": "The passage directly states journaling \"has been linked to reduced stress levels.\"",
+        "whyWrong": [null, "Physical strength isn't mentioned in the passage.", "Eyesight isn't mentioned either.", "Height isn't discussed in this passage at all."],
+        "shortcut": "Fact-based RC questions almost always have their answer as a near-direct quote from the passage."
+      }
+    ],
+    "medium": [
+      {
+        "id": "rc-m-01",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"Although social media platforms have made it easier than ever to stay connected with distant friends and family, some researchers argue that heavy usage may paradoxically increase feelings of loneliness, particularly when users engage in passive scrolling rather than active interaction.\"\n\nQuestion: What does the passage suggest about the relationship between social media and loneliness?",
+        "options": ["Heavy passive use may increase loneliness despite easier connectivity", "Social media always reduces loneliness", "Active interaction increases loneliness more than passive scrolling", "There is no relationship between the two"],
+        "answerIndex": 0,
+        "explanation": "The passage states that despite easier connectivity, heavy usage \"may paradoxically increase feelings of loneliness, particularly...passive scrolling.\"",
+        "whyWrong": [null, "The passage specifically notes a paradoxical INCREASE in loneliness with heavy passive use, not a universal reduction.", "The passage says the opposite — passive scrolling is linked to loneliness, not active interaction.", "The passage explicitly discusses a relationship between the two."],
+        "shortcut": "Look for contrast words like \"although\" and \"paradoxically\" — they often signal the passage's main nuanced point."
+      },
+      {
+        "id": "rc-m-02",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"Microplastics, tiny plastic particles less than 5mm in size, have been found in ocean water, soil, and even in the air we breathe. Their long-term health effects on humans remain under active scientific investigation, though early studies raise concerns about potential impacts on cellular function.\"\n\nQuestion: What can be inferred about scientific certainty regarding microplastics' health effects?",
+        "options": ["Scientists have not yet reached definitive conclusions about the health effects", "Scientists have proven microplastics are completely harmless", "Scientists have proven microplastics definitely cause cellular damage", "This topic has not been studied at all"],
+        "answerIndex": 0,
+        "explanation": "The passage states effects \"remain under active scientific investigation,\" implying research is ongoing and conclusions aren't yet definitive, even though \"early studies raise concerns.\"",
+        "whyWrong": [null, "The passage doesn't claim microplastics are proven harmless — it raises concerns instead.", "The passage says effects are still under investigation, not definitively proven.", "The passage explicitly mentions active investigation and early studies."],
+        "shortcut": "Words like \"remain under investigation\" or \"early studies suggest\" signal ongoing uncertainty, not a settled conclusion."
+      },
+      {
+        "id": "rc-m-03",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"The concept of 'planned obsolescence' refers to designing products with an artificially limited useful life, encouraging consumers to purchase replacements more frequently. Critics argue this contributes significantly to electronic waste, while manufacturers often defend it as a natural byproduct of technological advancement.\"\n\nQuestion: What is the main tension described in the passage?",
+        "options": ["A disagreement between critics and manufacturers over the causes/justification of planned obsolescence", "A dispute over the definition of electronic waste", "A disagreement about which country produces the most electronics", "A debate over the price of consumer products"],
+        "answerIndex": 0,
+        "explanation": "The passage presents two opposing views — critics blaming the practice for waste, and manufacturers defending it as natural progress — establishing this as the central tension.",
+        "whyWrong": [null, "The definition of electronic waste itself isn't disputed in the passage.", "Country of production isn't mentioned in the passage at all.", "Pricing isn't the focus of this passage."],
+        "shortcut": "When a passage presents two named groups with opposing views, that contrast is usually the passage's central point."
+      },
+      {
+        "id": "rc-m-04",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"Contrary to popular belief, multitasking does not actually mean the brain performs multiple tasks simultaneously. Instead, it rapidly switches attention between tasks, a process that comes with a measurable cognitive cost, often called a 'switching penalty,' that can slow overall performance.\"\n\nQuestion: According to the passage, what actually happens during \"multitasking\"?",
+        "options": ["The brain rapidly switches attention between tasks, incurring a performance cost", "The brain performs multiple tasks at the exact same time with no cost", "The brain shuts down completely during multitasking", "Multitasking has no effect on brain performance"],
+        "answerIndex": 0,
+        "explanation": "The passage explicitly clarifies that instead of true simultaneous processing, the brain \"rapidly switches attention between tasks,\" incurring a \"switching penalty.\"",
+        "whyWrong": [null, "The passage explicitly says this popular belief is incorrect — there IS a cost involved.", "The passage doesn't suggest the brain shuts down; it describes rapid switching instead.", "The passage explicitly describes a 'switching penalty' that can slow performance."],
+        "shortcut": "\"Contrary to popular belief\" signals the passage will correct a common misconception, often the answer to the main question."
+      },
+      {
+        "id": "rc-m-05",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"Freelancing has grown substantially over the past decade, driven largely by digital platforms that connect independent workers with clients globally. While this offers greater flexibility, freelancers often face inconsistent income and lack access to traditional employment benefits like health insurance.\"\n\nQuestion: What trade-off does the passage describe regarding freelancing?",
+        "options": ["Greater flexibility versus inconsistent income and fewer benefits", "Higher pay versus longer working hours", "More job security versus less creative freedom", "Better benefits versus less flexibility"],
+        "answerIndex": 0,
+        "explanation": "The passage explicitly contrasts the flexibility freelancing offers against \"inconsistent income\" and lack of \"traditional employment benefits.\"",
+        "whyWrong": [null, "Pay and working hours aren't the specific trade-off discussed in this passage.", "Job security and creative freedom aren't mentioned as the trade-off here.", "This reverses the actual trade-off — freelancing offers flexibility but LACKS benefits, not the other way around."],
+        "shortcut": "\"While\" often signals the passage is about to introduce a contrasting downside to a previously stated benefit."
+      },
+      {
+        "id": "rc-m-06",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"The term 'burnout' was first coined by psychologist Herbert Freudenberger in the 1970s to describe the consequences of severe stress in helping professions. Today, the term has expanded to describe chronic workplace stress across virtually any profession.\"\n\nQuestion: How has the meaning of \"burnout\" changed since it was first coined?",
+        "options": ["It expanded from describing helping professions specifically to describing workplace stress broadly", "It narrowed to apply only to psychologists", "It changed to mean physical exhaustion only", "It lost its connection to workplace stress entirely"],
+        "answerIndex": 0,
+        "explanation": "The passage states the term \"has expanded to describe chronic workplace stress across virtually any profession,\" compared to its original narrower use.",
+        "whyWrong": [null, "The passage says the term expanded to MORE professions, not narrowed to just psychologists.", "The passage doesn't restrict the modern meaning to physical exhaustion only.", "The passage explicitly says the term still describes workplace stress, just more broadly now."],
+        "shortcut": "Track directional language like \"expanded\" or \"narrowed\" carefully."
+      },
+      {
+        "id": "rc-m-07",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"Renewable energy sources like wind and solar are often criticized for their intermittency — the fact that they don't generate power consistently. Advances in battery storage technology aim to address this limitation by storing excess energy for use during low-generation periods.\"\n\nQuestion: What problem does battery storage technology aim to solve, according to the passage?",
+        "options": ["The inconsistency of renewable energy generation", "The high cost of renewable energy installation", "The pollution caused by renewable energy", "The difficulty of manufacturing solar panels"],
+        "answerIndex": 0,
+        "explanation": "The passage states battery storage aims \"to address this limitation\" — referring directly to intermittency, the inconsistency of renewable power generation.",
+        "whyWrong": [null, "Installation cost isn't mentioned as the problem battery storage addresses.", "Pollution isn't discussed in this passage at all.", "Manufacturing difficulty isn't mentioned either."],
+        "shortcut": "Trace \"this limitation\" or similar backward-referencing phrases to the specific problem named just before them."
+      },
+      {
+        "id": "rc-m-08",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"Confirmation bias refers to the tendency to search for and recall information in a way that confirms one's pre-existing beliefs, while giving disproportionately less consideration to alternative possibilities. This bias can significantly affect decision-making, even among experts in a field.\"\n\nQuestion: According to the passage, who can be affected by confirmation bias?",
+        "options": ["Even experts in a field, not just laypeople", "Only people without any expertise", "Only people making financial decisions", "Nobody — it's purely a theoretical concept"],
+        "answerIndex": 0,
+        "explanation": "The passage explicitly states the bias \"can significantly affect decision-making, even among experts in a field.\"",
+        "whyWrong": [null, "The passage specifically emphasizes that even experts are affected, not just non-experts.", "Financial decisions aren't specifically singled out in this passage.", "The passage describes real effects on decision-making, not a purely theoretical concept."],
+        "shortcut": "The word \"even\" often signals a broader or more surprising scope than expected."
+      },
+      {
+        "id": "rc-m-09",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"Minimalism, as a lifestyle philosophy, advocates for owning fewer possessions and focusing on experiences over material goods. Proponents argue this reduces stress, though critics note that minimalism itself has become commercialized, with entire product lines marketed around 'minimalist living.'\"\n\nQuestion: What criticism of minimalism does the passage mention?",
+        "options": ["That minimalism itself has become commercialized", "That minimalism causes increased stress", "That minimalism has no effect on life satisfaction", "That minimalism is impossible to practice"],
+        "answerIndex": 0,
+        "explanation": "The passage states critics note \"minimalism itself has become commercialized, with entire product lines marketed around 'minimalist living.'\"",
+        "whyWrong": [null, "The passage says proponents believe minimalism REDUCES stress, not causes it.", "The passage attributes benefits to minimalism according to proponents, not a lack of effect.", "The passage doesn't claim minimalism is impossible to practice."],
+        "shortcut": "When a passage presents both proponents' and critics' views, keep clear which specific claim belongs to which group."
+      },
+      {
+        "id": "rc-m-10",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"While standardized testing has long been used to measure academic achievement, critics argue it fails to capture creativity and critical thinking. Some educational institutions have begun incorporating project-based assessments as a complementary measure.\"\n\nQuestion: What alternative approach does the passage mention?",
+        "options": ["Project-based assessments as a complementary measure", "Eliminating all forms of testing entirely", "Increasing the frequency of standardized tests", "Outsourcing assessment to private companies"],
+        "answerIndex": 0,
+        "explanation": "The passage states some institutions \"have begun incorporating project-based assessments as a complementary measure.\"",
+        "whyWrong": [null, "The passage describes project-based assessments as a COMPLEMENT, not a full elimination of testing.", "Increasing standardized test frequency isn't mentioned as a response to this criticism.", "Outsourcing to private companies isn't mentioned in the passage at all."],
+        "shortcut": "Look for the specific alternative named directly after a criticism is raised."
+      }
+    ],
+    "hard": [
+      {
+        "id": "rc-h-01",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"Economists have long debated whether raising the minimum wage leads to job losses. Some studies find modest negative employment effects, while others find no significant effect, or even slight gains, attributing this to increased consumer spending power among low-wage workers. The empirical picture, therefore, remains genuinely mixed rather than settled in either direction.\"\n\nQuestion: What is the passage's overall characterization of the minimum wage debate?",
+        "options": ["The evidence is genuinely mixed, without a clear consensus either way", "All studies agree that minimum wage increases cause job losses", "All studies agree that minimum wage increases have no negative effects", "The debate has been fully resolved in favor of wage increases"],
+        "answerIndex": 0,
+        "explanation": "The passage explicitly concludes that \"the empirical picture...remains genuinely mixed rather than settled in either direction.\"",
+        "whyWrong": [null, "The passage explicitly says findings are mixed, not uniformly showing job losses.", "The passage also mentions studies finding negative effects, so it's not uniformly showing no negative effects either.", "The passage explicitly states the debate is NOT settled."],
+        "shortcut": "When a passage explicitly states its own conclusion ('genuinely mixed'), trust that stated characterization directly."
+      },
+      {
+        "id": "rc-h-02",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"The 'bystander effect' describes the phenomenon where individuals are less likely to offer help to a victim when other people are present, due to a diffusion of responsibility. Ironically, a lone bystander is statistically more likely to intervene than one person within a larger group witnessing the same event.\"\n\nQuestion: What does the passage suggest is counterintuitive about the bystander effect?",
+        "options": ["A person alone is more likely to help than the same person in a group, despite more people seemingly meaning more potential helpers", "Groups of people are always more helpful than individuals", "The bystander effect only occurs in emergency situations", "People in groups always act faster than individuals"],
+        "answerIndex": 0,
+        "explanation": "The passage highlights the irony that although more people are present, a lone bystander is \"statistically more likely to intervene\" — signaled by the word \"ironically.\"",
+        "whyWrong": [null, "This is the opposite of what the passage states — groups are described as LESS likely to help.", "The passage doesn't restrict the phenomenon to emergency situations specifically.", "The passage says the opposite — groups are slower/less likely to act, not faster."],
+        "shortcut": "When a passage uses \"ironically\" or \"counterintuitively,\" the sentence right after usually IS the answer to what's surprising."
+      },
+      {
+        "id": "rc-h-03",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"Behavioral economists have found that people tend to value a potential loss more heavily than an equivalent potential gain — a phenomenon known as loss aversion. This asymmetry can lead to seemingly irrational decisions, such as holding onto a failing investment far longer than is financially sensible, simply to avoid 'locking in' the loss.\"\n\nQuestion: How does loss aversion explain the investment behavior described in the passage?",
+        "options": ["Investors hold onto failing investments to avoid the psychological pain of confirming a loss, even when it's not financially optimal", "Investors hold onto failing investments because they always eventually recover", "Loss aversion causes investors to sell all investments immediately", "Loss aversion has no connection to investment behavior"],
+        "answerIndex": 0,
+        "explanation": "The passage explains loss aversion leads people to hold a \"failing investment far longer than is financially sensible, simply to avoid 'locking in' the loss.\"",
+        "whyWrong": [null, "The passage doesn't claim failing investments always eventually recover.", "The passage describes HOLDING onto investments longer, not selling immediately — the opposite behavior.", "The passage explicitly connects loss aversion to this specific investment behavior."],
+        "shortcut": "When a passage gives a specific example after defining a concept, the example illustrates that concept's real-world consequence."
+      },
+      {
+        "id": "rc-h-04",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"Urbanization has historically been associated with economic growth, as cities offer agglomeration benefits — productivity gains from businesses and workers clustering together. However, unchecked urbanization can also strain housing, transportation, and public services beyond their capacity, potentially offsetting these very gains.\"\n\nQuestion: What tension does the passage describe regarding urbanization?",
+        "options": ["The productivity benefits of clustering can be undermined if urban growth outpaces infrastructure capacity", "Urbanization always leads to economic decline", "Cities provide no economic benefits at all", "Rural areas always outperform urban areas economically"],
+        "answerIndex": 0,
+        "explanation": "The passage describes agglomeration benefits, but notes \"unchecked urbanization\" can strain services \"potentially offsetting these very gains.\"",
+        "whyWrong": [null, "The passage describes urbanization as generally associated with growth, not decline, making this too extreme.", "The passage explicitly describes real economic benefits from cities.", "Rural areas aren't discussed or compared in this passage at all."],
+        "shortcut": "When a passage presents a benefit and then a \"however\" that could undo it, that tension IS the passage's central point."
+      },
+      {
+        "id": "rc-h-05",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"Placebo effects occur when a patient experiences real physiological or psychological improvement after receiving a treatment with no active therapeutic ingredient, simply because they believe they are being treated. Interestingly, recent studies suggest placebo effects can occur even when patients are explicitly told they are receiving a placebo, a phenomenon researchers call 'open-label placebo.'\"\n\nQuestion: What does the concept of \"open-label placebo\" challenge about traditional understanding of the placebo effect?",
+        "options": ["That belief in receiving an active treatment is a strictly necessary condition for the placebo effect to occur", "That placebo effects are always harmful to patients", "That doctors should never use placebos under any circumstances", "That placebo effects only occur in psychological, not physiological, conditions"],
+        "answerIndex": 0,
+        "explanation": "Traditionally, placebo effects were thought to require patients believing they're receiving real treatment. Effects occurring even when patients KNOW it's a placebo challenges this assumed necessary condition.",
+        "whyWrong": [null, "The passage describes the placebo effect as beneficial (real improvement), not harmful.", "The passage doesn't make any recommendation about doctors' use of placebos.", "The passage explicitly mentions 'physiological or psychological improvement', so it isn't limited to psychological effects only."],
+        "shortcut": "When a passage introduces a specific, newly-named phenomenon, it's usually there to challenge or refine an assumption stated just before it."
+      },
+      {
+        "id": "rc-h-06",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"Cognitive dissonance theory suggests that people experience psychological discomfort when holding two contradictory beliefs or when their actions conflict with their beliefs. To resolve this discomfort, individuals often change their beliefs to align with their actions, rather than changing their actions to align with their beliefs, since actions already taken cannot be undone.\"\n\nQuestion: According to the passage, which is more commonly changed to resolve cognitive dissonance — beliefs or actions?",
+        "options": ["Beliefs, since past actions cannot be undone", "Actions, since beliefs are harder to change", "Both are changed equally often", "Neither changes; the discomfort remains permanently"],
+        "answerIndex": 0,
+        "explanation": "The passage explicitly states individuals \"often change their beliefs to align with their actions,\" specifically because past actions \"cannot be undone.\"",
+        "whyWrong": [null, "This reverses the passage's actual claim — beliefs are described as more commonly changed, not actions.", "The passage doesn't suggest an equal split — it specifically favors belief change.", "The passage explicitly describes a resolution process, so the discomfort doesn't simply remain."],
+        "shortcut": "When a passage explains WHY one option is favored (here, 'actions cannot be undone'), that reasoning confirms which option is more common."
+      },
+      {
+        "id": "rc-h-07",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"The Dunning-Kruger effect describes a cognitive bias in which people with limited knowledge or competence in a domain overestimate their own ability, while genuine experts often underestimate their relative competence, assuming tasks that are easy for them must be equally easy for others.\"\n\nQuestion: What is the key contrast the passage draws between novices and experts?",
+        "options": ["Novices tend to overestimate their ability, while experts tend to underestimate their relative competence", "Both novices and experts consistently overestimate their ability equally", "Novices underestimate their ability, while experts overestimate theirs", "Neither novices nor experts show any bias in self-assessment"],
+        "answerIndex": 0,
+        "explanation": "The passage explicitly states novices \"overestimate their own ability,\" while experts \"underestimate their relative competence\" — a direct, named contrast.",
+        "whyWrong": [null, "The passage doesn't say both groups show the same overestimation bias.", "This reverses the actual direction of bias described for each group.", "The passage explicitly describes biases for both groups."],
+        "shortcut": "When a passage names a bias affecting two different groups, look for the DIRECTION (over vs under) attributed to each group separately."
+      },
+      {
+        "id": "rc-h-08",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"Survivorship bias occurs when analysis focuses only on entities that 'survived' a selection process, overlooking those that did not. A classic illustration involves WWII researchers who initially recommended reinforcing the areas of returning aircraft with the most bullet damage — until statistician Abraham Wald pointed out that the planes which did NOT return were the ones that needed reinforcement, since damage there had proven fatal.\"\n\nQuestion: What was Abraham Wald's key insight, according to the passage?",
+        "options": ["The planes that didn't return, not the ones that did, showed where reinforcement was actually needed", "All planes should be reinforced equally regardless of damage location", "The returning planes needed no reinforcement of any kind", "Bullet damage location was irrelevant to aircraft survival"],
+        "answerIndex": 0,
+        "explanation": "The passage states Wald pointed out that the non-returning planes were the ones that \"needed the reinforcement, since damage there had proven fatal.\"",
+        "whyWrong": [null, "The passage specifically identifies the non-returning planes' damage areas as the critical insight, not a call for equal reinforcement everywhere.", "The passage's point is that the returning planes' damage was less critical, but doesn't claim zero reinforcement was needed.", "The passage explicitly connects damage location to survival outcomes."],
+        "shortcut": "In a \"classic illustration\" passage, the named expert's insight is usually the reversal of the flawed initial assumption stated just before it."
+      },
+      {
+        "id": "rc-h-09",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"Occam's razor, a principle often attributed to 14th-century philosopher William of Ockham, suggests that among competing explanations for a phenomenon, the one requiring the fewest assumptions should generally be preferred. It is important to note, however, that Occam's razor is a heuristic for weighing likelihood, not a guarantee of truth — the simplest explanation is not always the correct one.\"\n\nQuestion: What clarification does the passage make about Occam's razor's reliability?",
+        "options": ["It's a useful heuristic for likelihood, but doesn't guarantee the simplest explanation is actually correct", "It always identifies the correct explanation without exception", "It was proven mathematically by William of Ockham", "It only applies to scientific phenomena, never everyday reasoning"],
+        "answerIndex": 0,
+        "explanation": "The passage explicitly clarifies Occam's razor \"is a heuristic for weighing likelihood, not a guarantee of truth.\"",
+        "whyWrong": [null, "The passage explicitly contradicts this — it states the simplest explanation is 'not always the correct one.'", "The passage doesn't claim any mathematical proof — it describes a principle 'attributed to' Ockham, not proven by him.", "The passage doesn't restrict Occam's razor's application to only scientific phenomena."],
+        "shortcut": "Phrases like \"it is important to note, however\" almost always introduce the passage's key qualifying clarification."
+      },
+      {
+        "id": "rc-h-10",
+        "subtopic": "Reading Comprehension",
+        "question": "Passage: \"Anchoring bias refers to the tendency to rely too heavily on the first piece of information encountered (the 'anchor') when making subsequent judgments, even when that information is arbitrary or irrelevant. Negotiators often exploit this by proposing an aggressive initial offer, which can shift the entire range of the ensuing negotiation, regardless of the offer's actual justification.\"\n\nQuestion: How do negotiators reportedly exploit anchoring bias, according to the passage?",
+        "options": ["By proposing an aggressive initial offer that shifts the range of subsequent negotiation, regardless of its justification", "By always agreeing to the other party's very first offer immediately", "By avoiding making any offers until the very end of the negotiation", "By providing extensive justification for every single offer made"],
+        "answerIndex": 0,
+        "explanation": "The passage explicitly describes negotiators \"proposing an aggressive initial offer, which can shift the entire range of the ensuing negotiation, regardless of the offer's actual justification.\"",
+        "whyWrong": [null, "The passage describes negotiators setting the anchor themselves, not agreeing to the other party's offer.", "Delaying offers until the end isn't the strategy described — the anchor needs to come first to work.", "The passage notes the effect occurs 'regardless of the offer's actual justification', meaning justification isn't the key factor."],
+        "shortcut": "When a passage says a technique works \"regardless of X,\" that signals X is NOT the actual mechanism doing the work — timing/positioning is."
+      }
+    ]
+  },
+  "revision": {
+    "quickSheet": [
+      "Fact-based questions: locate the near-exact matching sentence in the passage — don't rely on memory or outside knowledge.",
+      "Inference questions: eliminate unsupported/contradicted options, then pick the best-SUPPORTED (not stated) option.",
+      "Watch for signal words: 'although/however/but' (contrast), 'ironically/counterintuitively' (surprising twist), 'therefore/as a result' (conclusion).",
+      "Tone questions require reading the WHOLE passage's balance of language, not just one sentence.",
+      "Don't import outside general knowledge — answer strictly based on what THIS passage states or implies."
+    ],
+    "oneMinute": [
+      "Skim for structure first, then hunt for specific details only when a question needs them.",
+      "Fact questions = find the matching sentence; inference questions = eliminate and select the best-supported option.",
+      "Contrast/signal words often mark the passage's most testable point."
+    ],
+    "summary": "Reading comprehension rewards targeted, efficient reading over exhaustive re-reading. Distinguish fact-based questions (find the near-exact matching sentence) from inference questions (eliminate unsupported options, then pick the best-supported one), and pay close attention to signal words like 'however,' 'ironically,' and 'therefore' — they almost always mark the passage's most important, most-tested point."
+  }
+}

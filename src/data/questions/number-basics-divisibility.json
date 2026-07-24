@@ -1,0 +1,465 @@
+{
+  "topicId": "number-basics-divisibility",
+  "subtopics": ["Factors", "Multiples", "Prime Numbers", "Composite Numbers", "Co-prime Numbers", "Twin Prime Numbers", "Divisibility Rules"],
+  "learn": {
+    "title": "Factors, Multiples & Divisibility",
+    "intro": "This is the foundation everything else in Number System builds on. Get comfortable with factors, multiples, and the prime/composite split, and LCM, HCF, and divisibility tricks all become much easier.",
+    "sections": [
+      {
+        "subtopic": "Factors",
+        "explanation": "A factor of a number is any number that divides it exactly, leaving remainder 0. Every number has at least two factors: 1 and itself.",
+        "realLifeExample": "When arranging 12 chairs into equal rows for an event, the possible row counts (1, 2, 3, 4, 6, 12) are exactly the factors of 12.",
+        "memoryTrick": "Factors are always ≤ the number itself — they fit inside it.",
+        "shortcutTrick": "To list all factors quickly, test divisibility only up to √n — every factor above √n pairs with one below it. For 36, testing up to 6: 1×36, 2×18, 3×12, 4×9, 6×6.",
+        "formulaCard": ["Number of factors of N = product of (each prime's exponent + 1)", "e.g. 36 = 2²×3² → factors = (2+1)(2+1) = 9"],
+        "commonMistakes": [
+          "Forgetting to include 1 and the number itself as factors.",
+          "Missing the paired factor when checking only up to n/2 instead of √n."
+        ],
+        "talentSprintTip": "TalentSprint often asks 'how many factors does N have' — use the prime factorization formula instead of listing factors manually.",
+        "tcsNqtTip": "TCS NQT sometimes asks for 'sum of factors' or 'number of even/odd factors' — compute total factors first, then filter by the extra condition."
+      },
+      {
+        "subtopic": "Multiples",
+        "explanation": "A multiple of a number is the product of that number with any positive integer. Multiples are always ≥ the number itself.",
+        "realLifeExample": "If a bus arrives every 15 minutes, the arrival times (15, 30, 45, 60...) are exactly the multiples of 15.",
+        "memoryTrick": "Multiples are always ≥ the number — they grow outward from it.",
+        "shortcutTrick": "To check if X is a multiple of Y, just verify X mod Y = 0 — no need for full division.",
+        "formulaCard": ["Multiples of N: N, 2N, 3N, 4N, ...", "Count of multiples of N up to a limit L = floor(L/N)"],
+        "commonMistakes": [
+          "Confusing factors and multiples — factors divide the number; multiples are divided BY the number.",
+          "Miscounting multiples 'between X and Y' by forgetting to handle the endpoints correctly."
+        ],
+        "talentSprintTip": "TalentSprint questions on 'multiples between X and Y' — use floor(Y/n) − floor((X−1)/n) to count them instantly instead of listing.",
+        "tcsNqtTip": "TCS NQT loves 'sum of multiples of 3 or 5 below N' style problems (inclusion-exclusion) — practice this pattern specifically."
+      },
+      {
+        "subtopic": "Prime Numbers",
+        "explanation": "A prime number has exactly two factors: 1 and itself. 2 is the only even prime; every other prime is odd.",
+        "realLifeExample": "Cryptography behind online banking relies on large prime numbers being hard to factor — primality is a real, practical property, not just a classroom concept.",
+        "memoryTrick": "2 is the lonely even prime — every other prime is odd.",
+        "shortcutTrick": "To check if N is prime, test divisibility only by primes up to √N — if none divide it, N is prime.",
+        "formulaCard": ["A number N is prime if it has no divisors other than 1 and N", "Check divisibility only up to √N"],
+        "commonMistakes": [
+          "Treating 1 as a prime number — 1 has only one factor and is neither prime nor composite.",
+          "Stopping the divisibility check before reaching √N."
+        ],
+        "talentSprintTip": "TalentSprint tests prime identification for 2-3 digit numbers under time pressure — memorize primes up to 100 to skip the check entirely for common cases.",
+        "tcsNqtTip": "TCS NQT sometimes asks 'how many primes between X and Y' — use the memorized list of primes up to 100 rather than testing each number."
+      },
+      {
+        "subtopic": "Composite Numbers",
+        "explanation": "A composite number has more than two factors — it can be broken down into smaller factors besides 1 and itself. Every integer greater than 1 is either prime or composite.",
+        "realLifeExample": "A number like 12 (used to divide a dozen eggs into different tray sizes) is composite because it splits many ways, unlike a prime which only splits into 1×itself.",
+        "memoryTrick": "Composite = 'composed of' smaller factors — built from at least two numbers greater than 1.",
+        "shortcutTrick": "If a number is even and greater than 2, it's automatically composite, since it's divisible by 2 in addition to 1 and itself.",
+        "formulaCard": ["Every integer > 1 is either prime or composite, never both", "1 is neither prime nor composite"],
+        "commonMistakes": [
+          "Forgetting that 1 is excluded from both categories.",
+          "Assuming all odd numbers are prime — many odd numbers (9, 15, 21...) are composite."
+        ],
+        "talentSprintTip": "TalentSprint sometimes asks you to count composite numbers in a range — count total numbers, then subtract the primes and subtract 1.",
+        "tcsNqtTip": "TCS NQT frames composite-number questions inside divisibility puzzles — recognize that 'more than 2 factors' is the same test as 'not prime and not 1'."
+      },
+      {
+        "subtopic": "Co-prime Numbers",
+        "explanation": "Two numbers are co-prime (or relatively prime) if their HCF is 1 — they share no common factor other than 1. Co-prime numbers don't need to be prime themselves.",
+        "realLifeExample": "Gear ratios in machinery are often chosen to be co-prime (like 13 and 17 teeth) so the same two teeth don't mesh repeatedly, spreading out wear evenly.",
+        "memoryTrick": "Co-prime means 'no common factor,' not 'both numbers are prime' — 8 and 9 are co-prime even though neither is prime.",
+        "shortcutTrick": "Two consecutive integers (like 14 and 15) are always co-prime, since consecutive numbers can never share a common factor greater than 1.",
+        "formulaCard": ["Two numbers a, b are co-prime if HCF(a,b) = 1", "Any two consecutive integers are always co-prime"],
+        "commonMistakes": [
+          "Assuming co-prime numbers must both be individually prime — they don't have to be.",
+          "Forgetting that 1 is co-prime with every number."
+        ],
+        "talentSprintTip": "TalentSprint tests 'are these two numbers co-prime' by asking you to quickly compute their HCF — use Euclid's algorithm rather than full factorization.",
+        "tcsNqtTip": "TCS NQT often uses co-prime pairs inside LCM/HCF product-pair-counting questions — recall this connection when solving 'how many pairs' problems."
+      },
+      {
+        "subtopic": "Twin Prime Numbers",
+        "explanation": "Twin primes are pairs of primes that differ by exactly 2, like (3,5), (11,13), (17,19). They become rarer as numbers grow larger, but several pairs exist within typical aptitude test ranges.",
+        "realLifeExample": "Twin primes have no direct daily-life application, but they're a favorite 'pattern spotting' test since both numbers in the pair must independently pass the prime test.",
+        "memoryTrick": "Twins are only 2 apart — check the number just above or below by exactly 2.",
+        "shortcutTrick": "When asked to find twin primes in a range, first list all primes in that range, then scan for consecutive primes exactly 2 apart.",
+        "formulaCard": ["Twin primes: (p, p+2) where both p and p+2 are prime", "Twin prime pairs under 75: (3,5), (5,7), (11,13), (17,19), (29,31), (41,43), (59,61), (71,73)"],
+        "commonMistakes": [
+          "Confusing twin primes with consecutive primes that aren't 2 apart (like 7 and 11, which differ by 4).",
+          "Missing a pair because one number wasn't correctly identified as prime."
+        ],
+        "talentSprintTip": "TalentSprint sometimes asks 'how many twin prime pairs below N' — memorize the list above to answer instantly.",
+        "tcsNqtTip": "TCS NQT rarely tests twin primes in isolation but may include them as a distractor pattern inside a larger number-series question."
+      },
+      {
+        "subtopic": "Divisibility Rules",
+        "explanation": "Divisibility rules let you check if a number divides another exactly without doing full division — each rule looks at specific digits or digit sums.",
+        "realLifeExample": "Someone splitting a bill of ₹450 among 3, 5, or 9 people can instantly tell which splits work evenly just by checking digit patterns, without dividing.",
+        "memoryTrick": "Small divisors (2, 5, 10) check the last digit; digit-sum divisors (3, 9) check the whole number at once; 11 needs an alternating sum.",
+        "shortcutTrick": "For 3 and 9: sum all digits, and check if that sum is divisible by 3 or 9 respectively. For 11: alternating digit sum (odd positions minus even positions) must be divisible by 11.",
+        "formulaCard": [
+          "Div by 2: last digit even",
+          "Div by 3: digit sum divisible by 3",
+          "Div by 4: last 2 digits divisible by 4",
+          "Div by 5: last digit 0 or 5",
+          "Div by 6: divisible by both 2 and 3",
+          "Div by 8: last 3 digits divisible by 8",
+          "Div by 9: digit sum divisible by 9",
+          "Div by 10: last digit 0",
+          "Div by 11: alternating digit sum divisible by 11"
+        ],
+        "commonMistakes": [
+          "Applying the divisibility-by-3 threshold to divisibility-by-9 without re-checking (the required digit sum is different).",
+          "Miscounting positions for the alternating sum in the rule for 11."
+        ],
+        "talentSprintTip": "TalentSprint tests divisibility rules on large numbers (5-6 digits) — the rules for 8, 9, and 11 save the most time versus direct division.",
+        "tcsNqtTip": "TCS NQT often combines two divisibility rules in one question (e.g. 'divisible by both 4 and 9') — apply each rule separately, then find the intersection."
+      }
+    ]
+  },
+  "solvedExamples": [
+    {
+      "id": "nbd-se-01",
+      "subtopic": "Factors",
+      "question": "Find the number of factors of 360.",
+      "solution": "360 = 2³×3²×5¹.\nNumber of factors = (3+1)(2+1)(1+1) = 4×3×2 = 24.",
+      "answer": "24"
+    },
+    {
+      "id": "nbd-se-02",
+      "subtopic": "Multiples",
+      "question": "How many multiples of 7 are there between 1 and 100?",
+      "solution": "Count = floor(100/7) = 14.",
+      "answer": "14"
+    },
+    {
+      "id": "nbd-se-03",
+      "subtopic": "Prime Numbers",
+      "question": "Is 91 a prime number?",
+      "solution": "91 = 7 × 13, so it has factors other than 1 and itself — it is composite, not prime.",
+      "answer": "No, 91 is composite (7×13)"
+    },
+    {
+      "id": "nbd-se-04",
+      "subtopic": "Co-prime Numbers",
+      "question": "Are 15 and 28 co-prime?",
+      "solution": "15 = 3×5, 28 = 2²×7. They share no common prime factor, so HCF(15,28) = 1.",
+      "answer": "Yes, they are co-prime"
+    },
+    {
+      "id": "nbd-se-05",
+      "subtopic": "Divisibility Rules",
+      "question": "Check whether 792 is divisible by 8, 9 and 11.",
+      "solution": "By 8: last 3 digits 792 ÷ 8 = 99 exactly → divisible.\nBy 9: digit sum 7+9+2=18, divisible by 9 → divisible.\nBy 11: alternating sum (7+2)−9 = 0, divisible by 11 → divisible.",
+      "answer": "Divisible by all three (8, 9 and 11)"
+    }
+  ],
+  "practiceExamples": [
+    {
+      "id": "nbd-pe-01",
+      "subtopic": "Factors",
+      "question": "Find the number of factors of 84.",
+      "answer": "12",
+      "hint": "84 = 2²×3×7 → (2+1)(1+1)(1+1)."
+    },
+    {
+      "id": "nbd-pe-02",
+      "subtopic": "Multiples",
+      "question": "How many multiples of 6 are there between 1 and 150?",
+      "answer": "25",
+      "hint": "Count = floor(150/6)."
+    },
+    {
+      "id": "nbd-pe-03",
+      "subtopic": "Twin Prime Numbers",
+      "question": "Find the twin prime pair between 55 and 65.",
+      "answer": "59 and 61",
+      "hint": "List primes in that range and check for a gap of exactly 2."
+    },
+    {
+      "id": "nbd-pe-04",
+      "subtopic": "Co-prime Numbers",
+      "question": "Are 35 and 42 co-prime?",
+      "answer": "No, HCF(35,42)=7",
+      "hint": "Factorize both: 35=5×7, 42=2×3×7."
+    },
+    {
+      "id": "nbd-pe-05",
+      "subtopic": "Divisibility Rules",
+      "question": "Is 4356 divisible by both 4 and 3?",
+      "answer": "Yes to both",
+      "hint": "Check the last 2 digits for divisibility by 4, and the digit sum for divisibility by 3."
+    }
+  ],
+  "quiz": {
+    "easy": [
+      {
+        "id": "nbd-e-01",
+        "subtopic": "Factors",
+        "question": "How many factors does 28 have?",
+        "options": ["6", "5", "4", "7"],
+        "answerIndex": 0,
+        "explanation": "28 = 2²×7¹. Number of factors = (2+1)(1+1) = 6.",
+        "whyWrong": [null, "5 undercounts one factor.", "4 undercounts by two factors.", "7 overcounts by one factor."],
+        "shortcut": "Use (exponent+1) for each prime and multiply — never list all factors manually for larger numbers."
+      },
+      {
+        "id": "nbd-e-02",
+        "subtopic": "Multiples",
+        "question": "Which of these is a multiple of 9?",
+        "options": ["45", "50", "56", "64"],
+        "answerIndex": 0,
+        "explanation": "45's digit sum is 4+5=9, divisible by 9, so 45 is a multiple of 9 (45=9×5).",
+        "whyWrong": [null, "50's digit sum is 5, not divisible by 9.", "56's digit sum is 11, not divisible by 9.", "64's digit sum is 10, not divisible by 9."],
+        "shortcut": "Use the digit-sum divisibility rule for 9 instead of doing full division."
+      },
+      {
+        "id": "nbd-e-03",
+        "subtopic": "Prime Numbers",
+        "question": "Which of the following is a prime number?",
+        "options": ["47", "51", "57", "63"],
+        "answerIndex": 0,
+        "explanation": "47 has no divisors other than 1 and itself (not divisible by 2, 3, 5, or 7). The others: 51=3×17, 57=3×19, 63=7×9.",
+        "whyWrong": [null, "51 = 3×17, so it's composite.", "57 = 3×19, so it's composite.", "63 = 7×9, so it's composite."],
+        "shortcut": "Test divisibility only by primes up to √N to confirm primality quickly."
+      },
+      {
+        "id": "nbd-e-04",
+        "subtopic": "Co-prime Numbers",
+        "question": "Which pair of numbers is co-prime?",
+        "options": ["8 and 15", "6 and 9", "10 and 15", "12 and 18"],
+        "answerIndex": 0,
+        "explanation": "8=2³ and 15=3×5 share no common prime factor, so HCF(8,15)=1 — they're co-prime.",
+        "whyWrong": [null, "6 and 9 share a common factor of 3, so HCF=3, not co-prime.", "10 and 15 share a common factor of 5, so HCF=5, not co-prime.", "12 and 18 share common factors of 2 and 3, so HCF=6, not co-prime."],
+        "shortcut": "Quickly factorize both numbers and check for any shared prime — if none, they're co-prime."
+      },
+      {
+        "id": "nbd-e-05",
+        "subtopic": "Divisibility Rules",
+        "question": "Which number is divisible by both 2 and 5?",
+        "options": ["130", "125", "132", "135"],
+        "answerIndex": 0,
+        "explanation": "130 ends in 0, so it's divisible by both 2 and 5 (and therefore 10).",
+        "whyWrong": [null, "125 ends in 5, divisible by 5 but not 2 (it's odd).", "132 ends in 2, divisible by 2 but not 5.", "135 ends in 5, divisible by 5 but not 2."],
+        "shortcut": "A number divisible by both 2 and 5 must end in 0."
+      }
+    ],
+    "medium": [
+      {
+        "id": "nbd-m-01",
+        "subtopic": "Factors",
+        "question": "Find the number of factors of 144.",
+        "options": ["15", "12", "18", "10"],
+        "answerIndex": 0,
+        "explanation": "144 = 2⁴×3². Number of factors = (4+1)(2+1) = 15.",
+        "whyWrong": [null, "12 doesn't match (4+1)(2+1).", "18 doesn't match either.", "10 doesn't match either."],
+        "shortcut": "Always fully factorize first — a partial factorization gives a wrong exponent and a wrong factor count."
+      },
+      {
+        "id": "nbd-m-02",
+        "subtopic": "Multiples",
+        "question": "How many multiples of 4 are there between 20 and 100 (inclusive)?",
+        "options": ["21", "20", "22", "19"],
+        "answerIndex": 0,
+        "explanation": "Multiples of 4 from 20 to 100: (100−20)/4 + 1 = 20+1 = 21.",
+        "whyWrong": [null, "20 misses one endpoint from the count.", "22 overcounts by one.", "19 undercounts by two."],
+        "shortcut": "For 'multiples between A and B inclusive', use (B−A)/n + 1 when A is itself a multiple of n."
+      },
+      {
+        "id": "nbd-m-03",
+        "subtopic": "Prime Numbers",
+        "question": "Which of the following numbers is prime?",
+        "options": ["97", "91", "87", "93"],
+        "answerIndex": 0,
+        "explanation": "97 is not divisible by 2, 3, 5, or 7 (all primes up to √97≈9.8), so it's prime. 91=7×13, 87=3×29, 93=3×31.",
+        "whyWrong": [null, "91 = 7×13, composite.", "87 = 3×29, composite.", "93 = 3×31, composite."],
+        "shortcut": "For 2-digit numbers, testing divisibility by 2, 3, 5, 7 alone is always enough."
+      },
+      {
+        "id": "nbd-m-04",
+        "subtopic": "Factors",
+        "question": "How many factors of 100 are even?",
+        "options": ["6", "9", "3", "4"],
+        "answerIndex": 0,
+        "explanation": "Total factors of 100 (=2²×5²) is 9. Odd factors come only from the 5² part: 3 (1, 5, 25). Even factors = 9−3 = 6.",
+        "whyWrong": [null, "9 is the total number of factors, not just the even ones.", "3 is the count of odd factors, not even ones.", "4 doesn't match either calculation."],
+        "shortcut": "Odd factors of N come only from N's odd prime-power part; total factors minus odd factors gives the even count."
+      },
+      {
+        "id": "nbd-m-05",
+        "subtopic": "Co-prime Numbers",
+        "question": "Which of these pairs is NOT co-prime?",
+        "options": ["21 and 22", "14 and 21", "9 and 16", "25 and 36"],
+        "answerIndex": 1,
+        "explanation": "14=2×7 and 21=3×7 share the common factor 7, so HCF(14,21)=7≠1 — not co-prime.",
+        "whyWrong": ["21 and 22 are consecutive integers, always co-prime.", null, "9=3² and 16=2⁴ share no common prime factor, so they are co-prime.", "25=5² and 36=2²×3² share no common prime factor, so they are co-prime."],
+        "shortcut": "Consecutive integers are always co-prime — that immediately rules out option A without any calculation."
+      },
+      {
+        "id": "nbd-m-06",
+        "subtopic": "Divisibility Rules",
+        "question": "What is the smallest 3-digit number divisible by both 3 and 4?",
+        "options": ["108", "102", "120", "96"],
+        "answerIndex": 0,
+        "explanation": "Divisible by both 3 and 4 means divisible by LCM(3,4)=12. The smallest 3-digit multiple of 12 is 108 (12×9).",
+        "whyWrong": [null, "102 isn't divisible by 4 (102/4=25.5).", "120 is a valid multiple of 12, but not the smallest 3-digit one.", "96 is only a 2-digit number, so it's excluded."],
+        "shortcut": "'Divisible by both X and Y' always means divisible by LCM(X,Y) — find that first."
+      },
+      {
+        "id": "nbd-m-07",
+        "subtopic": "Prime Numbers",
+        "question": "How many two-digit prime numbers are there?",
+        "options": ["21", "20", "25", "18"],
+        "answerIndex": 0,
+        "explanation": "The two-digit primes are 11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97 — a count of 21.",
+        "whyWrong": [null, "20 undercounts by missing one prime from the list.", "25 is the total count of primes below 100 (including single-digit ones), not just two-digit ones.", "18 undercounts by missing several primes."],
+        "shortcut": "There are 25 primes below 100 total, 4 of which are single-digit (2,3,5,7) — so 25−4=21 are two-digit."
+      },
+      {
+        "id": "nbd-m-08",
+        "subtopic": "Twin Prime Numbers",
+        "question": "Which of the following is a twin prime pair?",
+        "options": ["71 and 73", "71 and 79", "73 and 79", "67 and 71"],
+        "answerIndex": 0,
+        "explanation": "71 and 73 are both prime and differ by exactly 2, making them a twin prime pair.",
+        "whyWrong": [null, "71 and 79 differ by 8, not 2.", "73 and 79 differ by 6, not 2.", "67 and 71 differ by 4, not 2."],
+        "shortcut": "Twin primes must differ by exactly 2 — check the gap first before verifying both numbers are prime."
+      },
+      {
+        "id": "nbd-m-09",
+        "subtopic": "Divisibility Rules",
+        "question": "Which of these numbers is NOT divisible by 9?",
+        "options": ["451", "459", "468", "504"],
+        "answerIndex": 0,
+        "explanation": "Digit sum of 451 is 4+5+1=10, which isn't divisible by 9, so 451 isn't divisible by 9.",
+        "whyWrong": [null, "459's digit sum is 18, divisible by 9.", "468's digit sum is 18, divisible by 9.", "504's digit sum is 9, divisible by 9."],
+        "shortcut": "Apply the digit-sum rule for 9 to each option instead of doing actual division."
+      },
+      {
+        "id": "nbd-m-10",
+        "subtopic": "Divisibility Rules",
+        "question": "Find the digit that should replace * in 62*4 so the number is divisible by 11.",
+        "options": ["0", "1", "9", "5"],
+        "answerIndex": 0,
+        "explanation": "Using the alternating sum for 11 on 6-2-*-4 (right to left): (4+2) − (*+6) = −*. This is divisible by 11 only when * = 0.",
+        "whyWrong": [null, "1 gives an alternating sum of −1, not divisible by 11.", "9 gives an alternating sum of −9, not divisible by 11.", "5 gives an alternating sum of −5, not divisible by 11."],
+        "shortcut": "For missing-digit divisibility-by-11 questions, set up the alternating sum as an equation and solve for the digit directly."
+      }
+    ],
+    "hard": [
+      {
+        "id": "nbd-h-01",
+        "subtopic": "Factors",
+        "question": "How many factors of 720 are perfect squares?",
+        "options": ["6", "8", "4", "9"],
+        "answerIndex": 0,
+        "explanation": "720=2⁴×3²×5¹. A factor is a perfect square only if every prime's exponent in it is even. For 2: 0,2,4 (3 options). For 3: 0,2 (2 options). For 5: only 0 (1 option). Total = 3×2×1 = 6.",
+        "whyWrong": [null, "8 overcounts by allowing an invalid combination.", "4 undercounts by missing valid combinations.", "9 overcounts even further."],
+        "shortcut": "Count only even-exponent choices (including 0) for each prime in the factorization, then multiply the counts."
+      },
+      {
+        "id": "nbd-h-02",
+        "subtopic": "Factors",
+        "question": "Find the sum of all factors of 60.",
+        "options": ["168", "180", "150", "144"],
+        "answerIndex": 0,
+        "explanation": "60=2²×3×5. Sum of factors = (1+2+4)(1+3)(1+5) = 7×4×6 = 168.",
+        "whyWrong": [null, "180 doesn't match 7×4×6.", "150 doesn't match it either.", "144 doesn't match it either."],
+        "shortcut": "Sum of factors = product of (sum of each prime's powers from 0 up to its exponent) — much faster than adding all factors individually."
+      },
+      {
+        "id": "nbd-h-03",
+        "subtopic": "Divisibility Rules",
+        "question": "Find the smallest number which leaves remainder 1 when divided by each of 2, 3, 4, 5 and 6, but is exactly divisible by 7.",
+        "options": ["301", "241", "121", "361"],
+        "answerIndex": 0,
+        "explanation": "The number must be of the form 60k+1 (LCM of 2,3,4,5,6 is 60, plus the common remainder 1). Testing k=5: 60×5+1=301, which is exactly divisible by 7 (301=7×43).",
+        "whyWrong": [null, "241 isn't divisible by 7 (241/7≈34.4).", "121 isn't divisible by 7 either.", "361 isn't of the form 60k+1 and isn't divisible by 7."],
+        "shortcut": "Build the general form using LCM+remainder first, then test successive values against the extra divisibility condition."
+      },
+      {
+        "id": "nbd-h-04",
+        "subtopic": "Co-prime Numbers",
+        "question": "Two 2-digit co-prime numbers have a product of 143. Find them.",
+        "options": ["11 and 13", "7 and 21", "5 and 27", "13 and 12"],
+        "answerIndex": 0,
+        "explanation": "143 = 11×13 is its only two-digit factor pair, and since both 11 and 13 are prime, they are automatically co-prime.",
+        "whyWrong": [null, "7×21=147, not 143.", "5×27=135, not 143.", "13×12=156, not 143."],
+        "shortcut": "Factorize the product directly (143=11×13) rather than testing each option's product from scratch."
+      },
+      {
+        "id": "nbd-h-05",
+        "subtopic": "Factors",
+        "question": "If N² is divisible by 72, what is the smallest possible value of N?",
+        "options": ["12", "6", "24", "36"],
+        "answerIndex": 0,
+        "explanation": "72=2³×3². For N² to be divisible by 72, N must contain at least 2² (so N² reaches 2⁴≥2³) and at least 3¹ (so N² reaches 3²). Smallest such N = 2²×3 = 12, and 12²=144 is indeed divisible by 72.",
+        "whyWrong": [null, "6²=36, which is not divisible by 72.", "24 also works (24²=576, divisible by 72) but isn't the smallest — 12 is smaller and still works.", "36 also works but isn't the smallest possible N."],
+        "shortcut": "For N² to be divisible by M, N must contain at least ⌈(each prime's exponent in M)/2⌉ of that prime."
+      },
+      {
+        "id": "nbd-h-06",
+        "subtopic": "Co-prime Numbers",
+        "question": "How many pairs of co-prime numbers (a,b) with a<b exist such that a×b=180?",
+        "options": ["4", "3", "6", "8"],
+        "answerIndex": 0,
+        "explanation": "180=2²×3²×5 has 3 distinct prime factors. Each prime must go entirely to one side of a co-prime pair, giving 2³=8 assignments, or 4 unordered pairs (since 180 isn't a perfect square, no pair has a=b). All 4 satisfy a<b uniquely: (1,180), (4,45), (5,36), (9,20).",
+        "whyWrong": [null, "3 undercounts — one valid pair was missed.", "6 overcounts, double-counting some pairs as both (a,b) and (b,a).", "8 counts every ordered assignment without removing the mirror duplicates."],
+        "shortcut": "For a number with k distinct prime factors, the number of co-prime factor pairs (unordered) is 2^(k−1)."
+      },
+      {
+        "id": "nbd-h-07",
+        "subtopic": "Twin Prime Numbers",
+        "question": "Find the sum of the smaller member of each of the first 5 twin prime pairs.",
+        "options": ["65", "60", "70", "55"],
+        "answerIndex": 0,
+        "explanation": "The first five twin prime pairs are (3,5), (5,7), (11,13), (17,19), (29,31). Their smaller members are 3,5,11,17,29, summing to 65.",
+        "whyWrong": [null, "60 doesn't match summing 3+5+11+17+29.", "70 doesn't match it either.", "55 doesn't match it either."],
+        "shortcut": "Memorize the twin prime pairs up to 31 to answer this kind of question instantly."
+      },
+      {
+        "id": "nbd-h-08",
+        "subtopic": "Divisibility Rules",
+        "question": "A number leaves remainder 3 when divided by 5, and remainder 5 when divided by 7. Find the smallest such positive number.",
+        "options": ["33", "38", "23", "28"],
+        "answerIndex": 0,
+        "explanation": "Testing numbers of the form 5k+3 against the second condition: the smallest match is 33 (33=5×6+3, and 33=7×4+5).",
+        "whyWrong": [null, "38 gives remainder 3 when divided by 7, not 5.", "23 gives remainder 2 when divided by 7, not 5.", "28 gives remainder 0 when divided by 7, not 5."],
+        "shortcut": "List multiples satisfying the first condition and test each against the second — faster than a formal Chinese Remainder Theorem setup for small numbers."
+      },
+      {
+        "id": "nbd-h-09",
+        "subtopic": "Factors",
+        "question": "Find the largest 2-digit number that has exactly 3 factors.",
+        "options": ["49", "81", "64", "25"],
+        "answerIndex": 0,
+        "explanation": "A number has exactly 3 factors only if it's the square of a prime (factors: 1, p, p²). The largest prime p with p²≤99 is 7 (7²=49); the next prime, 11, gives 121, which exceeds 2 digits.",
+        "whyWrong": [null, "81=3⁴ has 5 factors (1,3,9,27,81), not 3.", "64=2⁶ has 7 factors, not 3.", "25=5² does have exactly 3 factors, but it's smaller than 49, which also qualifies."],
+        "shortcut": "'Exactly 3 factors' is a strong hint meaning 'square of a prime' — search directly for the largest qualifying prime square."
+      },
+      {
+        "id": "nbd-h-10",
+        "subtopic": "Divisibility Rules",
+        "question": "The 5-digit number 4A67B is divisible by both 3 and 11. Find the smallest possible value of A+B.",
+        "options": ["7", "10", "13", "9"],
+        "answerIndex": 0,
+        "explanation": "Using divisibility by 3 (digit sum 17+A+B divisible by 3) and by 11 (alternating sum divisible by 11), the valid combinations include A=5,B=2 (sum 7), A=1,B=9 (sum 10), and A=8,B=5 (sum 13). The smallest valid sum is 7.",
+        "whyWrong": [null, "10 is a valid combination (A=1,B=9) but not the smallest one.", "13 is also valid (A=8,B=5) but larger than the smallest.", "9 doesn't correspond to any valid (A,B) pair satisfying both conditions."],
+        "shortcut": "Set up both divisibility conditions as separate equations, solve the alternating-sum-for-11 equation first (fewer solutions), then filter against the digit-sum-for-3 condition."
+      }
+    ]
+  },
+  "revision": {
+    "quickSheet": [
+      "Number of factors of N = product of (each prime's exponent + 1) from N's prime factorization.",
+      "A prime has exactly 2 factors; a composite has more than 2; 1 has exactly 1 and is neither.",
+      "Co-prime means HCF=1 — the numbers don't need to be individually prime.",
+      "Twin primes differ by exactly 2 — memorize the pairs up to 75.",
+      "Divisibility by 3/9 → digit sum; by 11 → alternating digit sum; by 4/8 → last 2/3 digits; by 2/5/10 → last digit."
+    ],
+    "oneMinute": [
+      "Factors divide the number; multiples are divided by the number — don't mix these up.",
+      "Test primality only up to √N.",
+      "Consecutive integers are always co-prime."
+    ],
+    "summary": "Factors, multiples, primes, co-primes, and divisibility rules are the vocabulary of Number System — every LCM/HCF, remainder, or unit-digit question leans on them. The recurring shortcut across all of them is prime factorization: once you can factorize a number quickly, counting factors, checking co-primality, and applying divisibility rules all become fast, mechanical steps rather than guesswork."
+  }
+}

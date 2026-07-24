@@ -1,0 +1,385 @@
+{
+  "topicId": "squares-cubes",
+  "subtopics": ["Perfect Squares", "Perfect Cubes"],
+  "learn": {
+    "title": "Perfect Squares & Cubes",
+    "intro": "Recognizing squares and cubes on sight — without a calculator — saves huge amounts of time across Number System, unit-digit, and even Data Interpretation questions.",
+    "sections": [
+      {
+        "subtopic": "Perfect Squares",
+        "explanation": "A perfect square is the result of multiplying an integer by itself (n×n=n²). Recognizing them quickly helps with simplification, unit-digit checks, and factor-count problems.",
+        "realLifeExample": "Tiling a square room with side length 12 ft using 1 sq ft tiles needs exactly 12²=144 tiles — perfect squares appear naturally in area calculations.",
+        "memoryTrick": "Perfect squares only end in 0, 1, 4, 5, 6, or 9 — never in 2, 3, 7, or 8.",
+        "shortcutTrick": "To quickly check if a number could be a perfect square, first check its last digit against the allowed set; if it fails, it's definitely not a perfect square — this eliminates many options instantly.",
+        "formulaCard": ["Squares of 1-20: 1,4,9,16,25,36,49,64,81,100,121,144,169,196,225,256,289,324,361,400", "n² − (n−1)² = 2n−1 (the gap between consecutive squares)"],
+        "commonMistakes": [
+          "Assuming a number ending in an allowed digit (0,1,4,5,6,9) IS automatically a perfect square — the digit test only rules non-squares out, it never confirms one.",
+          "Forgetting to double-check with an actual square root estimate after the last-digit filter passes."
+        ],
+        "talentSprintTip": "TalentSprint often gives large numbers and asks 'is this a perfect square' — combine the last-digit filter with an approximate square root estimate to decide fast.",
+        "tcsNqtTip": "TCS NQT tests memorized squares up to 25² or 30² — memorize this range to skip calculation entirely during the test."
+      },
+      {
+        "subtopic": "Perfect Cubes",
+        "explanation": "A perfect cube is the result of multiplying an integer by itself three times (n×n×n=n³). Cubes grow much faster than squares, so fewer of them appear in a given range.",
+        "realLifeExample": "Packing a cube-shaped storage box with side 5 units using 1-unit cubes needs exactly 5³=125 small cubes — perfect cubes appear naturally in volume calculations.",
+        "memoryTrick": "Perfect cubes keep the same last digit as their root for most digits, except 2↔8 and 3↔7, which swap.",
+        "shortcutTrick": "To estimate a cube root: group the number in sets of 3 digits from the right to gauge the root's digit count, then match the last digit using the swap rule (2↔8, 3↔7, others unchanged) to pin down the last digit of the root.",
+        "formulaCard": ["Cubes of 1-15: 1,8,27,64,125,216,343,512,729,1000,1331,1728,2197,2744,3375", "Last-digit cube pairs: 2³ ends in 8, 8³ ends in 2; 3³ ends in 7, 7³ ends in 3 — all other digits match their root's last digit"],
+        "commonMistakes": [
+          "Forgetting the 2↔8 and 3↔7 swap when estimating a cube root from the last digit.",
+          "Confusing cube root estimation with square root estimation — the digit-grouping and swap rules are different."
+        ],
+        "talentSprintTip": "TalentSprint sometimes asks for the cube root of numbers up to 6 digits — memorizing cubes up to 15³=3375 covers nearly all such questions directly.",
+        "tcsNqtTip": "TCS NQT occasionally tests 'is this number a perfect cube' — check the last-digit swap rule first as a fast filter before attempting to estimate the actual root."
+      }
+    ]
+  },
+  "solvedExamples": [
+    {
+      "id": "sc-se-01",
+      "subtopic": "Perfect Squares",
+      "question": "Is 1024 a perfect square? If so, find its square root.",
+      "solution": "1024 ends in 4, an allowed last digit for perfect squares.\n32×32 = 1024, confirming it.",
+      "answer": "Yes, √1024 = 32"
+    },
+    {
+      "id": "sc-se-02",
+      "subtopic": "Perfect Squares",
+      "question": "Find the smallest perfect square greater than 200.",
+      "solution": "14² = 196 (less than 200). 15² = 225 (greater than 200).\nSo the smallest perfect square greater than 200 is 225.",
+      "answer": "225"
+    },
+    {
+      "id": "sc-se-03",
+      "subtopic": "Perfect Cubes",
+      "question": "Find the cube root of 2744.",
+      "solution": "2744 lies between 2197 (13³) and 3375 (14³).\nIts last digit is 4, which matches a root ending in 4 (no swap needed).\n14×14×14 = 2744, confirming the cube root is 14.",
+      "answer": "14"
+    },
+    {
+      "id": "sc-se-04",
+      "subtopic": "Perfect Cubes",
+      "question": "Is 500 a perfect cube?",
+      "solution": "7³ = 343 and 8³ = 512. 500 falls strictly between them, so it isn't equal to either — not a perfect cube.",
+      "answer": "No"
+    },
+    {
+      "id": "sc-se-05",
+      "subtopic": "Perfect Squares",
+      "question": "Find a number between 500 and 800 that is both a perfect square and a perfect cube.",
+      "solution": "A number that is both a square and a cube must be a perfect 6th power.\n1⁶=1, 2⁶=64, 3⁶=729 — and 729 falls between 500 and 800.",
+      "answer": "729"
+    }
+  ],
+  "practiceExamples": [
+    {
+      "id": "sc-pe-01",
+      "subtopic": "Perfect Squares",
+      "question": "Is 625 a perfect square? Find its root if so.",
+      "answer": "Yes, 25",
+      "hint": "Check the last digit (5 is allowed), then test 25²."
+    },
+    {
+      "id": "sc-pe-02",
+      "subtopic": "Perfect Squares",
+      "question": "Find the largest perfect square less than 300.",
+      "answer": "289",
+      "hint": "17² = 289; 18² = 324 exceeds 300."
+    },
+    {
+      "id": "sc-pe-03",
+      "subtopic": "Perfect Cubes",
+      "question": "Find the cube root of 3375.",
+      "answer": "15",
+      "hint": "3375 lies between 2744 (14³) and 4096 (16³); test 15³."
+    },
+    {
+      "id": "sc-pe-04",
+      "subtopic": "Perfect Cubes",
+      "question": "Is 900 a perfect cube?",
+      "answer": "No",
+      "hint": "9³=729 and 10³=1000 — 900 falls between them."
+    },
+    {
+      "id": "sc-pe-05",
+      "subtopic": "Perfect Squares",
+      "question": "Find the smallest number greater than 1 that is both a perfect square and a perfect cube.",
+      "answer": "64",
+      "hint": "Look for perfect 6th powers: 2⁶=64."
+    }
+  ],
+  "quiz": {
+    "easy": [
+      {
+        "id": "sc-e-01",
+        "subtopic": "Perfect Squares",
+        "question": "Which of these numbers is NOT a perfect square?",
+        "options": ["81", "72", "100", "121"],
+        "answerIndex": 1,
+        "explanation": "81=9², 100=10², 121=11², but 72 falls between 8²=64 and 9²=81, so it isn't a perfect square.",
+        "whyWrong": ["81=9², so it is a perfect square.", null, "100=10², so it is a perfect square.", "121=11², so it is a perfect square."],
+        "shortcut": "Memorizing squares up to 15² makes spotting non-squares instant."
+      },
+      {
+        "id": "sc-e-02",
+        "subtopic": "Perfect Squares",
+        "question": "What is the square root of 169?",
+        "options": ["13", "12", "14", "15"],
+        "answerIndex": 0,
+        "explanation": "13×13=169.",
+        "whyWrong": [null, "12²=144, not 169.", "14²=196, not 169.", "15²=225, not 169."],
+        "shortcut": "Memorize squares up to 20² to answer these instantly."
+      },
+      {
+        "id": "sc-e-03",
+        "subtopic": "Perfect Cubes",
+        "question": "What is the cube of 4?",
+        "options": ["64", "48", "56", "72"],
+        "answerIndex": 0,
+        "explanation": "4×4×4=64.",
+        "whyWrong": [null, "48 doesn't equal 4×4×4.", "56 doesn't equal 4×4×4 either.", "72 doesn't equal 4×4×4 either."],
+        "shortcut": "Memorize cubes up to 10³ for instant recall."
+      },
+      {
+        "id": "sc-e-04",
+        "subtopic": "Perfect Cubes",
+        "question": "Which of these numbers is a perfect cube?",
+        "options": ["216", "200", "225", "250"],
+        "answerIndex": 0,
+        "explanation": "216=6³.",
+        "whyWrong": [null, "200 isn't a perfect cube (5³=125, 6³=216).", "225 is a perfect square (15²) but not a perfect cube.", "250 isn't a perfect cube either."],
+        "shortcut": "Memorize cubes up to 10³=1000 to recognize them quickly."
+      },
+      {
+        "id": "sc-e-05",
+        "subtopic": "Perfect Squares",
+        "question": "A perfect square can never end in which of these digits?",
+        "options": ["3", "4", "9", "6"],
+        "answerIndex": 0,
+        "explanation": "Perfect squares only end in 0, 1, 4, 5, 6, 9 — 3 is never a valid last digit for a perfect square.",
+        "whyWrong": [null, "4 is a valid last digit for perfect squares (e.g. 4, 64, 144).", "9 is a valid last digit for perfect squares (e.g. 9, 49, 169).", "6 is a valid last digit for perfect squares (e.g. 16, 36, 196)."],
+        "shortcut": "Memorize the six allowed last digits for perfect squares: 0,1,4,5,6,9."
+      }
+    ],
+    "medium": [
+      {
+        "id": "sc-m-01",
+        "subtopic": "Perfect Squares",
+        "question": "Find the smallest perfect square greater than 150.",
+        "options": ["169", "144", "196", "160"],
+        "answerIndex": 0,
+        "explanation": "12²=144 (less than 150), 13²=169 (greater than 150), so 169 is the smallest perfect square greater than 150.",
+        "whyWrong": [null, "144 is less than 150, not greater.", "196=14² is greater than 150 but not the smallest such square.", "160 isn't a perfect square at all."],
+        "shortcut": "Find the integer square root of the target number, round up, then square that."
+      },
+      {
+        "id": "sc-m-02",
+        "subtopic": "Perfect Cubes",
+        "question": "Find the cube root of 4096.",
+        "options": ["16", "14", "15", "18"],
+        "answerIndex": 0,
+        "explanation": "16×16×16=4096.",
+        "whyWrong": [null, "14³=2744, not 4096.", "15³=3375, not 4096.", "18³=5832, not 4096."],
+        "shortcut": "Group the digits in sets of 3 from the right and use the last-digit rule (6 stays 6) to estimate quickly."
+      },
+      {
+        "id": "sc-m-03",
+        "subtopic": "Perfect Squares",
+        "question": "How many perfect squares lie between 50 and 150?",
+        "options": ["5", "4", "6", "3"],
+        "answerIndex": 0,
+        "explanation": "The perfect squares between 50 and 150 are 64, 81, 100, 121, 144 — a total of 5.",
+        "whyWrong": [null, "4 undercounts by missing one square.", "6 overcounts by including a square outside the range.", "3 undercounts by missing two squares."],
+        "shortcut": "Find ⌈√50⌉ and ⌊√150⌋, then count the integers between them inclusive."
+      },
+      {
+        "id": "sc-m-04",
+        "subtopic": "Perfect Cubes",
+        "question": "Is 1728 a perfect cube? If so, find its cube root.",
+        "options": ["Yes, 12", "Yes, 14", "No", "Yes, 10"],
+        "answerIndex": 0,
+        "explanation": "12×12×12=1728, so yes, 1728 is a perfect cube with cube root 12.",
+        "whyWrong": [null, "14³=2744, not 1728.", "1728 is indeed a perfect cube, so 'No' is incorrect.", "10³=1000, not 1728."],
+        "shortcut": "Memorizing cubes up to 15³ covers most aptitude test cube-root questions directly."
+      },
+      {
+        "id": "sc-m-05",
+        "subtopic": "Perfect Squares",
+        "question": "What is the sum of the first 5 perfect square numbers (starting from 1²)?",
+        "options": ["55", "50", "60", "45"],
+        "answerIndex": 0,
+        "explanation": "1²+2²+3²+4²+5²=1+4+9+16+25=55.",
+        "whyWrong": [null, "50 doesn't match the sum 1+4+9+16+25.", "60 doesn't match it either.", "45 doesn't match it either."],
+        "shortcut": "Use the formula for the sum of the first n squares: n(n+1)(2n+1)/6 = 5×6×11/6 = 55."
+      },
+      {
+        "id": "sc-m-06",
+        "subtopic": "Perfect Squares",
+        "question": "A number when squared gives 2809. Find the number.",
+        "options": ["53", "52", "54", "51"],
+        "answerIndex": 0,
+        "explanation": "53×53=2809.",
+        "whyWrong": [null, "52²=2704, not 2809.", "54²=2916, not 2809.", "51²=2601, not 2809."],
+        "shortcut": "Estimate the root using nearby memorized squares (50²=2500), then fine-tune digit by digit."
+      },
+      {
+        "id": "sc-m-07",
+        "subtopic": "Perfect Squares",
+        "question": "Which of the following is both a perfect square and ends in the digit 6?",
+        "options": ["196", "225", "289", "324"],
+        "answerIndex": 0,
+        "explanation": "196=14², and it ends in 6, satisfying both conditions.",
+        "whyWrong": [null, "225=15² is a perfect square but ends in 5, not 6.", "289=17² is a perfect square but ends in 9, not 6.", "324=18² is a perfect square but ends in 4, not 6."],
+        "shortcut": "A square ends in 6 only when its root ends in 4 or 6 (since 4²=16, 6²=36) — check both cases."
+      },
+      {
+        "id": "sc-m-08",
+        "subtopic": "Perfect Cubes",
+        "question": "Find the smallest 4-digit perfect cube.",
+        "options": ["1000", "729", "1331", "900"],
+        "answerIndex": 0,
+        "explanation": "10³=1000 is exactly a 4-digit number and the smallest cube reaching 4 digits (9³=729 is only 3 digits).",
+        "whyWrong": [null, "729=9³ is only a 3-digit number.", "1331=11³ is a valid 4-digit cube, but not the smallest one.", "900 isn't a perfect cube at all."],
+        "shortcut": "Test consecutive integers' cubes near the digit-count boundary to find the transition point."
+      },
+      {
+        "id": "sc-m-09",
+        "subtopic": "Perfect Squares",
+        "question": "If x² = 1444, find the positive value of x.",
+        "options": ["38", "36", "40", "42"],
+        "answerIndex": 0,
+        "explanation": "38×38=1444.",
+        "whyWrong": [null, "36²=1296, not 1444.", "40²=1600, not 1444.", "42²=1764, not 1444."],
+        "shortcut": "Since 1444 ends in 4, its root ends in either 2 or 8 — test values near √1444≈38 directly."
+      },
+      {
+        "id": "sc-m-10",
+        "subtopic": "Perfect Cubes",
+        "question": "Find the cube root of 9261.",
+        "options": ["21", "19", "23", "20"],
+        "answerIndex": 0,
+        "explanation": "21×21×21=9261.",
+        "whyWrong": [null, "19³=6859, not 9261.", "23³=12167, not 9261.", "20³=8000, not 9261."],
+        "shortcut": "9261 ends in 1, so its cube root also ends in 1 (no swap needed) — test 21 directly, close to the estimated range."
+      }
+    ],
+    "hard": [
+      {
+        "id": "sc-h-01",
+        "subtopic": "Perfect Squares",
+        "question": "Find the sum of the digits of 999².",
+        "options": ["27", "26", "28", "25"],
+        "answerIndex": 0,
+        "explanation": "999²=998001. Sum of digits = 9+9+8+0+0+1 = 27.",
+        "whyWrong": [null, "26 doesn't match the actual digit sum of 998001.", "28 doesn't match it either.", "25 doesn't match it either."],
+        "shortcut": "Use (1000−1)² = 1000²−2×1000+1 = 998001, avoiding direct multiplication of 999×999."
+      },
+      {
+        "id": "sc-h-02",
+        "subtopic": "Perfect Squares",
+        "question": "How many numbers between 1 and 1000 are both perfect squares and perfect cubes?",
+        "options": ["3", "2", "4", "1"],
+        "answerIndex": 0,
+        "explanation": "Numbers that are both perfect squares and perfect cubes are perfect 6th powers. Below 1000: 1⁶=1, 2⁶=64, 3⁶=729 — three such numbers (4⁶=4096 exceeds 1000).",
+        "whyWrong": [null, "2 undercounts — it misses one of the three valid 6th powers.", "4 overcounts — 4⁶=4096 exceeds 1000.", "1 severely undercounts, missing two valid numbers."],
+        "shortcut": "'Both square and cube' always means a 6th power — test 1⁶, 2⁶, 3⁶... until exceeding the limit."
+      },
+      {
+        "id": "sc-h-03",
+        "subtopic": "Perfect Squares",
+        "question": "Find the smallest number by which 1350 must be multiplied to make it a perfect square.",
+        "options": ["6", "3", "2", "5"],
+        "answerIndex": 0,
+        "explanation": "1350=2¹×3³×5². To make every exponent even, multiply by 2¹×3¹=6, giving 2²×3⁴×5² — a perfect square.",
+        "whyWrong": [null, "3 alone fixes 3's exponent but leaves 2's exponent odd.", "2 alone fixes 2's exponent but leaves 3's exponent odd.", "5 doesn't address either odd exponent."],
+        "shortcut": "Factorize fully, then multiply only by the primes with odd exponents (each needed just once more) to make every exponent even."
+      },
+      {
+        "id": "sc-h-04",
+        "subtopic": "Perfect Cubes",
+        "question": "Find the smallest number by which 2560 must be divided to make it a perfect cube.",
+        "options": ["5", "2", "10", "4"],
+        "answerIndex": 0,
+        "explanation": "2560=2⁹×5¹. The exponent of 2 (9) is already a multiple of 3, but 5's exponent (1) isn't. Dividing by 5 leaves 2⁹=512=8³, a perfect cube.",
+        "whyWrong": [null, "Dividing by 2 disturbs the already-valid exponent of 2, making it no longer a multiple of 3.", "Dividing by 10 unnecessarily removes a factor of 2 as well, which wasn't needed.", "Dividing by 4 also disturbs 2's valid exponent unnecessarily."],
+        "shortcut": "Only adjust the primes whose exponents aren't already multiples of 3 — leave the others untouched."
+      },
+      {
+        "id": "sc-h-05",
+        "subtopic": "Perfect Squares",
+        "question": "If a³ is a perfect square and a is not 1, what is the smallest possible value of a?",
+        "options": ["4", "2", "8", "9"],
+        "answerIndex": 0,
+        "explanation": "Since a³=a²×a and a² is automatically a perfect square, a³ is a perfect square exactly when a itself is a perfect square. The smallest such a greater than 1 is 4, and indeed 4³=64=8².",
+        "whyWrong": [null, "2³=8, which is not a perfect square, so a=2 doesn't satisfy the condition.", "8 is not itself a perfect square, so a=8 doesn't give a perfect square when cubed (8³=512, and 512 isn't a perfect square).", "9³=729=27², so a=9 does work, but it's larger than the smallest valid value, 4."],
+        "shortcut": "Since a³ is a perfect square exactly when a is, just test perfect squares directly (4, 9, 16...)."
+      },
+      {
+        "id": "sc-h-06",
+        "subtopic": "Perfect Cubes",
+        "question": "Find the number of trailing zeros in 100³.",
+        "options": ["6", "3", "4", "9"],
+        "answerIndex": 0,
+        "explanation": "100³ = (10²)³ = 10⁶ = 1,000,000, which has exactly 6 trailing zeros.",
+        "whyWrong": [null, "3 doesn't match 10⁶'s trailing zero count.", "4 doesn't match it either.", "9 overcounts significantly."],
+        "shortcut": "Convert the base to a power of 10 first (100=10²), then multiply the exponents: (10²)³=10⁶."
+      },
+      {
+        "id": "sc-h-07",
+        "subtopic": "Perfect Squares",
+        "question": "Which is the smallest perfect square that is also divisible by 12?",
+        "options": ["36", "24", "48", "144"],
+        "answerIndex": 0,
+        "explanation": "12=2²×3. For a perfect square divisible by 12, every prime's exponent must be even, requiring at least 2² and 3² — giving 36=6², which is indeed divisible by 12.",
+        "whyWrong": [null, "24 is divisible by 12 but isn't a perfect square.", "48 is divisible by 12 but isn't a perfect square either.", "144 is a perfect square divisible by 12, but it's larger than the smallest valid answer, 36."],
+        "shortcut": "Round up each prime's required exponent to the next even number when building the smallest qualifying perfect square."
+      },
+      {
+        "id": "sc-h-08",
+        "subtopic": "Perfect Squares",
+        "question": "The difference between the squares of two consecutive numbers is 45. Find the two numbers.",
+        "options": ["22 and 23", "21 and 22", "23 and 24", "20 and 21"],
+        "answerIndex": 0,
+        "explanation": "The difference between consecutive squares n² and (n+1)² is always 2n+1. Setting 2n+1=45 gives n=22, so the numbers are 22 and 23.",
+        "whyWrong": [null, "21 and 22 give a difference of 2(21)+1=43, not 45.", "23 and 24 give a difference of 2(23)+1=47, not 45.", "20 and 21 give a difference of 2(20)+1=41, not 45."],
+        "shortcut": "The gap between consecutive squares is always 2n+1 — solve directly for n instead of testing pairs."
+      },
+      {
+        "id": "sc-h-09",
+        "subtopic": "Perfect Squares",
+        "question": "Find the smallest positive integer that must be added to 500 to make it a perfect square.",
+        "options": ["29", "25", "30", "20"],
+        "answerIndex": 0,
+        "explanation": "The nearest perfect square above 500 is 23²=529 (since 22²=484 is below 500). 529−500=29.",
+        "whyWrong": [null, "25 doesn't correspond to reaching the next perfect square above 500.", "30 overshoots past the nearest perfect square.", "20 doesn't reach a perfect square at all (500+20=520)."],
+        "shortcut": "Find the integer square root of the number, round up, square that, then subtract the original number."
+      },
+      {
+        "id": "sc-h-10",
+        "subtopic": "Perfect Cubes",
+        "question": "A perfect cube has 4 digits and its cube root is an odd number. How many such perfect cubes exist?",
+        "options": ["6", "5", "7", "4"],
+        "answerIndex": 0,
+        "explanation": "4-digit cubes come from cube roots 10 through 21 (10³=1000 to 21³=9261). The odd roots in that range are 11, 13, 15, 17, 19, 21 — 6 values.",
+        "whyWrong": [null, "5 undercounts by missing one odd root in the range.", "7 overcounts by including a root outside the valid range.", "4 undercounts by missing two odd roots."],
+        "shortcut": "First find the full range of cube roots giving a 4-digit result, then filter for odd values within that range."
+      }
+    ]
+  },
+  "revision": {
+    "quickSheet": [
+      "Perfect squares only end in 0, 1, 4, 5, 6, 9 — use this as a fast elimination filter, never a confirmation.",
+      "Memorize squares up to 20-25 and cubes up to 15 for instant recall during the test.",
+      "Cube-root last digit swaps: 2↔8, 3↔7; every other digit matches its root.",
+      "'Both square and cube' always means a perfect 6th power.",
+      "To make a number a perfect square/cube, factorize it and fix only the primes whose exponents don't already fit (even for squares, multiples of 3 for cubes)."
+    ],
+    "oneMinute": [
+      "Squares: check last digit first, then estimate the root.",
+      "Cubes: group digits in 3s from the right, then apply the last-digit swap rule.",
+      "The gap between consecutive squares is always 2n+1."
+    ],
+    "summary": "Squares and cubes questions reward memorization plus a few structural rules — the six allowed last digits for squares, the swap rule for cube roots, and the 'fix only the odd exponents' trick for turning a number into a perfect square or cube. Once squares up to 25² and cubes up to 15³ are second nature, most questions in this topic become instant recall rather than calculation."
+  }
+}

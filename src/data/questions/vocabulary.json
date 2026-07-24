@@ -1,0 +1,399 @@
+{
+  "topicId": "vocabulary",
+  "subtopics": ["Vocabulary", "Synonyms", "Antonyms"],
+  "learn": {
+    "title": "Vocabulary Builder",
+    "intro": "Vocabulary questions reward precise reading — matching not just general meaning, but degree, tone, and context. A strong vocabulary also speeds up every other verbal section, since comprehension depends on recognizing words on sight.",
+    "sections": [
+      {
+        "subtopic": "Vocabulary",
+        "explanation": "Vocabulary questions test knowledge of word meanings, usage, and word families (noun/verb/adjective/adverb forms of the same root) — a strong vocabulary speeds up comprehension across every verbal section.",
+        "realLifeExample": "Understanding a formal email or news article quickly depends heavily on recognizing sophisticated words on sight, rather than pausing to guess their meaning from context every time.",
+        "memoryTrick": "Learn words in FAMILIES, not isolation: 'benevolent' (adj) → 'benevolence' (noun) → 'benevolently' (adverb) — one root, three related words.",
+        "shortcutTrick": "When you don't know a word, break it into prefix + root + suffix — many English words are built from Latin/Greek roots (bene=good, mal=bad, dict=speak) that unlock the general meaning even without exact recall.",
+        "formulaCard": ["Common prefixes: un-/in-/dis- (not), re- (again), pre- (before), anti- (against)", "Common roots: dict (speak), spect (see), port (carry), duc (lead)", "Common suffixes: -ful (full of), -less (without), -able (capable of)"],
+        "commonMistakes": [
+          "Memorizing word lists without example sentences, making it hard to recall usage in context.",
+          "Confusing similar-looking but unrelated words (e.g. 'affect' vs 'effect')."
+        ],
+        "talentSprintTip": "TalentSprint tests vocabulary heavily through 'fill in the blank with the most appropriate word' formats — practice using new words in your own sentences, not just memorizing definitions.",
+        "tcsNqtTip": "TCS NQT often tests word families (choosing the correct noun/verb/adjective form to fit a sentence's grammar) — learn all forms of a word together, not just one."
+      },
+      {
+        "subtopic": "Synonyms",
+        "explanation": "A synonym is a word with a similar (not always identical) meaning to another word. Exam questions test the closest match, so subtle differences in intensity, formality, or connotation matter.",
+        "realLifeExample": "'Happy' and 'ecstatic' are synonyms, but they're not interchangeable in every sentence — 'ecstatic' implies a much stronger, more intense joy, exactly the kind of nuance these questions test.",
+        "memoryTrick": "Synonyms are close cousins, not identical twins — always check for the closest match in DEGREE and TONE, not just a same-ballpark meaning.",
+        "shortcutTrick": "When two options both seem like valid synonyms, pick the one that matches the ORIGINAL word's intensity and formality level most closely.",
+        "formulaCard": ["Check degree: mild vs strong (happy vs ecstatic)", "Check tone: formal vs informal (deceased vs dead)", "Check connotation: positive vs negative vs neutral (frugal=positive, stingy=negative, both mean 'careful with money')"],
+        "commonMistakes": [
+          "Picking a word that's merely 'in the same general topic' rather than a true synonym.",
+          "Ignoring connotation — choosing a negative-toned word as a synonym for a neutral or positive one."
+        ],
+        "talentSprintTip": "TalentSprint's synonym questions often include one 'obviously wrong' option and three genuinely close synonyms — the correct answer usually matches meaning AND degree/tone most precisely.",
+        "tcsNqtTip": "TCS NQT sometimes gives synonym questions using the word in a specific sentence context — always check the chosen synonym fits the word's meaning AS USED there, since many words have multiple meanings."
+      },
+      {
+        "subtopic": "Antonyms",
+        "explanation": "An antonym is a word with the opposite meaning. Some words have direct, complementary opposites (alive/dead), while others exist on a gradable scale (hot/cold, with warm/cool in between).",
+        "realLifeExample": "Describing weather as 'not hot' doesn't necessarily mean 'cold' — it could be 'mild' or 'cool' — showing that many antonym pairs are gradable rather than strictly binary.",
+        "memoryTrick": "Gradable antonyms (big/small) allow a middle ground; complementary antonyms (alive/dead, true/false) don't — knowing which type avoids picking a 'too extreme' wrong answer.",
+        "shortcutTrick": "For a word with multiple possible antonyms, pick the one that's the DIRECT opposite in the same sense as the original word is being used.",
+        "formulaCard": ["Complementary antonyms: alive/dead, true/false, present/absent (no middle ground)", "Gradable antonyms: hot/cold, big/small, happy/sad (allow degrees in between)", "Relational antonyms: buy/sell, teacher/student (imply each other)"],
+        "commonMistakes": [
+          "Picking a word that's simply unrelated instead of a true opposite.",
+          "Confusing a word's antonym with a different sense of a multi-meaning word (e.g. 'light' the weight-adjective's antonym is 'heavy', but 'light' the noun's antonym is 'darkness')."
+        ],
+        "talentSprintTip": "TalentSprint tests antonym questions using polysemous words (like 'light', 'fair', 'sound') where the correct antonym depends entirely on which meaning is intended — check for context clues.",
+        "tcsNqtTip": "TCS NQT's antonym sets often place a near-synonym as a distractor option — read every option carefully, since a word that seems 'somewhat opposite' can be a trap."
+      }
+    ]
+  },
+  "solvedExamples": [
+    {
+      "id": "voc-se-01",
+      "subtopic": "Vocabulary",
+      "question": "What does \"ubiquitous\" mean?",
+      "solution": "\"Ubiquitous\" describes something present, appearing, or found everywhere.",
+      "answer": "Present or found everywhere"
+    },
+    {
+      "id": "voc-se-02",
+      "subtopic": "Vocabulary",
+      "question": "Convert the adjective \"generous\" to its noun form.",
+      "solution": "Adjectives ending in -ous often form nouns ending in -osity: generous → generosity.",
+      "answer": "generosity"
+    },
+    {
+      "id": "voc-se-03",
+      "subtopic": "Synonyms",
+      "question": "Choose the closest synonym for \"meticulous.\"",
+      "solution": "\"Meticulous\" means extremely careful and precise about details — \"painstaking\" captures the same meaning and intensity.",
+      "answer": "Painstaking"
+    },
+    {
+      "id": "voc-se-04",
+      "subtopic": "Synonyms",
+      "question": "Choose the closest synonym for \"candid\" in the sentence \"She gave a candid response.\"",
+      "solution": "\"Candid\" means honest and straightforward, matching \"frank\" closely in this context.",
+      "answer": "Frank"
+    },
+    {
+      "id": "voc-se-05",
+      "subtopic": "Antonyms",
+      "question": "Choose the antonym of \"benevolent.\"",
+      "solution": "\"Benevolent\" means kind and generous; its direct opposite is \"malevolent\" (wishing harm on others).",
+      "answer": "Malevolent"
+    }
+  ],
+  "practiceExamples": [
+    {
+      "id": "voc-pe-01",
+      "subtopic": "Vocabulary",
+      "question": "What does \"gregarious\" mean?",
+      "answer": "Sociable, fond of company",
+      "hint": "Think about someone who enjoys being with others."
+    },
+    {
+      "id": "voc-pe-02",
+      "subtopic": "Vocabulary",
+      "question": "Convert \"courage\" into its adjective form.",
+      "answer": "courageous",
+      "hint": "Add a suffix meaning 'full of'."
+    },
+    {
+      "id": "voc-pe-03",
+      "subtopic": "Synonyms",
+      "question": "Find a synonym for \"abundant.\"",
+      "answer": "Plentiful",
+      "hint": "Think of a word meaning 'existing in large quantities'."
+    },
+    {
+      "id": "voc-pe-04",
+      "subtopic": "Synonyms",
+      "question": "Find a synonym for \"reluctant.\"",
+      "answer": "Hesitant",
+      "hint": "Think of a word meaning 'unwilling'."
+    },
+    {
+      "id": "voc-pe-05",
+      "subtopic": "Antonyms",
+      "question": "Find the antonym of \"transparent\" (in the sense of honesty and openness, not glass).",
+      "answer": "Secretive",
+      "hint": "Think of the opposite of 'open and clear about intentions'."
+    }
+  ],
+  "quiz": {
+    "easy": [
+      {
+        "id": "voc-e-01",
+        "subtopic": "Vocabulary",
+        "question": "What does \"abundant\" mean?",
+        "options": ["Existing in large quantities", "Very rare", "Extremely small", "Completely empty"],
+        "answerIndex": 0,
+        "explanation": "\"Abundant\" means existing or available in large quantities; plentiful.",
+        "whyWrong": [null, "\"Very rare\" is nearly the opposite of 'abundant'.", "\"Extremely small\" doesn't relate to quantity the way 'abundant' does.", "\"Completely empty\" is essentially the opposite meaning."],
+        "shortcut": "\"Abundant\" shares a root with \"abound,\" meaning to exist in large numbers."
+      },
+      {
+        "id": "voc-e-02",
+        "subtopic": "Vocabulary",
+        "question": "What is the noun form of the adjective \"honest\"?",
+        "options": ["Honesty", "Honestly", "Honester", "Honestify"],
+        "answerIndex": 0,
+        "explanation": "\"Honesty\" is the correct noun form; \"honestly\" is the adverb form.",
+        "whyWrong": [null, "\"Honestly\" is the adverb form, describing HOW an action is done, not a noun.", "\"Honester\" isn't a standard English word.", "\"Honestify\" isn't a real word."],
+        "shortcut": "Many -est adjectives form nouns with -esty or -ness (honest→honesty, kind→kindness)."
+      },
+      {
+        "id": "voc-e-03",
+        "subtopic": "Synonyms",
+        "question": "Choose the synonym for \"happy.\"",
+        "options": ["Joyful", "Sad", "Angry", "Tired"],
+        "answerIndex": 0,
+        "explanation": "\"Joyful\" shares the same core meaning as \"happy\" — feeling or expressing pleasure.",
+        "whyWrong": [null, "\"Sad\" is essentially the opposite of 'happy'.", "\"Angry\" describes a completely different emotion.", "\"Tired\" relates to fatigue, not happiness."],
+        "shortcut": "For basic synonym questions, eliminate options with clearly different or opposite meanings first."
+      },
+      {
+        "id": "voc-e-04",
+        "subtopic": "Antonyms",
+        "question": "Choose the antonym for \"brave.\"",
+        "options": ["Cowardly", "Bold", "Fearless", "Courageous"],
+        "answerIndex": 0,
+        "explanation": "\"Cowardly\" is the direct opposite of \"brave\" — lacking courage.",
+        "whyWrong": [null, "\"Bold\" is actually a synonym of 'brave', not an antonym.", "\"Fearless\" is also a synonym of 'brave'.", "\"Courageous\" is a synonym of 'brave' as well."],
+        "shortcut": "Three of the four options here are synonyms of \"brave\" — the antonym is the clear outlier."
+      },
+      {
+        "id": "voc-e-05",
+        "subtopic": "Vocabulary",
+        "question": "What does \"ancient\" mean?",
+        "options": ["Very old, belonging to the distant past", "Very new and modern", "Medium-sized", "Colorful"],
+        "answerIndex": 0,
+        "explanation": "\"Ancient\" describes something belonging to the very distant past or very old.",
+        "whyWrong": [null, "\"Very new and modern\" is essentially the opposite meaning.", "\"Medium-sized\" relates to size, not age.", "\"Colorful\" doesn't relate to the meaning of 'ancient' at all."],
+        "shortcut": "\"Ancient\" relates to great age — think of ancient civilizations, ancient history."
+      }
+    ],
+    "medium": [
+      {
+        "id": "voc-m-01",
+        "subtopic": "Vocabulary",
+        "question": "What does \"meticulous\" mean?",
+        "options": ["Extremely careful and precise about details", "Careless and hasty", "Loud and boisterous", "Extremely generous"],
+        "answerIndex": 0,
+        "explanation": "\"Meticulous\" describes showing great attention to detail; extremely careful and precise.",
+        "whyWrong": [null, "\"Careless and hasty\" is essentially the opposite of 'meticulous'.", "\"Loud and boisterous\" doesn't relate to attention to detail.", "\"Extremely generous\" relates to giving, not precision."],
+        "shortcut": "\"Meticulous\" often appears alongside \"attention to detail\" in context — a strong contextual clue."
+      },
+      {
+        "id": "voc-m-02",
+        "subtopic": "Synonyms",
+        "question": "Choose the closest synonym for \"candid.\"",
+        "options": ["Frank", "Secretive", "Confused", "Aggressive"],
+        "answerIndex": 0,
+        "explanation": "\"Candid\" means honest and straightforward; \"frank\" carries the same meaning.",
+        "whyWrong": [null, "\"Secretive\" is close to the opposite of 'candid'.", "\"Confused\" doesn't relate to honesty or openness.", "\"Aggressive\" describes a different quality entirely."],
+        "shortcut": "\"Candid\" and \"frank\" are near-perfect synonyms — both mean openly honest, even if blunt."
+      },
+      {
+        "id": "voc-m-03",
+        "subtopic": "Synonyms",
+        "question": "Choose the closest synonym for \"abundant.\"",
+        "options": ["Plentiful", "Scarce", "Fragile", "Ordinary"],
+        "answerIndex": 0,
+        "explanation": "\"Abundant\" and \"plentiful\" both describe something existing in large quantities.",
+        "whyWrong": [null, "\"Scarce\" is the opposite of 'abundant'.", "\"Fragile\" relates to physical delicacy, not quantity.", "\"Ordinary\" doesn't relate to quantity at all."],
+        "shortcut": "Look for the option matching both the meaning AND the degree of \"abundant\" — a very large quantity, not just 'some'."
+      },
+      {
+        "id": "voc-m-04",
+        "subtopic": "Antonyms",
+        "question": "Choose the antonym for \"generous.\"",
+        "options": ["Stingy", "Kind", "Charitable", "Giving"],
+        "answerIndex": 0,
+        "explanation": "\"Stingy\" describes someone unwilling to give or share, the direct opposite of \"generous.\"",
+        "whyWrong": [null, "\"Kind\" is a synonym of 'generous', not an antonym.", "\"Charitable\" is also a synonym.", "\"Giving\" is essentially the same meaning as 'generous'."],
+        "shortcut": "Three options here describe positive giving traits — the antonym is the one describing withholding instead."
+      },
+      {
+        "id": "voc-m-05",
+        "subtopic": "Antonyms",
+        "question": "Choose the antonym for \"transparent\" (as in honesty and openness).",
+        "options": ["Secretive", "Clear", "Honest", "Open"],
+        "answerIndex": 0,
+        "explanation": "\"Secretive\" describes someone who hides information, the opposite of being \"transparent\" (open and honest).",
+        "whyWrong": [null, "\"Clear\" is closely related to 'transparent' in meaning, not its opposite.", "\"Honest\" is a synonym of the honesty-related sense of 'transparent'.", "\"Open\" is also a synonym in this context."],
+        "shortcut": "When a word has multiple meanings (transparent = see-through OR honest), match the antonym to the SAME sense used in the question."
+      },
+      {
+        "id": "voc-m-06",
+        "subtopic": "Vocabulary",
+        "question": "What is the correct noun form of the adjective \"generous\"?",
+        "options": ["Generosity", "Generously", "Generousness", "Generate"],
+        "answerIndex": 0,
+        "explanation": "\"Generosity\" is the standard noun form of \"generous.\"",
+        "whyWrong": [null, "\"Generously\" is the adverb form, not the noun.", "\"Generousness\" isn't standard usage — 'generosity' is the conventional noun form.", "\"Generate\" is an unrelated verb with a different root meaning."],
+        "shortcut": "Adjectives ending in -ous often form nouns ending in -osity (generous→generosity, curious→curiosity)."
+      },
+      {
+        "id": "voc-m-07",
+        "subtopic": "Synonyms",
+        "question": "Choose the closest synonym for \"reluctant.\"",
+        "options": ["Hesitant", "Eager", "Confident", "Determined"],
+        "answerIndex": 0,
+        "explanation": "\"Reluctant\" means unwilling or hesitant to do something; \"hesitant\" captures the same core meaning.",
+        "whyWrong": [null, "\"Eager\" is essentially the opposite of 'reluctant'.", "\"Confident\" describes a different quality — self-assurance, not unwillingness.", "\"Determined\" also describes a different, more decisive quality."],
+        "shortcut": "\"Reluctant\" and \"hesitant\" both signal unwillingness or delay in taking action."
+      },
+      {
+        "id": "voc-m-08",
+        "subtopic": "Antonyms",
+        "question": "Choose the antonym for \"abundant.\"",
+        "options": ["Scarce", "Plentiful", "Ample", "Sufficient"],
+        "answerIndex": 0,
+        "explanation": "\"Scarce\" describes something in short supply, the direct opposite of \"abundant\" (plentiful).",
+        "whyWrong": [null, "\"Plentiful\" is a synonym of 'abundant', not an antonym.", "\"Ample\" is also a synonym, meaning 'enough or more than enough'.", "\"Sufficient\" likewise describes an adequate amount, similar to 'abundant'."],
+        "shortcut": "Three options describe 'enough or more' — the antonym is the one describing 'too little'."
+      },
+      {
+        "id": "voc-m-09",
+        "subtopic": "Vocabulary",
+        "question": "What does \"gregarious\" mean?",
+        "options": ["Fond of company; sociable", "Shy and withdrawn", "Extremely intelligent", "Physically strong"],
+        "answerIndex": 0,
+        "explanation": "\"Gregarious\" describes someone who enjoys the company of others; sociable.",
+        "whyWrong": [null, "\"Shy and withdrawn\" is essentially the opposite meaning.", "\"Extremely intelligent\" doesn't relate to sociability.", "\"Physically strong\" is unrelated to the word's actual meaning."],
+        "shortcut": "\"Gregarious\" shares a root with animals that move and live in groups."
+      },
+      {
+        "id": "voc-m-10",
+        "subtopic": "Antonyms",
+        "question": "Choose the antonym for \"meticulous.\"",
+        "options": ["Careless", "Precise", "Thorough", "Detailed"],
+        "answerIndex": 0,
+        "explanation": "\"Careless\" describes a lack of attention to detail, the direct opposite of \"meticulous.\"",
+        "whyWrong": [null, "\"Precise\" is a synonym of 'meticulous', not an antonym.", "\"Thorough\" is also closely related in meaning to 'meticulous'.", "\"Detailed\" likewise aligns with, rather than opposes, 'meticulous'."],
+        "shortcut": "Three options describe careful, detailed work — the antonym is the one describing sloppy or hasty work instead."
+      }
+    ],
+    "hard": [
+      {
+        "id": "voc-h-01",
+        "subtopic": "Vocabulary",
+        "question": "What does \"ephemeral\" mean?",
+        "options": ["Lasting for a very short time", "Lasting forever", "Extremely large", "Very colorful"],
+        "answerIndex": 0,
+        "explanation": "\"Ephemeral\" describes something that lasts for a very short time; transient.",
+        "whyWrong": [null, "\"Lasting forever\" is essentially the opposite meaning.", "\"Extremely large\" relates to size, not duration.", "\"Very colorful\" is unrelated to the meaning."],
+        "shortcut": "\"Ephemeral\" often describes things like fashion trends or mayflies — known for their brief existence."
+      },
+      {
+        "id": "voc-h-02",
+        "subtopic": "Vocabulary",
+        "question": "What does \"pragmatic\" mean?",
+        "options": ["Dealing with things sensibly and practically", "Extremely emotional and irrational", "Overly theoretical and abstract", "Aggressive and confrontational"],
+        "answerIndex": 0,
+        "explanation": "\"Pragmatic\" describes an approach based on practical considerations rather than theory or ideals.",
+        "whyWrong": [null, "\"Extremely emotional and irrational\" is nearly the opposite of a pragmatic approach.", "\"Overly theoretical and abstract\" is close to the opposite — pragmatic is about the practical, not the theoretical.", "\"Aggressive and confrontational\" doesn't relate to practicality at all."],
+        "shortcut": "\"Pragmatic\" is often contrasted directly with \"idealistic\" or \"theoretical\" in context."
+      },
+      {
+        "id": "voc-h-03",
+        "subtopic": "Synonyms",
+        "question": "Choose the closest synonym for \"austere\" as used in \"The room had an austere, minimalist design.\"",
+        "options": ["Stark and severe in simplicity", "Warm and welcoming", "Colorful and decorative", "Comfortable and luxurious"],
+        "answerIndex": 0,
+        "explanation": "In this context, \"austere\" describes a style that's plain, simple, and without unnecessary decoration — \"stark and severe in simplicity\" captures this precisely.",
+        "whyWrong": [null, "\"Warm and welcoming\" contradicts the plain, undecorated sense of 'austere' here.", "\"Colorful and decorative\" is close to the opposite of an austere, minimalist design.", "\"Comfortable and luxurious\" also contradicts the stripped-down sense of 'austere' used here."],
+        "shortcut": "\"Austere\" can also describe strict/stern people, but in a design context specifically, it means starkly simple — always match the synonym to the exact context given."
+      },
+      {
+        "id": "voc-h-04",
+        "subtopic": "Synonyms",
+        "question": "Choose the closest synonym for \"vindicate\" in the sentence \"The new evidence vindicated her claims.\"",
+        "options": ["Proved to be right or justified", "Contradicted and disproved", "Ignored completely", "Exaggerated significantly"],
+        "answerIndex": 0,
+        "explanation": "\"Vindicate\" means to clear someone of blame or prove them right, especially after doubt or accusation.",
+        "whyWrong": [null, "\"Contradicted and disproved\" is the opposite of what 'vindicate' means.", "\"Ignored completely\" doesn't match the active sense of proving someone right.", "\"Exaggerated significantly\" doesn't capture the 'proving right' sense of the word at all."],
+        "shortcut": "\"Vindicate\" often appears in contexts involving accusations or doubts that are later proven wrong."
+      },
+      {
+        "id": "voc-h-05",
+        "subtopic": "Antonyms",
+        "question": "Choose the antonym for \"verbose\" as used in \"His verbose explanation confused everyone.\"",
+        "options": ["Concise", "Loud", "Confusing", "Detailed"],
+        "answerIndex": 0,
+        "explanation": "\"Verbose\" means using more words than necessary; \"concise\" (brief and to the point) is its direct opposite.",
+        "whyWrong": [null, "\"Loud\" relates to volume, not word count — an unrelated dimension.", "\"Confusing\" actually describes a possible RESULT of being verbose, not its opposite.", "\"Detailed\" is closer to a synonym of 'verbose' in some contexts, not an antonym."],
+        "shortcut": "\"Verbose\" is specifically about excessive WORD COUNT — its antonym must address brevity, not volume or clarity."
+      },
+      {
+        "id": "voc-h-06",
+        "subtopic": "Vocabulary",
+        "question": "What does \"ostentatious\" mean?",
+        "options": ["Designed to impress through excessive display", "Modest and understated", "Extremely useful and practical", "Quiet and reserved"],
+        "answerIndex": 0,
+        "explanation": "\"Ostentatious\" describes something showy, done to attract attention or impress others, often excessively.",
+        "whyWrong": [null, "\"Modest and understated\" is essentially the opposite meaning.", "\"Extremely useful and practical\" doesn't relate to the showy, attention-seeking sense of the word.", "\"Quiet and reserved\" is close to the opposite of 'ostentatious' as well."],
+        "shortcut": "\"Ostentatious\" is often paired with words like \"display,\" \"wealth,\" or \"jewelry\" in context."
+      },
+      {
+        "id": "voc-h-07",
+        "subtopic": "Synonyms",
+        "question": "Choose the closest synonym for \"resilient\" in the sentence \"Despite the setbacks, she remained resilient.\"",
+        "options": ["Able to recover quickly from difficulties", "Easily discouraged", "Extremely fragile", "Indifferent to outcomes"],
+        "answerIndex": 0,
+        "explanation": "\"Resilient\" describes the ability to withstand or recover quickly from difficult conditions.",
+        "whyWrong": [null, "\"Easily discouraged\" is essentially the opposite of 'resilient'.", "\"Extremely fragile\" is also close to the opposite meaning.", "\"Indifferent to outcomes\" doesn't capture the active recovery aspect of 'resilient'."],
+        "shortcut": "\"Resilient\" often appears alongside words like \"despite,\" \"setbacks,\" or \"challenges.\""
+      },
+      {
+        "id": "voc-h-08",
+        "subtopic": "Antonyms",
+        "question": "Choose the antonym for \"eloquent\" as used in \"He gave an eloquent speech.\"",
+        "options": ["Inarticulate", "Persuasive", "Fluent", "Expressive"],
+        "answerIndex": 0,
+        "explanation": "\"Eloquent\" describes fluent and persuasive speaking; \"inarticulate\" (unable to express oneself clearly) is its direct opposite.",
+        "whyWrong": [null, "\"Persuasive\" is a synonym of 'eloquent', not an antonym.", "\"Fluent\" is also a synonym in this context.", "\"Expressive\" likewise aligns with the meaning of 'eloquent' rather than opposing it."],
+        "shortcut": "Three of the options describe skilled communication — the antonym describes an inability to communicate clearly."
+      },
+      {
+        "id": "voc-h-09",
+        "subtopic": "Vocabulary",
+        "question": "What does \"innate\" mean?",
+        "options": ["Existing naturally from birth, not acquired", "Learned through years of practice", "Extremely rare and valuable", "Related to foreign cultures"],
+        "answerIndex": 0,
+        "explanation": "\"Innate\" describes a quality or ability someone is born with, rather than one learned or acquired later.",
+        "whyWrong": [null, "\"Learned through years of practice\" is essentially the opposite of 'innate'.", "\"Extremely rare and valuable\" doesn't relate to the birth/nature aspect of the word.", "\"Related to foreign cultures\" is unrelated to the actual meaning."],
+        "shortcut": "\"Innate\" is often contrasted directly with \"acquired\" or \"learned\" in context."
+      },
+      {
+        "id": "voc-h-10",
+        "subtopic": "Synonyms",
+        "question": "Choose the closest synonym for \"arbitrary\" in the sentence \"The judge's decision seemed arbitrary.\"",
+        "options": ["Based on random choice rather than reason", "Carefully reasoned and justified", "Extremely harsh and severe", "Delayed and postponed"],
+        "answerIndex": 0,
+        "explanation": "\"Arbitrary\" describes a decision made without a clear system, reason, or fair basis — essentially random or based on personal whim.",
+        "whyWrong": [null, "\"Carefully reasoned and justified\" is essentially the opposite of 'arbitrary'.", "\"Extremely harsh and severe\" describes a different quality — severity, not randomness.", "\"Delayed and postponed\" relates to timing, not the reasoning (or lack of it) behind a decision."],
+        "shortcut": "\"Arbitrary\" decisions lack a clear, consistent reasoning system — look for words implying randomness or whim."
+      }
+    ]
+  },
+  "revision": {
+    "quickSheet": [
+      "Learn words in FAMILIES (noun/verb/adjective/adverb forms), not in isolation.",
+      "Synonyms must match not just general meaning but also DEGREE (mild vs strong) and TONE (formal vs informal).",
+      "Antonyms come in three types: complementary (alive/dead, no middle ground), gradable (hot/cold, degrees exist), and relational (buy/sell).",
+      "For polysemous words (multiple meanings, like 'light' or 'sound'), always match the synonym/antonym to the SAME sense used in the given context.",
+      "Breaking an unknown word into prefix+root+suffix often reveals its general meaning even without exact recall."
+    ],
+    "oneMinute": [
+      "Eliminate options with clearly opposite or unrelated meanings first.",
+      "Check both meaning and intensity/tone before finalizing a synonym.",
+      "Context sentences change which synonym/antonym is correct for multi-meaning words."
+    ],
+    "summary": "Vocabulary, synonym, and antonym questions all reward the same underlying habit: read for precise meaning, degree, and context — not just a general 'same topic' match. Learning words in families, recognizing common prefixes/roots/suffixes, and always checking a word's specific sense in context will resolve most of the tricky options these questions throw at you."
+  }
+}
